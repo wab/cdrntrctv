@@ -8,7 +8,7 @@ wordpress_sites:
     site_title: Cedreo
     admin_user: wadmin
     # admin_password: (defined in group_vars/development/vault.yml)
-    admin_email: admin@cedreo.dev
+    admin_email: wab2com@gmail.com
     initial_permalink_structure: /%postname%/ # applied only at time of WP install and when `site_install: true`
     multisite:
       enabled: false
