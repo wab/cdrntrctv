@@ -7,7 +7,7 @@ vault_sudoer_passwords:
 
 # Variables to accompany `group_vars/development/wordpress_sites.yml`
 vault_wordpress_sites:
-  example.com:
-    admin_password: admin
+  cedreo.com:
+    admin_password: wadmin
     env:
-      db_password: example_dbpassword
+      db_password: 5tc@WP
