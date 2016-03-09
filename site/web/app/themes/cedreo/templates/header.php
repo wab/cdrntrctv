@@ -8,5 +8,6 @@
       endif;
       ?>
     </nav>
+    <a class="toggle-nav btn btn-primary" href="">open menu</a>
   </div>
 </header>

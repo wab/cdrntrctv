@@ -1,0 +1,47 @@
+/* Hides everything pushed outside of it */
+.site-wrap {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+/* Adds a transition and the resting translate state */
+.push-wrap {
+    -webkit-transition: all 300ms ease 0;
+    -moz-transition: all 300ms ease 0;
+    -o-transition: all 300ms ease 0;
+    transition: all 300ms ease 0;
+
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+/* Will animate the content to the right 275px revealing the hidden nav */
+.show-nav .push-wrap {
+    -webkit-transform: translate(275px, 0);
+    -moz-transform: translate(275px, 0);
+    -ms-transform: translate(275px, 0);
+    -o-transform: translate(275px, 0);
+    transform: translate(275px, 0);
+
+    -webkit-transform: translate3d(275px, 0, 0);
+    -moz-transform: translate3d(275px, 0, 0);
+    -ms-transform: translate3d(275px, 0, 0);
+    -o-transform: translate3d(275px, 0, 0);
+    transform: translate3d(275px, 0, 0);
+}
+/* Positions the nav fixed below the push wrapper */
+.main-navigation {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}

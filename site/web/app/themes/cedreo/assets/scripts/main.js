@@ -19,6 +19,22 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        // Normal Clicks
+        $(function() {
+          $('.toggle-nav').click(function() {
+            $('body').toggleClass('show-nav');
+             return false;
+          });
+          
+        });
+
+
+        // Toggle with hitting of ESC
+        $(document).keyup(function(e) {
+            if (e.keyCode == 27) {
+           $('body').toggleClass('show-nav');
+          }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
