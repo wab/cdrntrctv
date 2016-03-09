@@ -30,6 +30,66 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "toolbox-plugin/gravityforms",
+        "version": "1.9.15",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/wab/gravityforms/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "v1.0.12"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "toolbox-plugin/acf-repeater",
+        "version": "1.1.1",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/wab/acf-repeater/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "v1.0.12"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "toolbox-plugin/acf-flexible-content",
+        "version": "1.1.1",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/wab/acf-flexible-content/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "v1.0.12"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "toolbox-plugin/acf-gallery",
+        "version": "1.1.1",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/wab/acf-gallery/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "v1.0.12"
+        }
+      }
     }
   ],
   "require": {
@@ -38,7 +98,15 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.4.2",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "roots/soil": "^3.6",
+    "wpackagist-plugin/advanced-custom-fields": "^4.4",
+    "toolbox-plugin/acf-repeater": "^1.1.1",
+    "toolbox-plugin/acf-flexible-content": "^1.1.1",
+    "toolbox-plugin/acf-gallery": "^1.1.1",
+    "wpackagist-plugin/types": "^1.8",
+    "toolbox-plugin/gravityforms": "1.9.15",
+    "wpackagist-plugin/wordpress-seo": "^3.0"
   },
   "extra": {
     "installer-paths": {

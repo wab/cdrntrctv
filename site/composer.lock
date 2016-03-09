@@ -4,37 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c1a6716c9465beb6cbc45fecd3a86e07",
-    "content-hash": "175acdfd1990a9c09fd3e5239140b5a0",
+    "hash": "415064cdba3442b0872fdaaaef5fa44f",
+    "content-hash": "ba890ea1eb417d60f85fb8b3dbb3fa1e",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.23",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/4127333b03e8b4c08d081958548aae5419d1a2fa",
+                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa",
                 "shasum": ""
             },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
             "replace": {
-                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "3.7.*"
             },
-            "type": "composer-plugin",
+            "type": "composer-installer",
             "extra": {
-                "class": "Composer\\Installers\\Plugin",
+                "class": "Composer\\Installers\\Installer",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -52,34 +48,27 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama"
+                    "homepage": "https://github.com/shama",
+                    "role": "Developer"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
                 "Craft",
-                "Dolibarr",
                 "Hurad",
                 "MODX Evo",
                 "OXID",
-                "SMF",
-                "Thelia",
                 "WolfCMS",
                 "agl",
-                "aimeos",
                 "annotatecms",
-                "bitrix",
                 "cakephp",
-                "chef",
                 "codeigniter",
                 "concrete5",
                 "croogo",
-                "dokuwiki",
                 "drupal",
                 "elgg",
                 "fuelphp",
-                "grav",
                 "installer",
                 "joomla",
                 "kohana",
@@ -89,12 +78,9 @@
                 "mako",
                 "mediawiki",
                 "modulework",
-                "moodle",
                 "phpbb",
                 "piwik",
                 "ppi",
-                "puppet",
-                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
@@ -103,7 +89,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2014-02-24 04:21:34"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -233,6 +219,48 @@
             "time": "2015-12-31 12:34:29"
         },
         {
+            "name": "roots/soil",
+            "version": "3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/soil.git",
+                "reference": "085fd3c9b16df5b72dce4fba09de0207937ef721"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/soil/zipball/085fd3c9b16df5b72dce4fba09de0207937ef721",
+                "reference": "085fd3c9b16df5b72dce4fba09de0207937ef721",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                }
+            ],
+            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
+            "homepage": "https://roots.io/plugins/soil/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2016-03-07 19:49:21"
+        },
+        {
             "name": "roots/wp-password-bcrypt",
             "version": "1.0.0",
             "source": {
@@ -290,6 +318,62 @@
             "time": "2016-03-01 16:27:06"
         },
         {
+            "name": "toolbox-plugin/acf-flexible-content",
+            "version": "1.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/wab/acf-flexible-content/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "v1.0.12"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "toolbox-plugin/acf-gallery",
+            "version": "1.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/wab/acf-gallery/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "v1.0.12"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "toolbox-plugin/acf-repeater",
+            "version": "1.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/wab/acf-repeater/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "v1.0.12"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "toolbox-plugin/gravityforms",
+            "version": "1.9.15",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/wab/gravityforms/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "v1.0.12"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.2.0",
             "source": {
@@ -339,6 +423,66 @@
                 "environment"
             ],
             "time": "2015-12-29 15:10:30"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "4.4.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "tags/4.4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/types",
+            "version": "1.9.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/types/",
+                "reference": "tags/1.9.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/types.1.9.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/types/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "3.1.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         }
     ],
     "packages-dev": [],
