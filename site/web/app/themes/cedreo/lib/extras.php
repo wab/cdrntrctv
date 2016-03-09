@@ -31,3 +31,62 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+
+/**
+ * Disable Emojicons()
+ */
+
+function disable_wp_emojicons() {
+
+  // all actions related to emojis
+  remove_action( 'admin_print_styles', 'print_emoji_styles' );
+  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+
+}
+
+add_action( 'init', __NAMESPACE__ . '\\disable_wp_emojicons' );
+
+function disable_emojicons_tinymce( $plugins ) {
+  if ( is_array( $plugins ) ) {
+    return array_diff( $plugins, array( 'wpemoji' ) );
+  } else {
+    return array();
+  }
+}
+
+// Custom logo on login page
+function custom_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            width: 100%;
+            height: 120px;
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.png);
+            background-size: 100%;
+        }
+    </style>
+<?php }
+
+//add_action( 'login_enqueue_scripts',  __NAMESPACE__ . '\\custom_login_logo' );
+
+// rename post to actus
+function change_post_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Actualités';
+    $submenu['edit.php'][5][0] = 'Actualités';
+    $submenu['edit.php'][10][0] = 'Ajouter une actualité';
+    echo '';
+}
+add_action( 'admin_menu', __NAMESPACE__ . '\\change_post_menu_label' );
+
+// hide admin bar
+function my_function_admin_bar() {
+    return false;
+}
+add_filter( 'show_admin_bar' , __NAMESPACE__ . '\\my_function_admin_bar');
