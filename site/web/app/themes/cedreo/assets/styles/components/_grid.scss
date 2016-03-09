@@ -1,0 +1,12 @@
+// Grid system
+.main {
+  @include make-col-span($main-sm-columns);
+  @include make-col();
+  .sidebar-primary & {
+    @include make-col-span($main-sm-columns - $sidebar-sm-columns);
+  }
+}
+.sidebar {
+  @include make-col-span($sidebar-sm-columns);
+  @include make-col();
+}
