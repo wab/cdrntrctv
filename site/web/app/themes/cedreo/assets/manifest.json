@@ -19,9 +19,14 @@
     },
     "jquery.js": {
       "bower": ["jquery"]
+    },
+    "modernizr.js": {
+      "files": [
+        "scripts/modernizr.js"
+      ]
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://localhost/cedreo/site/web"
   }
 }
