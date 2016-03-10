@@ -6,42 +6,76 @@
 }
 /* Adds a transition and the resting translate state */
 .push-wrap {
-    -webkit-transition: all 300ms ease 0;
-    -moz-transition: all 300ms ease 0;
-    -o-transition: all 300ms ease 0;
-    transition: all 300ms ease 0;
-
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
+    transition: all 300ms ease;
     transform: translate(0, 0);
-
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+
+    .show-nav & {
+        transform: translate(25%, 0);
+        transform: translate3d(25%, 0, 0);
+    }
 }
 /* Will animate the content to the right 275px revealing the hidden nav */
-.show-nav .push-wrap {
-    -webkit-transform: translate(275px, 0);
-    -moz-transform: translate(275px, 0);
-    -ms-transform: translate(275px, 0);
-    -o-transform: translate(275px, 0);
-    transform: translate(275px, 0);
 
-    -webkit-transform: translate3d(275px, 0, 0);
-    -moz-transform: translate3d(275px, 0, 0);
-    -ms-transform: translate3d(275px, 0, 0);
-    -o-transform: translate3d(275px, 0, 0);
-    transform: translate3d(275px, 0, 0);
-}
 /* Positions the nav fixed below the push wrapper */
 .main-navigation {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
     top: 0;
-    left: 0;
+    left: -100vw;
+    background: $brand-primary;
+    transition: all 300ms ease;
+    opacity: 1;
+    z-index: 10;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    .show-nav & {
+        left: 0;
+    }
+
+    * {
+        color: $body-bg;
+    }
+
+    .menu-wrap {
+       display: flex;
+       flex-flow: row wrap;
+       max-width:800px;
+
+       .menu-col {
+            flex: 1;
+            flex-basis: 50%;
+            padding: 1em;
+
+            &.full {
+                flex-basis: 100%;
+            }
+
+            .menu-title {
+                //text-transform: uppercase;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1rem;
+                //border-bottom: 1px solid $body-bg;
+            }
+       }
+    }
+}
+
+.nav-menu {
+    .nav-link {
+        padding: 0.2rem 0;
+    }
+}
+
+.toggle-nav {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 20;
 }

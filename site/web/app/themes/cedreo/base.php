@@ -39,16 +39,8 @@ use Roots\Sage\Wrapper;
 
       </div> <!-- push-wrap -->
 
-
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <?php get_template_part('templates/menu'); ?>
+      
     </div> <!-- site-wrap -->
     
     <?php wp_footer(); ?>
