@@ -1,9 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,600);
 @import "common/variables";
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
 // endbower
 
 @import "common/global";

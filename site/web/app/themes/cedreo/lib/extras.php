@@ -64,15 +64,15 @@ function disable_emojicons_tinymce( $plugins ) {
 function custom_login_logo() { ?>
     <style type="text/css">
         .login h1 a {
-            width: 100%;
-            height: 120px;
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.png);
+            width: 50%;
+            height: 150px;
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-cedreo-interactive-b.png);
             background-size: 100%;
         }
     </style>
 <?php }
 
-//add_action( 'login_enqueue_scripts',  __NAMESPACE__ . '\\custom_login_logo' );
+add_action( 'login_enqueue_scripts',  __NAMESPACE__ . '\\custom_login_logo' );
 
 // rename post to actus
 function change_post_menu_label() {

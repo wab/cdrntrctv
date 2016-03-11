@@ -15,11 +15,12 @@ use Roots\Sage\Wrapper;
           <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
         </div>
       <![endif]-->
-      <div class="push-wrap">
-      <?php
+       <?php
         do_action('get_header');
         get_template_part('templates/header');
       ?>
+      <div class="push-wrap">
+     
       <div class="container" role="document">
         <div class="content row">
           <main class="main">

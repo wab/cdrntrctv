@@ -45,4 +45,3 @@
 		</div>
 	</div>
 </nav>
-<a class="toggle-nav btn btn-primary" href=""><i class="fa fa-bars"></i> menu</a>
