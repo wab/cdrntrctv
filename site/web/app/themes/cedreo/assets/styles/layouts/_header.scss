@@ -1,19 +1,19 @@
 .banner {
-	padding: 1rem 0;
 	background: $body-color;
-	text-align: right;
+	//text-align: right;
 	position: relative;
 	z-index: 50;
-	.brand {
-		@extend .pull-left;
+
+	.row {
+		height: $header-height;
 	}
 
 	a.nav-link, .txt {
-		line-height: $navbar-height;
 		color: $body-bg;
 	}
 
-	.is-active {
-        //position: fixed;
-    }
+	.columns + .columns {
+		text-align: right;
+	}
+
 }

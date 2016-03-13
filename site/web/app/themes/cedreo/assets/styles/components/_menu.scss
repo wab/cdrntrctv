@@ -22,6 +22,7 @@
     width: 100%;
     min-height: 100vh;
     position: absolute;
+    padding-top: $header-height;
     top: 0;
     left: -100vw;
     background: $body-color;
@@ -30,46 +31,11 @@
     //z-index: 10;
     overflow: hidden;
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-
     .show-nav & {
         left: 0;
     }
 
     * {
         color: $body-bg;
-    }
-
-    .menu-wrap {
-        margin-top: $navbar-height;
-        display: flex;
-        flex-flow: row wrap;
-        max-width:800px;
-
-       .menu-col {
-            flex: 1;
-            flex-basis: 50%;
-            padding: 1em;
-
-            &.full {
-                flex-basis: 100%;
-            }
-
-            .menu-title {
-                //text-transform: uppercase;
-                padding-bottom: 0.5rem;
-                margin-bottom: 1rem;
-                //border-bottom: 1px solid $body-bg;
-            }
-       }
-    }
-}
-
-.nav-menu {
-    .nav-link {
-        padding: 0.2rem 0;
     }
 }
