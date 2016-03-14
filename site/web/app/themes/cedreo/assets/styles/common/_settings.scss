@@ -2,7 +2,7 @@
 //  -----------------------------
 //
 //  Table of Contents:
-//
+//   Custom
 //   1. Global
 //   2. Breakpoints
 //   3. The Grid
@@ -41,6 +41,32 @@
 //  36. Top Bar
 
 @import 'util/util';
+//@import url(https://fonts.googleapis.com/css?family=Raleway:700,600);
+
+// Custom
+// ---------
+
+// header
+
+$header-height : 80px;
+// menu btn
+
+$hamburger-padding-x                       : 0.2rem;
+$hamburger-padding-y                       : 0;
+$hamburger-layer-width                     : 1.5rem;
+$hamburger-layer-height                    : 2px;
+$hamburger-layer-spacing                   : 4px;
+$hamburger-layer-color                     : #fff;
+$hamburger-layer-border-radius             : 2px;
+$hamburger-hover-opacity                   : 0.7;
+$hamburger-hover-transition-duration       : 0.15s;
+$hamburger-hover-transition-timing-function: ease;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter: false;
+$hamburger-hover-filter    : opacity(50%);
 
 // 1. Global
 // ---------
@@ -102,7 +128,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Raleway', $body-font-family;
+$header-font-family: 'Raleway', sans-serif;
 $header-font-weight: 700;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -116,11 +142,11 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
-    'h4': 25,
-    'h5': 20,
+    'h1': 40,
+    'h2': 31,
+    'h3': 25,
+    'h4': 20,
+    'h5': 18,
     'h6': 16,
   ),
 );
@@ -174,7 +200,7 @@ $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
-$subheader-font-weight: $global-weight-normal;
+$subheader-font-weight: 600;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
 $stat-font-size: 2.5rem;
@@ -378,7 +404,7 @@ $mediaobject-image-width-stacked: 100%;
 
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
-$menu-item-padding: 0.7rem 1rem;
+$menu-item-padding: 0.6rem 1rem;
 $menu-item-color-active: $white;
 $menu-item-background-active: map-get($foundation-palette, primary);
 $menu-icon-spacing: 0.25rem;
