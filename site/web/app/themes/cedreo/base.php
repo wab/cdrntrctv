@@ -2,6 +2,7 @@
 
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
+use Roots\Sage\Breadcrumbs;
 
 ?>
 
@@ -21,22 +22,25 @@ use Roots\Sage\Wrapper;
       ?>
       <div class="push-wrap">
      
-      <div class="container" role="document">
-        <div class="content row">
-          <main class="main">
-            <?php include Wrapper\template_path(); ?>
-          </main><!-- /.main -->
-          <?php if (Setup\display_sidebar()) : ?>
-            <aside class="sidebar">
-              <?php include Wrapper\sidebar_path(); ?>
-            </aside><!-- /.sidebar -->
-          <?php endif; ?>
-        </div><!-- /.content -->
-      </div><!-- /.wrap -->
-      <?php
-        do_action('get_footer');
-        get_template_part('templates/footer');
-      ?>
+        <div class="container" role="document">
+
+            <?= Breadcrumbs\breadcrumbs(); ?>
+            
+            <main class="main">
+              <?php include Wrapper\template_path(); ?>
+            </main><!-- /.main -->
+            
+            <?php if (Setup\display_sidebar()) : ?>
+              <aside class="sidebar">
+                <?php include Wrapper\sidebar_path(); ?>
+              </aside><!-- /.sidebar -->
+            <?php endif; ?>
+
+        </div><!-- /.container -->
+        <?php
+          do_action('get_footer');
+          get_template_part('templates/footer');
+        ?>
 
       </div> <!-- push-wrap -->
 

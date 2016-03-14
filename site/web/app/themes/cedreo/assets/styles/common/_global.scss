@@ -1,1 +1,11 @@
+.container {
+	@include grid-row;
+}
 
+.breadcrumbs {
+	@include grid-col;
+	margin: 1rem 0;
+	ul {
+		@include breadcrumbs-container;
+	}
+}
