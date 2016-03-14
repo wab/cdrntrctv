@@ -1,12 +1,11 @@
 // Grid system
 .main {
-  @include make-col-span($main-sm-columns);
-  @include make-col();
+  // Use the full column count (100%)
+  @include grid-column;
   .sidebar-primary & {
-    @include make-col-span($main-sm-columns - $sidebar-sm-columns);
+    @include grid-column-size(8);
   }
 }
 .sidebar {
-  @include make-col-span($sidebar-sm-columns);
-  @include make-col();
+   @include grid-column(4);
 }

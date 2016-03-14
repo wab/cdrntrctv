@@ -1,19 +1,26 @@
 .banner {
-	background: $body-color;
-	//text-align: right;
+	background: $body-font-color;
 	position: relative;
 	z-index: 50;
 
 	.row {
 		height: $header-height;
+
+		@include flex-grid-row;
+
+		.columns {
+			@include flex-grid-column(6);
+			@include flex-align-self(middle);
+		}
+
+		.columns + .columns {
+			text-align: right;
+		}
 	}
 
 	a.nav-link, .txt {
-		color: $body-bg;
+		color: $body-background;
 	}
 
-	.columns + .columns {
-		text-align: right;
-	}
 
 }

@@ -11,8 +11,8 @@
     transform: translate3d(0, 0, 0);
 
     .show-nav & {
-        transform: translate(10%, 0);
-        transform: translate3d(10%, 0, 0);
+        transform: translate(20%, 0);
+        transform: translate3d(20%, 0, 0);
     }
 }
 /* Will animate the content to the right 275px revealing the hidden nav */
@@ -25,17 +25,57 @@
     padding-top: $header-height;
     top: 0;
     left: -100vw;
-    background: $body-color;
+    background: $body-font-color;
     transition: all 300ms ease;
     opacity: 1;
     //z-index: 10;
     overflow: hidden;
 
+    .row {
+        @include flex-grid-row;
+
+        .columns {
+            @include flex-grid-column;
+            @include flex-align(center, middle);
+        }
+    }
+
+    hr {
+        border-color: rgba(255,255,255,0.1)
+    }
+
+    .menu {
+        margin-bottom: 1rem;
+    }
+
+    .nav-item {
+        margin-bottom: 0.4rem;
+    }
+
+    .nav-link {
+        border-left: 1px solid rgba(0,0,0,0.2);
+        transition: all 0.2s ease;
+
+        &:hover, &:focus {
+            border-color: map-get($foundation-palette, primary);
+        }
+    }
+
+    .panel {
+        padding: 1rem;
+        border: 1px solid rgba(255,255,255,0.1);
+        background: rgba(0,0,0,0.2)
+    }
+
     .show-nav & {
         left: 0;
     }
 
-    * {
-        color: $body-bg;
+    a {
+        color: $body-background;
+
+        &:hover, &:focus {
+            color: map-get($foundation-palette, primary);
+        }
     }
 }
