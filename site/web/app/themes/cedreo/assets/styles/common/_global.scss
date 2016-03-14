@@ -2,6 +2,10 @@
 	@include grid-row;
 }
 
+.section {
+	padding: 2rem 0;
+}
+
 .breadcrumbs {
 	@include grid-col;
 	margin: 1rem 0;

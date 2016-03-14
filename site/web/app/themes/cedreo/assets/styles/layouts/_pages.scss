@@ -1,0 +1,10 @@
+.home {
+	.cibles, .arguments {
+		.row {
+			@include flex-grid-row;
+		}
+		.columns {
+			@include flex-grid-column;
+		}
+	}
+}
