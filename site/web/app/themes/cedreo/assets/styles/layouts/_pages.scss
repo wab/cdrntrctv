@@ -1,10 +1,22 @@
 .home {
-	.cibles, .arguments {
-		.row {
-			@include flex-grid-row;
+	.cibles {
+		.title {
+			font-size: 1.2rem;
+			min-height: 4rem;
 		}
-		.columns {
-			@include flex-grid-column;
+
+		.besoins {
+			> * {
+				margin-bottom: 4rem;
+			}
 		}
+	}
+
+	.arguments {
+		background: $light-gray;
+	}
+
+	.stories {
+		//background: $medium-gray;
 	}
 }
