@@ -29,7 +29,6 @@
           
         });
 
-
         // Toggle with hitting of ESC
         $(document).keyup(function(e) {
             if (e.keyCode === 27) {
@@ -46,6 +45,27 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        $('.carousel').owlCarousel({
+          items : 1
+        });
+        $('.stories-carousel').owlCarousel({
+          loop:true,
+          margin:20,
+          responsiveClass:true,
+          nav:false,
+          dots:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:3
+              }
+          }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

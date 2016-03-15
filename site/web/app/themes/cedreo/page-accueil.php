@@ -4,9 +4,24 @@
  */
 ?>
 
-<div class="section">
-	<div class="row column">
-		<p>carousel</p>
+<div class="carousel owl-carousel">
+	<div class="item">
+		<img src="https://unsplash.it/1850/600?random" alt="">
+		<div class="item-wrap">
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+	</div>
+	<div class="item">
+		<img src="https://unsplash.it/1800/600?random" alt="">
+		<div class="item-wrap">
+			<p class="lead">Sit obcaecati laboriosam nobis corporis accusantium, non assumenda quis tempora quo voluptatibus.</p>
+		</div>
+	</div>
+	<div class="item">
+		<img src="https://unsplash.it/1820/600?random" alt="">
+		<div class="item-wrap">
+			<p class="lead">Neque distinctio nulla ipsam alias harum eum ratione earum odit.</p>
+		</div>
 	</div>
 </div>
 
@@ -15,7 +30,7 @@
   <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
-<div class="introduction">
+<div class="section introduction">
 	<div class="row">
 		<div class="columns medium-10 large-8 medium-centered">
 			<h1>Logiciels 3D d’aide à la vente sur tous supports</h1>
@@ -27,7 +42,7 @@
 </div>
 
 <section class="section cibles">
-	<div class="row column">
+	<div class="row column extended">
 		<h2>Logiciels sur-mesure ou standard ?</h2>
 		<div class="row medium-up-2 besoins">
 			<div class="columns">
@@ -77,13 +92,37 @@
 <section class="section stories">
 	<div class="row column">
 		<h2>Nos success stories</h2>
-		<div class="carousel">
-			<div>Nexity</div>
-			<div>Maisons France Confort</div>
-			<div>Lundia</div>
-			<div>Chateau d’Ax / La maison du convertible ?</div>
-			<div>Fermob</div>
-			<div>123 Webimmo</div>
+		<div class="owl-carousel stories-carousel">
+			<div>
+				<div class="wrap">
+					<strong>Nexity</strong>
+				</div>
+			</div>
+			<div>
+				<div class="wrap">
+					<strong>Maisons France Confort</strong>
+				</div>
+			</div>
+			<div>
+				<div class="wrap">
+					<strong>Lundia</strong>
+				</div>
+			</div>
+			<div>
+				<div class="wrap">
+					<strong>Chateau d’Ax</strong>
+				</div>
+			</div>
+			<div>
+				<div class="wrap">
+					<strong>Fermob</strong>
+				</div>
+			</div>
+			<div>
+				<div class="wrap">
+					<strong>123 Webimmo</strong>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -91,5 +130,12 @@
 <section class="section partenaires">
 	<div class="row column">
 		<h2>Nos partenaires</h2>
+		<ul class="row medium-up-8 no-bullet">
+			<li class="columns"><img src="https://unsplash.it/g/180" alt=""></li>
+			<li class="columns"><img src="https://unsplash.it/g/181" alt=""></li>
+			<li class="columns"><img src="https://unsplash.it/g/182" alt=""></li>
+			<li class="columns"><img src="https://unsplash.it/g/183" alt=""></li>
+			<li class="columns"><img src="https://unsplash.it/g/184" alt=""></li>
+		</ul>
 	</div>
 </section>
