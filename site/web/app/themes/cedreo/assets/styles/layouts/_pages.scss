@@ -3,7 +3,7 @@
 		background: $light-gray;
 		.item {
 			position: relative;
-			height: 100vh - ($header-height * 4);
+			height: 100vh - ($header-height * 3);
 			z-index: 0;
 
 			.item-wrap {
@@ -18,6 +18,11 @@
 				z-index: 10;
 				color: $body-background;
 				padding: 2rem;
+
+				.lead {
+					background: map-get($foundation-palette, primary);
+					padding: 1rem;
+				}
 
 			}
 

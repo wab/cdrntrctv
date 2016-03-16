@@ -6,19 +6,19 @@
 
 <div class="carousel owl-carousel">
 	<div class="item">
-		<img src="https://unsplash.it/1850/600?random" alt="">
+		<img src="https://unsplash.it/1850/800?random" alt="">
 		<div class="item-wrap">
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
 	</div>
 	<div class="item">
-		<img src="https://unsplash.it/1800/600?random" alt="">
+		<img src="https://unsplash.it/1800/800?random" alt="">
 		<div class="item-wrap">
 			<p class="lead">Sit obcaecati laboriosam nobis corporis accusantium, non assumenda quis tempora quo voluptatibus.</p>
 		</div>
 	</div>
 	<div class="item">
-		<img src="https://unsplash.it/1820/600?random" alt="">
+		<img src="https://unsplash.it/1820/800?random" alt="">
 		<div class="item-wrap">
 			<p class="lead">Neque distinctio nulla ipsam alias harum eum ratione earum odit.</p>
 		</div>
@@ -42,28 +42,55 @@
 </div>
 
 <section class="section cibles">
-	<div class="row column extended">
-		<h2>Logiciels sur-mesure ou standard ?</h2>
-		<div class="row medium-up-2 besoins">
-			<div class="columns">
-				<p class="title">Besoin d'un logiciel sur mesure ?</p>
-				<img src="https://unsplash.it/602/300?random" alt="" class="thumbnail">
-				<p class="text-center"><a href="#" class="expanded button">Ca se passe ici</a></p>
-			</div>
-			<div class="columns">
-				<p class="title">Un logiciel d’architecture 3D pour réaliser ces images en moins de 30 minutes ?</p>
-				<img src="https://unsplash.it/600/300?random" alt="" class="thumbnail">
-				<p class="text-center"><a href="#" class="expanded button">Ca se passe chez Brand 3D</a></p>
-			</div>
-			<div class="columns">
-				<p class="title">Constructeurs de maisons, vous souhaitez vendre plus et plus vite ? </p>
-				<img src="https://unsplash.it/601/300?random" alt="" class="thumbnail">
-				<p class="text-center"><a href="#" class="expanded button">Ca se passe chez Brand CMI</a></p>
-			</div>
-			<div class="columns">
-				<p class="title">Professionnels de l’immobilier ou de la construction, vos images 3D rapidement et au meilleur prix ?</p>
-				<img src="https://unsplash.it/603/300?random" alt="" class="thumbnail">
-				<p class="text-center"><a href="#" class="expanded button">Ca se passe chez Brand Services</a></p>
+	<div class="row">
+		<div class="columns large-centered large-8">
+			<h2>Logiciels sur-mesure ou standard ?</h2>
+		
+			<div class="row grid medium-up-2">
+				<div class="columns">
+					<figure class="effect-ming">
+						<img src="https://unsplash.it/601?random" alt="">
+						<figcaption>
+							<h3 class="grid-title">Besoin d'un logiciel<span> sur mesure ?</span></h3>
+							<p>&rarr; <em>Ca se passe ici</em></p>
+							<a href="#">y accéder</a>
+						</figcaption>			
+					</figure>
+				</div>
+				<div class="columns">
+					<figure class="effect-ming">
+						<img src="https://unsplash.it/602?random" alt="">
+						<figcaption>
+							<h3 class="grid-title">Un logiciel <span>d’architecture 3D</span></h3>
+							<p>pour réaliser ces images en moins de 30 minutes ?</p>
+							<p>&rarr; <em>Ca se passe chez Brand 3D</em></p>
+							<a href="#">y accéder</a>
+						</figcaption>			
+					</figure>
+				</div>
+				<div class="columns">
+					<figure class="effect-ming">
+						<img src="https://unsplash.it/603?random" alt="">
+						<figcaption>
+							<h3 class="grid-title">Constructeurs<span> de maisons</span></h3>
+							<p>Vous souhaitez vendre plus et plus vite ?</p>
+							<p>&rarr; <em>Ca se passe chez Brand CMI</em></p>
+							<a href="#">y accéder</a>
+						</figcaption>			
+					</figure>
+				</div>
+				<div class="columns">
+					<figure class="effect-ming">
+						<img src="https://unsplash.it/604?random" alt="">
+						<figcaption>
+							<h3 class="grid-title">Professionnels <span>de l’immobilier</span> ou <span>de la construction</span></h3>
+							<p>Vos images 3D rapidement et au meilleur prix ?</p>
+							<p>&rarr; <em>Ca se passe chez Brand Services</em></p>
+							<a href="#">y accéder</a>
+						</figcaption>			
+					</figure>
+				</div>
+				
 			</div>
 		</div>
 	</div>
