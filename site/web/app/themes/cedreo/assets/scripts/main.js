@@ -20,6 +20,8 @@
       init: function() {
         // JavaScript to be fired on all pages
         // Normal Clicks
+        $(document).foundation();
+        
         $(function() {
           $('.toggle-nav').click(function() {
             $('body').toggleClass('show-nav');

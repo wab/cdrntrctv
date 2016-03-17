@@ -24,9 +24,12 @@
       "files": [
         "scripts/modernizr.js"
       ]
+    },
+    "foundation.js": {
+      "bower": ["foundation-sites", "what-input"]
     }
   },
   "config": {
-    "devUrl": "http://cedreo.dev"
+    "devUrl": "http://localhost/cedreo/site/web"
   }
 }

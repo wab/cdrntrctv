@@ -16,7 +16,7 @@
   },
   "overrides": {
     "foundation-sites" : {
-      "main" : []
+      "main" : ["dist/foundation.js"]
     }
   }
 }
