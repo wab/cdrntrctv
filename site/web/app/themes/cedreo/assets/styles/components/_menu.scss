@@ -21,22 +21,25 @@
 .main-navigation {
     width: 100%;
     min-height: 100vh;
-    position: absolute;
+    position: fixed;
     padding-top: $header-height;
     top: 0;
     left: -100vw;
     background: $body-font-color;
     transition: all 300ms ease;
     opacity: 1;
-    //z-index: 10;
-    overflow: hidden;
+    z-index: 10;
+    overflow-y: visible;
+    
 
     .row {
-        @include flex-grid-row;
 
+        @include grid-row;
         .columns {
-            @include flex-grid-column;
-            @include flex-align(center, middle);
+            @include grid-column;
+            @include breakpoint(medium) {
+                @include grid-column-size(6);
+            }
         }
     }
 
