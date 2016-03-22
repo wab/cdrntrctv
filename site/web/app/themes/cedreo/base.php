@@ -2,7 +2,7 @@
 
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
-use Roots\Sage\Breadcrumbs;
+
 
 ?>
 
@@ -23,8 +23,6 @@ use Roots\Sage\Breadcrumbs;
       <div class="push-wrap">
      
         <div class="container" role="document">
-
-            <?= Breadcrumbs\breadcrumbs(); ?>
             
             <main class="main">
               <?php include Wrapper\template_path(); ?>

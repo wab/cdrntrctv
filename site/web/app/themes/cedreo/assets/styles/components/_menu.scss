@@ -50,6 +50,15 @@ html, body {
         @include breakpoint(large) {
             @include flex-grid-column(4);
         }
+
+        li a {
+            //padding-left: 0;
+            transition: all 0.2s ease;
+
+            &:hover, &:focus {
+                border-color: map-get($foundation-palette, primary);
+            }
+        }
     }
     
     .subheader {
@@ -60,15 +69,6 @@ html, body {
 
     hr {
         border-color: rgba(255,255,255,0.1);
-    }
-
-    .nav-link {
-        padding-left: 0;
-        transition: all 0.2s ease;
-
-        &:hover, &:focus {
-            border-color: map-get($foundation-palette, primary);
-        }
     }
 
     .panel {

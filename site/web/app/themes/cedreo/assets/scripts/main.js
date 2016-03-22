@@ -47,18 +47,22 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        
+        // Carousel accueil
         $('.carousel').owlCarousel({
           items : 1,
           dots: true,
           nav: false,
           autoplay: true
         });
+        
+        // Stories
         $('.stories-carousel').owlCarousel({
           loop:true,
           margin:20,
           responsiveClass:true,
-          nav:false,
-          dots:true,
+          nav:true,
+          dots:false,
           responsive:{
               0:{
                   items:1

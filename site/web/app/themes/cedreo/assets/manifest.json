@@ -31,6 +31,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost/cedreo/site/web"
+    "devUrl": "http://cedreo.dev"
   }
 }

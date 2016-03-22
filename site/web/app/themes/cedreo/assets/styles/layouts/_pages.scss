@@ -58,3 +58,19 @@
 		}
 	}
 }
+
+.page-header {
+	min-height: 25vh;
+	display: flex;
+	//justify-content: center;
+	align-items: center;
+
+	.page-title {
+		display: inline-block;
+		padding: 0.2em 0.5em;
+		color: #fff;
+		background: map-get($foundation-palette, primary);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+}

@@ -1,10 +1,25 @@
 <?php
-/**
- * Template Name: Solution
- */
-?>
 
+/**
+ * Template Name: Secteur d'activité
+ */
+use Roots\Sage\Breadcrumbs;
+
+?>
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
+	<header class="page-header section" style="background-image: url(https://unsplash.it/1850/200?random);">
+		<div class="row column">
+			<h1 class="page-title"><?php the_title(); ?></h1>
+		</div>
+		
+	</header>
+	<div class="section">
+		<div class="row">
+			<div class="columns large-8">
+				<?= Breadcrumbs\breadcrumbs(); ?>
+				<?php get_template_part('templates/content', 'page'); ?>
+			</div>
+		</div>
+	</div>
+
 <?php endwhile; ?>

@@ -27,7 +27,15 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage')
+    'secteurs' => __('Activity Area', 'cedreo')
+  ]);
+
+  register_nav_menus([
+    'logiciels' => __('Software', 'cedreo')
+  ]);
+
+  register_nav_menus([
+    'cedreo' => __('Company', 'cedreo')
   ]);
 
   // Enable post thumbnails
@@ -85,6 +93,7 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_page(),
     is_page_template('template-custom.php'),
   ]);
 
