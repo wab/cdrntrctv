@@ -3,6 +3,11 @@
 	position: relative;
 	z-index: 50;
 
+	.toggle-nav {
+		position: relative;
+		//z-index: 50;
+	}
+
 	.row {
 		height: $header-height;
 
@@ -21,6 +26,27 @@
 	a.nav-link, .txt {
 		color: $body-background;
 	}
+}
 
+.brand {
+	display: inline-block;
+	transition: all 0.2s ease;
+	transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
 
+	img {
+		opacity: 1;	
+	}
+	
+
+	.show-nav & {
+		transform: translate(0, -100px);
+    	transform: translate3d(0, -100px, 0);
+		
+		img {
+			opacity: 0.6;
+			
+		}
+		
+	}
 }

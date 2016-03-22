@@ -9,3 +9,17 @@
 		@include breadcrumbs-container;
 	}
 }
+
+.zoom {
+	padding: 1em;
+	border: dotted 2px map-get($foundation-palette, primary);
+	font-size: 1.6em;
+
+	> * {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	
+}

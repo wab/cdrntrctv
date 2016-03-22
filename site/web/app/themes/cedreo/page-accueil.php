@@ -7,20 +7,17 @@
 <?php while (have_posts()) : the_post(); ?>
 
 <div class="carousel owl-carousel">
-	<div class="item">
-		<img src="https://unsplash.it/1850/800?random" alt="">
+	<div class="item" style="background-image: url(https://unsplash.it/1850/800?random)">
 		<div class="item-wrap">
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
 	</div>
-	<div class="item">
-		<img src="https://unsplash.it/1800/800?random" alt="">
+	<div class="item" style="background-image: url(https://unsplash.it/1800/800?random)">
 		<div class="item-wrap">
 			<p class="lead">Sit obcaecati laboriosam nobis corporis accusantium, non assumenda quis tempora quo voluptatibus.</p>
 		</div>
 	</div>
-	<div class="item">
-		<img src="https://unsplash.it/1820/800?random" alt="">
+	<div class="item" style="background-image: url(https://unsplash.it/1820/800?random)">
 		<div class="item-wrap">
 			<p class="lead">Neque distinctio nulla ipsam alias harum eum ratione earum odit.</p>
 		</div>
@@ -32,7 +29,7 @@
 		<div class="columns medium-10 large-8 medium-centered">
 			<h1><?php bloginfo('description') ?></h1>
 			<?php get_template_part('templates/content', 'page'); ?>
-			<p class="panel">Plus de 2000 professionnels utilisent nos logiciels tous les mois à travers le monde, serez vous le prochain ?</p>
+			<div class="zoom"><p>Plus de 2000 professionnels utilisent nos logiciels tous les mois à travers le monde, serez vous le prochain ?</p></div>
 		</div>
 	</div>
 </div>
