@@ -2,7 +2,8 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/main.js"
+        "scripts/main.js",
+        "scripts/scroll.js"
       ],
       "main": true
     },
@@ -25,8 +26,8 @@
         "scripts/modernizr.js"
       ]
     },
-    "foundation.js": {
-      "bower": ["foundation-sites", "what-input"]
+    "vendor.js": {
+      "bower": ["foundation-sites", "what-input", "owl.carousel", "scrollmagic"]
     }
   },
   "config": {

@@ -21,6 +21,8 @@ use Roots\Sage\Breadcrumbs;
         get_template_part('templates/header');
       ?>
       <div class="push-wrap">
+
+        <a id="triggerBanner"></a>
      
         <div class="container" role="document">
 

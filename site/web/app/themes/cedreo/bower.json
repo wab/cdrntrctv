@@ -11,12 +11,20 @@
     "font-awesome": "~4.5.0",
     "modernizr": "~3.2.0",
     "owl.carousel": "~2.0.0-beta.3",
-    "css-hamburgers": "^0.3.0"
-
+    "css-hamburgers": "^0.3.0",
+    "scrollmagic": "~2.0.5"
   },
   "overrides": {
-    "foundation-sites" : {
-      "main" : ["dist/foundation.js"]
+    "foundation-sites": {
+      "main": [
+        "dist/foundation.js"
+      ]
+    },
+    "owl.carousel": {
+      "main": [
+        "dist/owl.carousel.js",
+        "src/scss/owl.carousel.scss"
+      ]
     }
   }
 }

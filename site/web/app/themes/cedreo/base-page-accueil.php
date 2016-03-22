@@ -21,9 +21,10 @@ use Roots\Sage\Breadcrumbs;
         get_template_part('templates/header');
       ?>
       <main class="push-wrap">
-            
+          
+          <a id="triggerBanner"></a>
+          
           <?php include Wrapper\template_path(); ?>
-
 
         <?php
           do_action('get_footer');
