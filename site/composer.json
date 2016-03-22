@@ -35,7 +35,7 @@
       "type": "package",
       "package": {
         "name": "toolbox-plugin/gravityforms",
-        "version": "1.9.15",
+        "version": "1.9.17.5",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -106,7 +106,8 @@
     "toolbox-plugin/acf-gallery": "^1.1.1",
     "wpackagist-plugin/types": "^1.8",
     "toolbox-plugin/gravityforms": "1.9.15",
-    "wpackagist-plugin/wordpress-seo": "^3.0"
+    "wpackagist-plugin/wordpress-seo": "^3.0",
+    "wpackagist-plugin/polylang": "1.8.4"
   },
   "extra": {
     "installer-paths": {

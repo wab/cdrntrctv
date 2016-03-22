@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "415064cdba3442b0872fdaaaef5fa44f",
-    "content-hash": "ba890ea1eb417d60f85fb8b3dbb3fa1e",
+    "hash": "06d1a74d78277a74343121565c14512d",
+    "content-hash": "6d5c5efb6928a2fee1dd145849882e22",
     "packages": [
         {
             "name": "composer/installers",
@@ -429,7 +429,7 @@
             "version": "4.4.5",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
                 "reference": "tags/4.4.5"
             },
             "dist": {
@@ -445,11 +445,31 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
+            "name": "wpackagist-plugin/polylang",
+            "version": "1.8.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/1.8.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.1.8.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/polylang/"
+        },
+        {
             "name": "wpackagist-plugin/types",
             "version": "1.9.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/types/",
+                "url": "https://plugins.svn.wordpress.org/types/",
                 "reference": "tags/1.9.1"
             },
             "dist": {
@@ -469,7 +489,7 @@
             "version": "3.1.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
                 "reference": "tags/3.1.1"
             },
             "dist": {
