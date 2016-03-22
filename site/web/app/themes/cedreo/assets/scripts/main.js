@@ -48,7 +48,10 @@
       init: function() {
         // JavaScript to be fired on the home page
         $('.carousel').owlCarousel({
-          items : 1
+          items : 1,
+          dots: true,
+          nav: false,
+          autoplay: true
         });
         $('.stories-carousel').owlCarousel({
           loop:true,
