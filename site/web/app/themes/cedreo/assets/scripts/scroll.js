@@ -5,8 +5,10 @@
 	/*eslint no-unused-vars: 2*/
 	var controller = new ScrollMagic.Controller();
 	var banner = new ScrollMagic.Scene({
-		triggerElement: '#triggerBanner',
-		triggerHook: 'onLeave'
+		triggerElement: '#trigger',
+		triggerHook: 'onLeave',
+		offset: 100, // start scene after scrolling for 100px
+  		duration: 400 // pin the element for 400px of scrolling
 	})
 	.setClassToggle('.banner', 'fix');
 

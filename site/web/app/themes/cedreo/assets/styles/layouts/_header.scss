@@ -3,6 +3,8 @@
 	position: relative;
 	z-index: 50;
 
+	transition: all 0.2 ease;
+
 	.toggle-nav {
 		position: relative;
 		//z-index: 50;
@@ -25,6 +27,14 @@
 
 	a.nav-link, .txt {
 		color: $body-background;
+	}
+
+	&.fix {
+		position: fixed;
+		width: 100%;
+		.row {
+			height: $header-height / 2;
+		}
 	}
 }
 
