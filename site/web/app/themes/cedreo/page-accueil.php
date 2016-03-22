@@ -4,6 +4,8 @@
  */
 ?>
 
+<?php while (have_posts()) : the_post(); ?>
+
 <div class="carousel owl-carousel">
 	<div class="item">
 		<img src="https://unsplash.it/1850/800?random" alt="">
@@ -25,17 +27,11 @@
 	</div>
 </div>
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php // get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
-<?php endwhile; ?>
-
 <div class="section introduction">
 	<div class="row">
 		<div class="columns medium-10 large-8 medium-centered">
-			<h1>Logiciels 3D d’aide à la vente sur tous supports</h1>
-			Depuis plus de 10 ans, Cedreo Interactive est un éditeur leader de logiciels 3D d’aménagement d’espaces, et de configuration pour l’aide à la vente.
-			Logiciel de plans 3D, agencement, aménagement, configuration, construction, personnalisation visuelle, le tout se fait de manière si simple et intuitive qu’elle devient la suite logicielle 3D la plus accessible du marché en offrant la meilleure qualité visuelle sur le maximum de plateformes.</p>
+			<h1><?php bloginfo('description') ?></h1>
+			<?php get_template_part('templates/content', 'page'); ?>
 			<p class="panel">Plus de 2000 professionnels utilisent nos logiciels tous les mois à travers le monde, serez vous le prochain ?</p>
 		</div>
 	</div>
@@ -52,7 +48,7 @@
 						<img src="https://unsplash.it/601?random" alt="">
 						<figcaption>
 							<h3 class="grid-title">Besoin d'un logiciel<span> sur mesure ?</span></h3>
-							<p>&rarr; <em>Ca se passe ici</em></p>
+							<p>&rarr; <em>Ça se passe ici</em></p>
 							<a href="#">y accéder</a>
 						</figcaption>			
 					</figure>
@@ -63,7 +59,7 @@
 						<figcaption>
 							<h3 class="grid-title">Un logiciel <span>d’architecture 3D</span></h3>
 							<p>pour réaliser ces images en moins de 30 minutes ?</p>
-							<p>&rarr; <em>Ca se passe chez Brand 3D</em></p>
+							<p>&rarr; <em>Ça se passe chez Brand 3D</em></p>
 							<a href="#">y accéder</a>
 						</figcaption>			
 					</figure>
@@ -74,7 +70,7 @@
 						<figcaption>
 							<h3 class="grid-title">Constructeurs<span> de maisons</span></h3>
 							<p>Vous souhaitez vendre plus et plus vite ?</p>
-							<p>&rarr; <em>Ca se passe chez Brand CMI</em></p>
+							<p>&rarr; <em>Ça se passe chez Brand CMI</em></p>
 							<a href="#">y accéder</a>
 						</figcaption>			
 					</figure>
@@ -85,7 +81,7 @@
 						<figcaption>
 							<h3 class="grid-title">Professionnels <span>de l’immobilier</span> ou <span>de la construction</span></h3>
 							<p>Vos images 3D rapidement et au meilleur prix ?</p>
-							<p>&rarr; <em>Ca se passe chez Brand Services</em></p>
+							<p>&rarr; <em>Ça se passe chez Brand Services</em></p>
 							<a href="#">y accéder</a>
 						</figcaption>			
 					</figure>
@@ -166,3 +162,4 @@
 		</ul>
 	</div>
 </section>
+<?php endwhile; ?>
