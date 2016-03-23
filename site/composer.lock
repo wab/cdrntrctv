@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "06d1a74d78277a74343121565c14512d",
-    "content-hash": "6d5c5efb6928a2fee1dd145849882e22",
+    "hash": "6587dd93f69b6e578b32629865eaf77d",
+    "content-hash": "c2f07755ab3ef4f94af04e338a825ff0",
     "packages": [
         {
             "name": "composer/installers",
@@ -361,7 +361,7 @@
         },
         {
             "name": "toolbox-plugin/gravityforms",
-            "version": "1.9.15",
+            "version": "1.9.17.5",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/wab/gravityforms/archive/master.zip",
@@ -486,15 +486,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.1.1"
+                "reference": "tags/3.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.2.zip",
                 "reference": null,
                 "shasum": null
             },
