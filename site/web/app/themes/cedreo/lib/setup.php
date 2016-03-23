@@ -37,6 +37,14 @@ function setup() {
   register_nav_menus([
     'cedreo' => __('Company', 'cedreo')
   ]);
+  
+  register_nav_menus([
+    'footer' => __('Pied de page', 'cedreo')
+  ]);
+
+  register_nav_menus([
+    'lg' => __('langues', 'cedreo')
+  ]);
 
   // Enable post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
