@@ -20,8 +20,11 @@
       init: function() {
         // JavaScript to be fired on all pages
         // Normal Clicks
+
+        // Foundation init
         $(document).foundation();
         
+        // Toggle nav
         $(function() {
           $('.toggle-nav').click(function() {
             $('body').toggleClass('show-nav');
@@ -38,6 +41,7 @@
            $('.toggle-nav').toggleClass('is-active');
           }
         });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

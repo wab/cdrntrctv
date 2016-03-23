@@ -2,9 +2,16 @@
 	padding: 2rem 0;
 }
 
+.section-title {
+	font-size: 2.3em;
+	margin-bottom: 0.8em;
+	text-align: center;
+	color: map-get($foundation-palette, secondary);
+}
+
 .breadcrumbs {
-	@include grid-col;
 	margin: 1rem 0;
+
 	ul {
 		@include breadcrumbs-container;
 	}

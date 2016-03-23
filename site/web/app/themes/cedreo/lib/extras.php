@@ -90,3 +90,14 @@ function my_function_admin_bar() {
     return false;
 }
 add_filter( 'show_admin_bar' , __NAMESPACE__ . '\\my_function_admin_bar');
+
+
+
+function add_login_logout_link($items, $args) {
+  if( $args->theme_location == 'footer')  {
+        $loginoutlink = wp_loginout($_SERVER['REQUEST_URI'], false); 
+        $items .= '<li>'. $loginoutlink .'</li>'; 
+  }
+  return $items; 
+}
+add_filter('wp_nav_menu_items', __NAMESPACE__ . '\\add_login_logout_link', 10, 2);

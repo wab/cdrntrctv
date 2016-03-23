@@ -20,8 +20,9 @@
 				padding: 2rem;
 
 				.lead {
-					background: map-get($foundation-palette, primary);
+					background: map-get($foundation-palette, secondary);
 					padding: 1rem;
+					opacity: 0.8;
 				}
 
 			}
@@ -44,6 +45,12 @@
 
 	.arguments {
 		background: $light-gray;
+
+		.argument-title {
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+			border-bottom: solid 1px rgba(0,0,0,0.1)
+		}
 	}
 
 	.stories {

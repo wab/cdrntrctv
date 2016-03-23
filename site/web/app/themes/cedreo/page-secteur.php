@@ -7,11 +7,10 @@ use Roots\Sage\Breadcrumbs;
 
 ?>
 <?php while (have_posts()) : the_post(); ?>
-	<header class="page-header section" style="background-image: url(https://unsplash.it/1850/200?random);">
+	<header class="page-header section" style="background-image: url(https://unsplash.it/1850/250?random);">
 		<div class="row column">
 			<h1 class="page-title"><?php the_title(); ?></h1>
 		</div>
-		
 	</header>
 	<div class="section">
 		<div class="row">
