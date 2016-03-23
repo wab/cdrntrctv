@@ -2,6 +2,7 @@
 
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
+use Roots\Sage\Breadcrumbs;
 
 
 ?>
@@ -21,9 +22,27 @@ use Roots\Sage\Wrapper;
         get_template_part('templates/header');
       ?>
       <div class="push-wrap">
-     
-        <div class="container" role="document">
-            
+        <?php if(is_home() || is_archive() || is_single()) : ?>
+        
+          <div class="blog-breadcrumb">
+            <div class="row column">
+              <?= Breadcrumbs\breadcrumbs(); ?>
+            </div>
+          </div>
+          
+          <div class="row column">
+            <div class="expanded button-group">
+              <a href="#" class="button secondary">réalisations</a>
+              <a href="#" class="button">interviews</a>
+              <a href="#" class="button">categorie 3</a>
+              <a href="#" class="button">catégorie 4</a>
+            </div>
+          </div>
+
+        <?php endif; ?>
+
+        <div class="row" role="document">
+
             <main class="main">
               <?php include Wrapper\template_path(); ?>
             </main><!-- /.main -->
@@ -35,6 +54,7 @@ use Roots\Sage\Wrapper;
             <?php endif; ?>
 
         </div><!-- /.container -->
+        
         <?php
           do_action('get_footer');
           get_template_part('templates/footer');

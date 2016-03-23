@@ -11,7 +11,7 @@ namespace Roots\Sage\Breadcrumbs;
  */
 function breadcrumbs(){
   /* === OPTIONS === */
-	$text['home']     = 'Home'; // text for the 'Home' link
+	$text['home']     = 'Actualités'; // text for the 'Home' link
 	$text['category'] = 'Archive by Category "%s"'; // text for a category page
 	$text['tax'] 	  = 'Archive for "%s"'; // text for a taxonomy page
 	$text['search']   = 'Search Results for "%s" Query'; // text for a search results page
@@ -33,7 +33,7 @@ function breadcrumbs(){
 	$linkAttr = ' rel="v:url" property="v:title"';
 	$link = $linkBefore . '<a' . $linkAttr . ' href="%1$s">%2$s</a>' . $linkAfter;
 
-	if (is_home() || is_front_page()) {
+	if (is_front_page()) {
 
 		if ($showOnHome == 1) echo '<nav aria-label="You are here:" role="navigation" class="breadcrumbs"><ul><li><a href="' . $homeLink . '">' . $text['home'] . '</a></li></ul></nav>';
 

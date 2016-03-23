@@ -2,7 +2,6 @@
 
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
-use Roots\Sage\Breadcrumbs;
 
 ?>
 
@@ -20,18 +19,20 @@ use Roots\Sage\Breadcrumbs;
         do_action('get_header');
         get_template_part('templates/header');
       ?>
-      <main class="push-wrap">
+      <div class="push-wrap">
           
+        <main class="page">
           <?php include Wrapper\template_path(); ?>
+        </main>  
 
         <?php
           do_action('get_footer');
           get_template_part('templates/footer');
         ?>
 
-      </main> <!-- push-wrap -->
+      </div> <!-- push-wrap -->
 
-    <?php get_template_part('templates/menu'); ?>
+      <?php get_template_part('templates/menu'); ?>
       
     </div> <!-- site-wrap -->
     
