@@ -21,33 +21,39 @@ use Roots\Sage\Breadcrumbs;
         do_action('get_header');
         get_template_part('templates/header');
       ?>
+      
       <div class="push-wrap">
-        <?php if(is_home() || is_archive() || is_single()) : ?>
         
+        <?php if( !is_front_page() ) : ?>
+          
           <div class="blog-breadcrumb">
             <div class="row column">
               <?= Breadcrumbs\breadcrumbs(); ?>
             </div>
           </div>
-          
-          <div class="row column">
-            <div class="expanded button-group">
-              <a href="#" class="button secondary">réalisations</a>
-              <a href="#" class="button">interviews</a>
-              <a href="#" class="button">categorie 3</a>
-              <a href="#" class="button">catégorie 4</a>
+
+        <?php endif; ?>
+        
+        <?php if(is_home() || is_archive() || is_single()) : ?>
+                  
+          <nav class="navigation-categories">
+            <div class="row column">
+              <ul class="menu">
+              <?php wp_list_categories('exclude=14&title_li='); ?>
+              </ul>
             </div>
-          </div>
+          </nav>
 
         <?php endif; ?>
 
-        <div class="row" role="document">
+        <div class="container" role="document">
 
             <main class="main">
               <?php include Wrapper\template_path(); ?>
             </main><!-- /.main -->
             
             <?php if (Setup\display_sidebar()) : ?>
+              
               <aside class="sidebar">
                 <?php include Wrapper\sidebar_path(); ?>
               </aside><!-- /.sidebar -->

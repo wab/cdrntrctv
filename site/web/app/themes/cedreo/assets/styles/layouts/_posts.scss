@@ -1,4 +1,11 @@
 .post {
 	padding: 1em;
 	background: $body-background;
+	margin-bottom: 1em;
+}
+
+.comments {
+	border-top: 0.5em solid $light-gray;
+	margin-top: 1em;
+	padding-top: 1em;
 }

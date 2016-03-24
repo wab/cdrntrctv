@@ -1,7 +1,11 @@
-.blog, .archive {
+.blog, .archive, .single {
 	background: $light-gray;
 }
 
 .blog-breadcrumb {
 	background: $body-background;
+}
+
+.navigation-categories {
+	margin: 1em 0;
 }
