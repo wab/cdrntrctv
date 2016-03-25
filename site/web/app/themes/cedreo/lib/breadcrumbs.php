@@ -11,7 +11,14 @@ namespace Roots\Sage\Breadcrumbs;
  */
 function breadcrumbs(){
   /* === OPTIONS === */
-	$text['home']     = 'Actualités'; // text for the 'Home' link
+  	if(is_home() || is_archive() || is_single()) { 
+		$text['home']     = 'Actualités'; // text for the 'Home' link
+		$homeLink = get_bloginfo('url') . '/actualites';
+	}
+	else {
+		$text['home']     = 'Accueil'; // text for the 'Home' link
+		$homeLink = get_bloginfo('url') . '/';
+	}
 	$text['category'] = 'Archive by Category "%s"'; // text for a category page
 	$text['tax'] 	  = 'Archive for "%s"'; // text for a taxonomy page
 	$text['search']   = 'Search Results for "%s" Query'; // text for a search results page
@@ -27,7 +34,7 @@ function breadcrumbs(){
 	/* === END OF OPTIONS === */
 
 	global $post;
-	$homeLink = get_bloginfo('url') . '/';
+	
 	$linkBefore = '<li typeof="v:Breadcrumb">';
 	$linkAfter = '</li>';
 	$linkAttr = ' rel="v:url" property="v:title"';

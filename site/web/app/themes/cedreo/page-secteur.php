@@ -12,7 +12,7 @@ use Roots\Sage\Breadcrumbs;
 			<h1 class="page-title"><?php the_title(); ?></h1>
 		</div>
 	</header>
-	<div class="section">
+	<div class="contenu">
 		<div class="row">
 			<div class="columns large-8">
 				<?= Breadcrumbs\breadcrumbs(); ?>

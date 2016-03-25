@@ -24,21 +24,17 @@ use Roots\Sage\Breadcrumbs;
       
       <div class="push-wrap">
         
-        <?php if( !is_front_page() ) : ?>
+        <?php if(is_home() || is_archive() || is_single()) : ?>
           
           <div class="blog-breadcrumb">
             <div class="row column">
               <?= Breadcrumbs\breadcrumbs(); ?>
             </div>
           </div>
-
-        <?php endif; ?>
-        
-        <?php if(is_home() || is_archive() || is_single()) : ?>
                   
           <nav class="navigation-categories">
             <div class="row column">
-              <ul class="menu">
+              <ul class="menu simple">
               <?php wp_list_categories('exclude=14&title_li='); ?>
               </ul>
             </div>

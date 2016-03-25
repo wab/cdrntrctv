@@ -1,7 +1,7 @@
 <header class="banner">
   <div class="row ">
     <div class="columns">
-       <a class="brand" href="<?= esc_url(home_url('/')); ?>" title="retour à l'accueil"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-brand.png" alt="<?php bloginfo('name'); ?>"></a>
+       <a class="brand" href="<?php bloginfo('url'); ?>/" title="retour à l'accueil"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-brand.png" alt="<?php bloginfo('name'); ?>"></a>
     </div>
     <div class="columns">
       <button class="hamburger hamburger--elastic toggle-nav" type="button">

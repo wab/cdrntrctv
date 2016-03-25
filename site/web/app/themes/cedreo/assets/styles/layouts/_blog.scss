@@ -8,4 +8,18 @@
 
 .navigation-categories {
 	margin: 1em 0;
+	.cat-item {
+
+		a {
+			@include button(false, $primary-color, darken($primary-color, 10%), #fff, hollow);
+			margin-bottom: 0;
+		}
+	}
+
+	.current-cat {
+		a {
+			@include button(false, $primary-color, darken($primary-color, 10%), #fff, solid);
+			margin-bottom: 0;
+		}
+	}
 }

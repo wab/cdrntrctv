@@ -33,9 +33,9 @@
 		<div class="menu-section">
 			<h2 class="subheader">Nous suivre</h2>
 			<ul class="menu vertical">
-				<li class="nav-item"><a class="nav-link" href="<?php bloginfo('url') ?>/blog/actualites"><i class="fa fa-newspaper-o"></i> L'actualité</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php bloginfo('url') ?>/blog/actualites"><i class="fa fa-picture-o"></i> Nos réalisations</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php bloginfo('url') ?>/blog/contact"><i class="fa fa-envelope"></i> Contactez-nous</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?php bloginfo('url') ?>/actualites"><i class="fa fa-newspaper-o"></i> L'actualité</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?php bloginfo('url') ?>/category/realisations"><i class="fa fa-picture-o"></i> Nos réalisations</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?php bloginfo('url') ?>/contact"><i class="fa fa-envelope"></i> Contactez-nous</a></li>
 			</ul>
 			<hr>
 			<ul class="menu reseaux">
