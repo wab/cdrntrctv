@@ -8,7 +8,7 @@
 		margin-left: 0;
 		margin-right: 0;
 		overflow: hidden;
-		height: auto;
+		height: 280px;
 		cursor: pointer;
 
 		img {
@@ -20,15 +20,18 @@
 		}
 
 		figcaption {
-			padding: 2em;
+			padding: 1em;
 			color: #fff;
 			//font-size: 1.25em;
 			backface-visibility: hidden;
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 100%;
+			width: 50%;
+			margin-left: 50%;
 			height: 100%;
+			background-color: rgba(0,0,0,0.6);
+			transition: background-color 0.5s ease;
 
 			display: flex;
 			flex-flow: column nowrap;
@@ -57,7 +60,6 @@
 
 		.grid-title {
 			word-spacing: -0.05em;
-			font-weight: 600;
 			text-transform: uppercase;
 			//text-shadow: 1px 1px 1px $dark-gray;
 			letter-spacing: 2px;
@@ -80,55 +82,48 @@
 /*---------------*/
 
 figure.effect-ming {
-	background: #030c17;
+	background: $dark-gray;
 	img {
-		opacity: 0.9;
-		transition: opacity 0.35s;
+		opacity: 0.8;
+		filter: grayscale(80%);
+		transition: all 0.35s;
 	}
 
-	figcaption::before {
-		position: absolute;
-		top: 30px;
-		right: 30px;
-		bottom: 30px;
-		left: 30px;
-		border: 0.1em solid $body-background;
-		box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
-		content: '';
-		opacity: 0;
-		transition: opacity 0.35s, transform 0.35s;
-		transform: scale3d(1.4,1.4,1);
-	}
+
 	.grid-title {
 		margin: 1rem 0 10px 0;
 		transition: transform 0.35s;
 	}
 
-	p {
+	.acces {
+		display: inline-block;
 		padding: 0 1em 1em 1em;
-		opacity: 0;
-		transition: opacity 0.35s, transform 0.35s;
-		transform: scale(1.5);
+		//opacity: 0.8;
+		transition: all 0.35s;
+		//transform: scale(1);
+		@include button(false, $body-background, map-get($foundation-palette, primary), $body-background, hollow);
 	}
 
 	&:hover {
+
+		figcaption {
+			background-color: rgba(0,0,0,0.9);
+		}
 		
 		.grid-title {
 			transform: scale(0.9);
 		}
 		
-		figcaption::before,
-		&:hover p {
+		.acces {
 			opacity: 1;
-			transform: scale3d(1,1,1);
-		}
-
-		figcaption {
-			background-color: rgba(0,0,0,0.5);
+			@include button(false, map-get($foundation-palette, primary), map-get($foundation-palette, primary), $body-background, solid);
+			//transform: scale(1.1);
+			//transform: scale3d(1.1,1.1,1.1);
 		}
 
 		img {
-			opacity: 0.4;
+			filter: grayscale(0%);
+			opacity: 0.9;
 		}
 	}
 }
@@ -137,7 +132,8 @@ figure.effect-ming {
 	figure.effect-ming {
 		
 		figcaption {
-			background-color: rgba(0,0,0,0.8);
+			width: 100%;
+			margin-left: 0;
 			
 			&:before, p {
 				opacity: 1;

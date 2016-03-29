@@ -59,13 +59,15 @@
           nav: false,
           autoplay: true
         });
+
+        var stories =  $('.stories-carousel');
         
         // Stories
-        $('.stories-carousel').owlCarousel({
+        stories.owlCarousel({
           loop:true,
           margin:20,
           responsiveClass:true,
-          nav:true,
+          nav:false,
           dots:false,
           responsive:{
               0:{
@@ -75,10 +77,21 @@
                   items:2
               },
               1000:{
-                  items:3
+                  items:4
               }
           }
         });
+
+        // Custom Navigation Events
+        $(".next").click(function() {
+            stories.trigger('next.owl.carousel');
+            console.log('next');
+        });
+
+         $(".prev").click(function() {
+            stories.trigger('prev.owl.carousel');
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

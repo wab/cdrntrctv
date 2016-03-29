@@ -30,10 +30,12 @@
 		font-size: $nav-font-size;
 		margin: $nav-margin;
 		padding: $nav-padding;
-		background: $nav-background;
+		//text-indent: -99em;
+		//background: $nav-background;
 		display: inline-block;
 		cursor: pointer;
-		@include rounded($nav-rounded);
+		//@include rounded($nav-rounded);
+		content: '<';
 
 		&:hover {
 			background: $nav-background-hover;
@@ -57,32 +59,47 @@
 
 	.carousel & {
 		position: absolute;
-		bottom: 0;
-		width: 100%;
-		//text-align: right;
+		bottom: 3em;
+		left: calc(50% - 50px);
+		min-width: 100px;
+		padding: 0.5em;
+		background: rgba(0,0,0,0.8);
+
+		@include breakpoint(small only) {
+			bottom: 0;
+			background: transparent;
+		}
+
 	}
 	
 	.owl-dot {
 		display: inline-block;
 		zoom: 1;
 		*display: inline;
+		padding: 0 0.2em;
+		
 
 		span {
-			width: $dot-width;
-			height: $dot-height;
-			margin: $dot-margin;
-			background: $dot-background;
-			display: block;
-			-webkit-backface-visibility: visible;
-			@include transition(opacity, 200ms, ease);
-			@include rounded($dot-rounded);
+			content: "";
+		    border-color: $dot-background transparent;
+		    border-style: solid;
+		    border-width: 0 0.55em 0.65em 0.55em;
+		    display: block;
+		    height: 0;
+		    width: 0;
+		    left: 0;
+		    top: 0;
+		    position: relative;
 		}
+
 
 		&.active,
 		&:hover {
 			span {
-				background: $dot-background-active;
+				border-bottom-color: $dot-background-active;
 			}
+			
+
 		}
 	}
 }

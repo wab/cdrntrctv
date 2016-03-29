@@ -41,6 +41,7 @@
 //  36. Top Bar
 //  37. Carousel
 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import 'util/util';
 //@import url(https://fonts.googleapis.com/css?family=Raleway:700,600);
 
@@ -84,10 +85,10 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
-$light-gray: #e6e6e6;
+$light-gray: #f1f3f5;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #212121;
+$dark-gray: #3f4655;
+$black: #313641;
 $white: #fff;
 $body-background: $white;
 $body-font-color: $black;
@@ -131,8 +132,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Raleway', sans-serif;
-$header-font-weight: 700;
+$header-font-family: 'Lato', sans-serif;
+$header-font-weight: 400;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
@@ -269,7 +270,7 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: 0;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
@@ -604,13 +605,13 @@ $color-gray:      #D6D6D6;
 //nav
 
 $nav-color:       $color-white;
-$nav-color-hover:   $color-white;
-$nav-font-size:     14px;
+$nav-color-hover:   map-get($foundation-palette, primary);
+$nav-font-size:     30px;
 $nav-rounded:       3px;
 $nav-margin:      5px;
 $nav-padding:       4px 7px;
-$nav-background:    $color-gray;
-$nav-background-hover:  $color-base;
+$nav-background:    transparent;
+$nav-background-hover:  $nav-background;
 $nav-disabled-opacity:  0.5;
 
 //dots
@@ -619,5 +620,5 @@ $dot-width:       10px;
 $dot-height:      10px;
 $dot-rounded:     30px;
 $dot-margin:      5px 7px;
-$dot-background:    $color-gray;
+$dot-background:    $body-background;
 $dot-background-active: $color-base;

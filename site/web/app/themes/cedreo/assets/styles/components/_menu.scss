@@ -36,27 +36,45 @@ html, body {
 
     overflow-y: auto;
 
+
     .menu-row {
         @include flex-grid-row();
         @include flex-align(right, stretch);
     }
 
     .menu-section {
+        margin-bottom: 3em;
         @include flex-grid-column(12);
        
         @include breakpoint(medium) {
             @include flex-grid-column(6);
         }
         @include breakpoint(large) {
-            @include flex-grid-column(4);
+            @include flex-grid-column(3);
         }
 
         li a {
-            //padding-left: 0;
+            padding-left: 0;
             transition: all 0.2s ease;
 
             &:hover, &:focus {
-                border-color: map-get($foundation-palette, primary);
+                &:before {
+                    content: '>';
+                    display: inline-block;
+                    margin-right: 0.3em;
+                }
+            }
+
+        }
+
+        .active a {
+            padding-left: 0.5em;
+
+            &:hover, &:focus {
+                color: $body-background;
+                &:before {
+                    display: none;
+                }
             }
         }
     }
@@ -64,7 +82,10 @@ html, body {
     .subheader {
         margin-bottom: 0.5em;
         padding-bottom: 0.5em;
-        border-bottom: solid 1px rgba(255,255,255,0.1)
+        border-bottom: solid 1px map-get($foundation-palette, primary);
+        color: map-get($foundation-palette, primary);
+        text-transform: uppercase;
+        font-size: 1.2em;
     }
 
     hr {
