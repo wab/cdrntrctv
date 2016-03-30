@@ -64,7 +64,7 @@
         
         // Stories
         stories.owlCarousel({
-          loop:true,
+          loop:false,
           margin:20,
           responsiveClass:true,
           nav:false,
@@ -91,6 +91,8 @@
          $(".prev").click(function() {
             stories.trigger('prev.owl.carousel');
         });
+
+        
 
       },
       finalize: function() {
