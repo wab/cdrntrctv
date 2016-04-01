@@ -51,6 +51,8 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+  add_image_size( 'banner', 1200, 500, true ); // 1200 pixels wide by 500 pixels tall, hard crop mode
+
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -103,6 +105,7 @@ function display_sidebar() {
     is_front_page(),
     is_page(),
     is_page_template('template-custom.php'),
+    is_singular('logiciel')
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

@@ -82,8 +82,14 @@
 	}
 }
 .content-info {
-	margin-top: 1em;
 	min-height: $footer-height;
 	padding: 2em 0;
 	background: $body-font-color;
+	color: $white;
+	ul:not(.reseaux) a {
+		color: $white;
+		&:hover, &:focus {
+			color: map-get($foundation-palette, primary);
+		}
+	}
 }

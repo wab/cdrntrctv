@@ -24,7 +24,7 @@ use Roots\Sage\Breadcrumbs;
       
       <div class="push-wrap">
         
-        <?php if(is_home() || is_archive() || is_single()) : ?>
+        <?php if(is_home() || is_archive() || is_singular('post')) : ?>
           
           <div class="blog-breadcrumb">
             <div class="row column">

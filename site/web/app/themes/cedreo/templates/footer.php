@@ -63,19 +63,21 @@
 		?>
     </div>
 
-    <div class="column medium-4">
-    	<ul class="menu simple">
-    		<li><a href="#"><i class="fa fa-twitter"></i> <span class="show-for-sr">Twitter</span></a></li>
-			<li><a href="#"><i class="fa fa-facebook"></i> <span class="show-for-sr">Facebook</span></a></a></li>
-    	</ul>
-    </div>
-
-	<div class="column medium-2">
-		<?php
+    <div class="column medium-2">
+    	<?php
 		    if (has_nav_menu('lg')) :
 		      wp_nav_menu(['theme_location' => 'lg', 'menu_class' => 'menu simple']);
 		    endif;
 		?>
+    </div>
+
+	<div class="column medium-4">
+		
+		<ul class="reseaux">
+			<li>suivez-nous sur :</li>
+    		<li><a href="#"><i class="fa fa-twitter"></i> <span class="show-for-sr">Twitter</span></a></li>
+			<li><a href="#"><i class="fa fa-facebook"></i> <span class="show-for-sr">Facebook</span></a></a></li>
+    	</ul>
 	</div>
 
   </div>

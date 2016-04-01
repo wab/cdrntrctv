@@ -53,27 +53,30 @@ html, body {
             @include flex-grid-column(3);
         }
 
-        li a {
-            padding-left: 0;
-            transition: all 0.2s ease;
+        ul:not(.reseaux) {
 
-            &:hover, &:focus {
-                &:before {
-                    content: '>';
-                    display: inline-block;
-                    margin-right: 0.3em;
+            li a {
+                padding-left: 0;
+                transition: all 0.2s ease;
+
+                &:hover, &:focus {
+                    &:before {
+                        content: '>';
+                        display: inline-block;
+                        margin-right: 0.3em;
+                    }
                 }
+
             }
 
-        }
+            .active a {
+                padding-left: 0.5em;
 
-        .active a {
-            padding-left: 0.5em;
-
-            &:hover, &:focus {
-                color: $body-background;
-                &:before {
-                    display: none;
+                &:hover, &:focus {
+                    color: $body-background;
+                    &:before {
+                        display: none;
+                    }
                 }
             }
         }
@@ -115,6 +118,29 @@ html, body {
 
         &:hover, &:focus {
             color: map-get($foundation-palette, primary);
+        }
+    }
+}
+
+.reseaux {
+    margin: 0;
+    text-align: right;
+    li {
+        display: inline-block;
+    }
+    a {
+        display: inline-block;
+        width: 29px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        border: solid 2px map-get($foundation-palette, primary);
+        color: map-get($foundation-palette, primary);
+        transition: all 0.2s ease;
+
+        &:hover, &:focus {
+            color: lighten(map-get($foundation-palette, primary), 15%);
+            border-color: lighten(map-get($foundation-palette, primary), 35%);
         }
     }
 }

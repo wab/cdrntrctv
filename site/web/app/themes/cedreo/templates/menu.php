@@ -38,7 +38,7 @@
 				<li class="nav-item"><a class="nav-link" href="<?php bloginfo('url') ?>/contact"><i class="fa fa-envelope"></i> Contactez-nous</a></li>
 			</ul>
 			<hr>
-			<ul class="menu reseaux">
+			<ul class="reseaux">
 				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter"></i></a></li>
 				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-facebook"></i></a></li>
 			</ul>

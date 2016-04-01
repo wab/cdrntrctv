@@ -137,12 +137,15 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	background-color: $medium-gray;
-
+	background-color: $dark-gray;
 
 
 	.page-template-page-secteur & {
 		background-image: url(../images/banners/secteurs.jpg);
+	}
+
+	.single-logiciel & {
+		background-image: url(../images/banners/logiciels.jpg);
 	}
 
 	.page-title {
