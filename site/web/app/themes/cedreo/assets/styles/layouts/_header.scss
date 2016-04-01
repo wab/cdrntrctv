@@ -7,21 +7,46 @@
 
 	.toggle-nav {
 		position: relative;
+		text-transform: uppercase;
 		//z-index: 50;
 	}
 
 	.row {
 		height: $header-height;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		 > * {
+		 	flex-basis: 50%;
+		 }
 
-		@include flex-grid-row;
+	}
 
-		.columns {
-			@include flex-grid-column(6);
-			@include flex-align-self(middle);
-		}
+	.lg {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 0.68em;
+		padding: $hamburger-layer-spacing;
+		li {
+			margin-right: 0;
+			display: inline-block;
+			
+			a {
+				color: $white;
 
-		.columns + .columns {
-			text-align: right;
+				&:after {
+					content: '/';
+					display: inline-block;
+					margin: 0 0.5em;
+					color: $white;
+				}
+			}
+
+			&:last-child {
+				a:after {
+					display: none;
+				}
+			}
 		}
 	}
 

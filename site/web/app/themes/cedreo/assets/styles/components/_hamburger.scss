@@ -12,7 +12,7 @@
 // Hamburger
 // ==================================================
 .hamburger {
-  padding: $hamburger-padding-y $hamburger-padding-x;
+  //padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
 
@@ -41,7 +41,7 @@
 
 .hamburger-box {
   width: $hamburger-layer-width;
-  height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
+  height: auto;
   display: inline-block;
   position: relative;
 }
@@ -49,7 +49,7 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: $hamburger-layer-height / -2;
+  //margin-top: $hamburger-layer-height / -2;
 
   &,
   &::before,
