@@ -2,26 +2,45 @@
 	padding: 2rem 0;
 }
 
-.section-title {
-	margin-bottom: 1em;
+.cedreo-title {
+	//margin-bottom: 1em;
 	text-align: center;
 	text-transform: uppercase;
+
+	.logiciels & {
+		text-align: left;
+	}
+
 
 	&:after {
 		content: '';
 		display: block;
 		width: 200px;
-		margin: 1em auto;
+		margin: 0.5em auto;
 		height: 1px;
-		background: $body-font-color
+		background: $body-font-color;
+
+		.logiciels & {
+			margin-left: 0;
+		}
 	}
+
 }
 
 .breadcrumbs {
-	margin: 1rem 0;
 
 	ul {
 		@include breadcrumbs-container;
+		margin-bottom: 0;
+
+		a {
+			color: $white;
+
+		}
+
+		.current {
+			color: map-get($foundation-palette, primary);
+		}
 	}
 }
 

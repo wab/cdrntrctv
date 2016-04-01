@@ -42,23 +42,7 @@
           }
         });
 
-      },
-      finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
-      }
-    },
-    // Home page
-    'home': {
-      init: function() {
-        // JavaScript to be fired on the home page
-        
-        // Carousel accueil
-        $('.carousel').owlCarousel({
-          items : 1,
-          dots: true,
-          nav: false,
-          autoplay: true
-        });
+        //Sories carousel
 
         var stories =  $('.stories-carousel');
         
@@ -92,7 +76,23 @@
             stories.trigger('prev.owl.carousel');
         });
 
+      },
+      finalize: function() {
+        // JavaScript to be fired on all pages, after page specific JS is fired
+      }
+    },
+    // Home page
+    'home': {
+      init: function() {
+        // JavaScript to be fired on the home page
         
+        // Carousel accueil
+        $('.carousel').owlCarousel({
+          items : 1,
+          dots: true,
+          nav: false,
+          autoplay: true
+        });
 
       },
       finalize: function() {

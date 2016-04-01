@@ -37,7 +37,7 @@
 <div class="section introduction">
 	<div class="row">
 		<div class="columns medium-6">
-			<h1 class="section-title">Logiciels 3D d'aide à la vente <br> <span>sur tous supports</span> </h1>
+			<h1 class="cedreo-title">Logiciels 3D d'aide à la vente <br> <span>sur tous supports</span> </h1>
 			<?php get_template_part('templates/content', 'page'); ?>
 		</div>
 		<div class="columns medium-6">
@@ -48,7 +48,7 @@
 
 <section class="section cibles">
 	<div class="row column">
-			<h2 class="section-title">Logiciels sur-mesure <span>ou standard ?</span></h2>
+			<h2 class="cedreo-title">Logiciels sur-mesure <span>ou standard ?</span></h2>
 		
 			<div class="row grid medium-up-2">
 				<div class="columns">
@@ -98,74 +98,25 @@
 
 <section class="section arguments">
 	<div class="row column">
-		<h2 class="section-title" id="triggerNumbers">Ce qui se voit, <span>se vend</span></h2>
+		<h2 class="cedreo-title" id="triggerNumbers">Ce qui se voit, <span>se vend</span></h2>
 		<p class="lead text-center">Pour qu’une application 3D d’aide à la vente soit efficace, elle a besoin de ce que nous appelons les 3S</p>
 		<div class="row">
 			<div class="columns medium-4 text-center">
 				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/picto-simplicite.png" alt="simplicite"></p>
-				<h3 class="argument-title section-title">Simplicité</h3>
+				<h3 class="argument-title cedreo-title">Simplicité</h3>
 				<p>Des logiciels utilisables par les forces commerciales et clients finaux sans besoin de formation, une prise en mains intuitive</p>
 			</div>
 			<div class="columns medium-4 text-center">
 				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/picto-souplesse.png" alt="souplesse"></p>
-				<h3 class="argument-title section-title">Souplesse</h3>
+				<h3 class="argument-title cedreo-title">Souplesse</h3>
 				<p>Des logiciels utilisables par les forces commerciales et clients finaux sans besoin de formation, une prise en mains intuitive</p>
 			</div>
 			<div class="columns medium-4 text-center">
 				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/picto-seduction.png" alt="seduction"></p>
-				<h3 class="argument-title section-title">Séduction</h3>
+				<h3 class="argument-title cedreo-title">Séduction</h3>
 				<p>Grâce à la technologie Cedreo Render Engine, tout se fait automatiquement et en ligne pour générer des rendus de qualité professionnelle</p>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section class="section stories">
-	<div class="row column">
-		<h2 class="section-title"><span>Nos success</span> stories</h2>
-		<div class="owl-carousel stories-carousel">
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/nexity.png" alt=""></p>
-				<p class="lead"><span class="stat" id="n1" data-number="5000"></span><br><strong>appartements</strong><br>visualisables en très haute qualité</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/maisons-france-confort.png" alt=""></p>
-				<p class="lead"><span class="stat" id="n2" data-number="250"></span><br><strong>points de vente</strong><br>équipés du logiciel</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/lundia.png" alt=""></p>
-				<p class="lead"><span class="stat">x</span><span class="stat" id="n3" data-number="10"></span><br><strong>le nombre de clients</strong><br>dans toute la France</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/fermob.png" alt=""></p>
-				<p class="lead"><span class="stat" id="n4" data-number="95"></span><span class="stat">%</span><br><strong>de satisfaction client</strong><br>sur l'année 2015</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/nexity.png" alt=""></p>
-				<p class="lead"><span class="stat">5000</span><br><strong>appartements</strong><br>visualisables en très haute qualité</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/maisons-france-confort.png" alt=""></p>
-				<p class="lead"><span class="stat">250</span><br><strong>points de vente</strong><br>équipés du logiciel</p>
-			</div>
-		</div>
-		<div class="arrows">
-			<a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
-			<a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
-		</div>
-	</div>
-</section>
-
-<section class="section partenaires">
-	<div class="row column">
-		<h2 class="section-title">Nos <span>partenaires</span></h2>
-		<ul class="list no-bullet">
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/bamboo.png" alt=""></a></li>
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/total.png" alt=""></a></li>
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/sodero-gestion.png" alt=""></a></li>
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/ministere-education.png" alt=""></a></li>
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/reseau-entreprendre.png" alt=""></a></li>
-		</ul>
 	</div>
 </section>
 

@@ -126,105 +126,88 @@
 			}
 		}
 	}
-
-	.stories {
-		background: $light-gray;
-		
-		.stories-carousel {
-			position: relative;
-			z-index: 20;
-			margin-top: 2em;
-			.item {
-				padding: 0;
-				display: flex;
-				flex-flow: column nowrap;
-				min-height: 300px;
-
-				> * {
-					&:first-child {
-					flex-basis: 100px;
-					}
-				}
-
-				img {
-					display: inline;
-					width: auto;
-				}
-
-				strong {
-					font-size: 1.2em;
-				}
-
-			}
-		}
-
-		.row {
-			position: relative
-		}
-
-		.arrows {
-			font-size: 2em;
-			position: absolute;
-			width: calc(100% + 2em);
-			height: 100%;
-			top: 0;
-			left: 0;
-			margin: 0 -1em;
-			z-index: 10;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			a {
-				color: $body-background;
-				&:hover, &:focus {
-					color: map-get($foundation-palette, primary);
-				}
-			}
-		}
-	}
-
-	.partenaires {
-		.list {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: center;
-			align-items: center;
-			.item {
-				margin: 1em;
-				a {
-					display: block;
-					text-align: center;
-					
-					img {
-						filter: grayscale(100%);
-						transition: all 0.35s ease;
-					}
-
-					&:hover, &:focus {
-						img {
-							filter: grayscale(0%);
-						}
-						
-					}
-				}
-			}
-		}
-	}
 }
 
 .page-header {
 	min-height: 25vh;
 	display: flex;
-	//justify-content: center;
+	justify-content: center;
 	align-items: center;
+	flex-flow: column;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-color: $medium-gray;
+
+
+
+	.page-template-page-secteur & {
+		background-image: url(../images/banners/secteurs.jpg);
+	}
 
 	.page-title {
-		display: inline-block;
-		padding: 0.2em 0.5em;
-		color: #fff;
-		background: map-get($foundation-palette, primary);
+		text-align: center;
+		color: $white;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
+
+		&:after {
+			background-color: $white;
+		}
+	}
+}
+
+.logiciels {
+	.presentation {
+		display: flex;
+		> * {
+			flex-basis: 50%;
+		}
+	}
+
+	.page-template-page-secteur & {
+		.item {
+			&:first-child {
+				background-image: url(../images/bg-cibles.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			&:nth-child(2) {
+				background-image: url(../images/bg-arguments.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				color: $white;
+				.cedreo-title {
+					&:after {
+						background-color: $white;
+					}
+				}
+			}
+			&:nth-child(2n + 1) {
+				
+				.presentation > div:first-child {
+					
+					margin-right: map-get($grid-column-gutter, small) / 2;
+					padding-right: map-get($grid-column-gutter, small) / 2;
+
+					@include breakpoint(medium) {
+						margin-right: map-get($grid-column-gutter, medium) / 2;
+						padding-right: map-get($grid-column-gutter, medium) / 2;
+					}
+				}
+			}
+			&:nth-child(2n) {
+				
+				.presentation > div:first-child {
+					order: 1;
+					
+					margin-left: map-get($grid-column-gutter, small);
+
+					@include breakpoint(medium) {
+						margin-left: map-get($grid-column-gutter, medium);
+					}
+				}
+			}
+		}
 	}
 }
