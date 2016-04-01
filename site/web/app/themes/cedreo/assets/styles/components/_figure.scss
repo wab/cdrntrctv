@@ -81,7 +81,7 @@
 /***** Ming *****/
 /*---------------*/
 
-figure.effect-ming {
+.effect-ming {
 	background: $dark-gray;
 	img {
 		opacity: 0.8;
@@ -147,4 +147,35 @@ figure.effect-ming {
 		}
 	}
 
+}
+
+.equipe figure {
+	font-size: 0.8em;
+	text-align: left;
+	img {
+		opacity: 1;
+		filter: grayscale(80%);
+		transition: all 0.35s;
+	}
+
+	figcaption {
+		width: 100%;
+		top: 100%;
+		margin-left: 0;
+		padding: 2em;
+		background: rgba(0,0,0,0.8);
+		> * {
+			flex: 0;
+		}
+		transition: all 0.2s ease;
+	}
+
+	&:hover {
+		img {
+			transform: scale(1.1);
+		}
+		figcaption {
+			top: 0;
+		}
+	}
 }

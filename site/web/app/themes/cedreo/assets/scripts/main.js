@@ -100,9 +100,43 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'entreprise': {
       init: function() {
         // JavaScript to be fired on the about us page
+
+        //Sories carousel
+
+        var equipe =  $('.equipe-carousel');
+
+        // equipe
+        equipe.owlCarousel({
+          loop:true,
+          margin:0,
+          responsiveClass:true,
+          nav:false,
+          dots:false,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:4
+              }
+          }
+        });
+
+        // Custom Navigation Events
+        $(".suivant").click(function() {
+            stories.trigger('next.owl.carousel');
+            console.log('next');
+        });
+
+         $(".precedent").click(function() {
+            stories.trigger('prev.owl.carousel');
+        });
       }
     }
   };
