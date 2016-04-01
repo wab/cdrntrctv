@@ -6,7 +6,7 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-<div class="carousel owl-carousel">
+<div class="carousel owl-carousel banshadow">
 	<div class="item" style="background-image: url(https://unsplash.it/1850/800?random)">
 		<div class="row column item-wrap">
 
