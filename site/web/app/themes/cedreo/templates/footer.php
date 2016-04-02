@@ -1,38 +1,4 @@
-<section class="section stories">
-	<div class="row column">
-		<h2 class="cedreo-title"><span>Nos success</span> stories</h2>
-		<div class="owl-carousel stories-carousel">
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/nexity.png" alt=""></p>
-				<p class="lead"><span class="stat" id="n1" data-number="5000">5000</span><br><strong>appartements</strong><br>visualisables en très haute qualité</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/maisons-france-confort.png" alt=""></p>
-				<p class="lead"><span class="stat" id="n2" data-number="250">250</span><br><strong>points de vente</strong><br>équipés du logiciel</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/lundia.png" alt=""></p>
-				<p class="lead"><span class="stat">x</span><span class="stat" id="n3" data-number="10">10</span><br><strong>le nombre de clients</strong><br>dans toute la France</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/fermob.png" alt=""></p>
-				<p class="lead"><span class="stat" id="n4" data-number="95">95</span><span class="stat">%</span><br><strong>de satisfaction client</strong><br>sur l'année 2015</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/nexity.png" alt=""></p>
-				<p class="lead"><span class="stat">5000</span><br><strong>appartements</strong><br>visualisables en très haute qualité</p>
-			</div>
-			<div class="item text-center">
-				<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/stories/maisons-france-confort.png" alt=""></p>
-				<p class="lead"><span class="stat">250</span><br><strong>points de vente</strong><br>équipés du logiciel</p>
-			</div>
-		</div>
-		<div class="arrows">
-			<a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
-			<a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
-		</div>
-	</div>
-</section>
+<?php get_template_part('templates/section', 'stories'); ?>
 
 <?php if(is_front_page()): ?>
 

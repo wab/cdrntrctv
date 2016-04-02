@@ -70,8 +70,8 @@
 	<section class="section equipe grid ">
 		<div class="row column">
 			<h2 class="cedreo-title">Notre <span>équipe</span></h2>
-			<ul class="owl-carousel equipe-carousel no-bullet contenu">
-				<li>
+			<div class="owl-carousel equipe-carousel no-bullet contenu">
+				<div>
 					<figure>
 						<img src="https://unsplash.it/400?random" alt="">
 						<figcaption>
@@ -79,8 +79,8 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam, est vero, enim consequatur doloremque dolores temporibus et! Quia, voluptatibus laboriosam sequi a maxime et quae modi reprehenderit nisi iste.</p>
 						</figcaption>
 					</figure>
-				</li>
-				<li>
+				</div>
+				<div>
 					<figure>
 						<img src="https://unsplash.it/402?random" alt="">
 						<figcaption>
@@ -88,8 +88,8 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam, est vero, enim consequatur doloremque dolores temporibus et! Quia, voluptatibus laboriosam sequi a maxime et quae modi reprehenderit nisi iste.</p>
 						</figcaption>
 					</figure>
-				</li>
-				<li>
+				</div>
+				<div>
 					<figure>
 						<img src="https://unsplash.it/401?random" alt="">
 						<figcaption>
@@ -97,8 +97,8 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam, est vero, enim consequatur doloremque dolores temporibus et! Quia, voluptatibus laboriosam sequi a maxime et quae modi reprehenderit nisi iste.</p>
 						</figcaption>
 					</figure>
-				</li>
-				<li>
+				</div>
+				<div>
 					<figure>
 						<img src="https://unsplash.it/403?random" alt="">
 						<figcaption>
@@ -106,13 +106,17 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam, est vero, enim consequatur doloremque dolores temporibus et! Quia, voluptatibus laboriosam sequi a maxime et quae modi reprehenderit nisi iste.</p>
 						</figcaption>
 					</figure>
-				</li>
-			</ul>
+				</div>
+			</div>
+
+			<div class="arrows">
+		        <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
+		        <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
+		      </div>
 		</div>
 	</section>
 
-	<section class="section temoignages">
-		<h2 class="cedreo-title">Témoignages <span>Clients</span></h2>
-	</section>
+	<?php get_template_part('templates/section', 'testimony'); ?>
 
 <?php endwhile; ?>
+

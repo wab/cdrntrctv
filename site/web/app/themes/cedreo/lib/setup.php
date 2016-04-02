@@ -52,6 +52,8 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
   add_image_size( 'banner', 1200, 500, true ); // 1200 pixels wide by 500 pixels tall, hard crop mode
+  add_image_size( 'square', 400, 400, true ); // 400 pixels wide by 400 pixels tall, hard crop mode
+  add_image_size( 'testimony', 125, 125, true ); // 400 pixels wide by 400 pixels tall, hard crop mode
 
 
   // Enable post formats

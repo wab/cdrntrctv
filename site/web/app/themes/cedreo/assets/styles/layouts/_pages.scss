@@ -35,13 +35,13 @@
 	}
 
 	.homequote {
-		border: none;
 		text-align: center;
 		text-transform: uppercase;
 		min-height: 300px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		font-size: 1.6em;
 
 		background: url(../images/bgquote.jpg) center no-repeat;
 		background-size: 100%;
@@ -205,10 +205,16 @@
 					background-color: #2cb5ad;
 				}
 			}
-			&:nth-child(4) {
-				color: darken(map-get($foundation-palette, primary), 12%);
+			&:nth-child(3) {
+				color: darken(#2cb5ad, 5%);
 				.progress-meter {
-					background-color: darken(map-get($foundation-palette, primary), 12%);
+					background-color: darken(#2cb5ad, 5%);
+				}
+			}
+			&:nth-child(4) {
+				color: darken(map-get($foundation-palette, primary), 20%);
+				.progress-meter {
+					background-color: darken(map-get($foundation-palette, primary), 20%);
 				}
 			}
 			&:nth-child(5) {
@@ -247,5 +253,23 @@
 		background-image: url(../images/bg-temoignages.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+		color: $white;
+
+		.cedreo-title {
+			&:after {
+				background: $white;
+			}
+		}
+
+		.item {
+			font-size: 0.8em;
+
+			cite {
+				font-style: normal;
+				&:before {
+					display: none;
+				}
+			}
+		}
 	}
 }

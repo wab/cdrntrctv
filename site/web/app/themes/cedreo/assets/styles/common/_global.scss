@@ -52,7 +52,38 @@ h1, h2, .h1, .h2, blockquote, .lead {
 }
 
 blockquote {
-	font-size: 1.6em;
+	border: none;
+
+
+	.contenu & {
+		
+		position: relative;
+		background: rgba(0,0,0,0.4);
+
+		margin: map-get($grid-column-gutter, small);
+		padding: map-get($grid-column-gutter, small);
+
+		@include breakpoint(medium) {
+			margin: map-get($grid-column-gutter, medium);
+			padding: map-get($grid-column-gutter, medium);
+		}
+
+		cite {
+			color: map-get($foundation-palette, primary);
+		}
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			width: 32px;
+			height: 28px;
+			top: -12px;
+			left: -20px;
+			background: url(../images/quote.png) center no-repeat;
+		}
+
+	}
 }
 
 .lead {
@@ -104,5 +135,11 @@ blockquote {
 			background-size: 70%;
 		}
 
+	}
+}
+
+.stories {
+	.item {
+		text-transform: uppercase;
 	}
 }

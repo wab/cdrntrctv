@@ -129,13 +129,37 @@
         });
 
         // Custom Navigation Events
-        $(".suivant").click(function() {
-            stories.trigger('next.owl.carousel');
+        $(".equipe-carousel .next").click(function() {
+            equipe.trigger('next.owl.carousel');
             console.log('next');
         });
 
-         $(".precedent").click(function() {
-            stories.trigger('prev.owl.carousel');
+         $(".equipe-carousel .prev").click(function() {
+            equipe.trigger('prev.owl.carousel');
+        });
+
+        //Testimony carousel
+
+        var testimony =  $('.testimony-carousel');
+
+        // equipe
+        testimony.owlCarousel({
+          loop:true,
+          margin:0,
+          responsiveClass:true,
+          nav:false,
+          dots:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:2
+              }
+          }
         });
       }
     }
