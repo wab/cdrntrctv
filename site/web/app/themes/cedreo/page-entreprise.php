@@ -19,6 +19,7 @@
 
 	<?php get_template_part('templates/section', 'arguments'); ?>
 
+
 	<section class="section competences contenu">
 		<div class="row">
 			<div class="columns medium-6">
@@ -43,20 +44,13 @@
 				        	<div class="progress" role="progressbar" tabindex="0" aria-valuenow="<?php the_sub_field('value'); ?>" aria-valuemin="0" aria-valuetext="<?php the_sub_field('value'); ?> percent" aria-valuemax="100">
 							  <div class="progress-meter" style="width: <?php the_sub_field('value'); ?>%"></div>
 							</div>
-				        	<!-- <progress max="100" value="<?php the_sub_field('value'); ?>"></progress> -->
 				        </li>
 
 				    <?php endwhile; ?>
 
 				</ul>
 
-				<? else :
-
-				    // no rows found
-
-				endif;
-
-				?>
+				<?php endif; ?>
 
 			</div>
 			<?php if(get_field('c_image')): ?>
@@ -66,7 +60,6 @@
 			<?php endif; ?>
 		</div>
 	</section>
-
 	<section class="section equipe grid ">
 		<div class="row column">
 			<h2 class="cedreo-title">Notre <span>équipe</span></h2>

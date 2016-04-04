@@ -29,7 +29,7 @@ $testimony = new WP_Query( $args_testimony );
                 <?php endif; ?>
                 <div class="columns small-8">
                   <?php the_content(); ?>
-                  <cite><?php the_title(); ?><? if(get_field('subtitle')) {?> // <?php the_field('subtitle'); } ?></cite>
+                  <cite><?php the_title(); ?><?php if(get_field('subtitle')) { echo ' // '; the_field('subtitle'); } ?></cite>
                 </div>
               </div>
               
