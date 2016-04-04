@@ -60,47 +60,41 @@
 			<?php endif; ?>
 		</div>
 	</section>
+	
+	<?php if( have_rows('members') ): ?>
 	<section class="section equipe grid ">
 		<div class="row column">
 			<h2 class="cedreo-title">Notre <span>équipe</span></h2>
-			<div class="owl-carousel equipe-carousel no-bullet contenu">
-				<div>
-					<figure>
-						<img src="https://unsplash.it/400?random" alt="">
-						<figcaption>
-							<h2 class="cedreo-title">Nom <span>fonction</span></h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam, est vero, enim consequatur doloremque dolores temporibus et! Quia, voluptatibus laboriosam sequi a maxime et quae modi reprehenderit nisi iste.</p>
-						</figcaption>
-					</figure>
+
+				<div class="owl-carousel equipe-carousel contenu">
+
+					<?php 	// loop through the rows of data
+				    while ( have_rows('members') ) : the_row(); ?>
+
+				        <div class="item">
+							<figure>
+								<?php if(get_sub_field('photo')): ?>
+									<img src="<?php the_sub_field('photo'); ?>" alt="" />
+								<?php else: ?>
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/silhouette.jpg" alt="" />
+								<?php endif; ?>
+								<figcaption>
+									<?php if(get_sub_field('name')) { ?>
+									<h2 class="cedreo-title">
+										<?php the_sub_field('name'); ?>
+										<?php if(get_sub_field('function')) { ?>
+											&nbsp;<span><?php the_sub_field('function');?></span>
+										<?php } ?>
+									</h2>
+									<?php } ?>
+									<?php if(get_sub_field('desc')) { echo '<p>' . the_sub_field('desc') . '</p>';} ?>
+								</figcaption>
+							</figure>
+						</div>
+
+				    <?php endwhile; ?>
+
 				</div>
-				<div>
-					<figure>
-						<img src="https://unsplash.it/402?random" alt="">
-						<figcaption>
-							<h2 class="cedreo-title">Nom <span>fonction</span></h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam, est vero, enim consequatur doloremque dolores temporibus et! Quia, voluptatibus laboriosam sequi a maxime et quae modi reprehenderit nisi iste.</p>
-						</figcaption>
-					</figure>
-				</div>
-				<div>
-					<figure>
-						<img src="https://unsplash.it/401?random" alt="">
-						<figcaption>
-							<h2 class="cedreo-title">Nom <span>fonction</span></h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam, est vero, enim consequatur doloremque dolores temporibus et! Quia, voluptatibus laboriosam sequi a maxime et quae modi reprehenderit nisi iste.</p>
-						</figcaption>
-					</figure>
-				</div>
-				<div>
-					<figure>
-						<img src="https://unsplash.it/403?random" alt="">
-						<figcaption>
-							<h2 class="cedreo-title">Nom <span>fonction</span></h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam, est vero, enim consequatur doloremque dolores temporibus et! Quia, voluptatibus laboriosam sequi a maxime et quae modi reprehenderit nisi iste.</p>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
 
 			<div class="arrows">
 		        <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
@@ -108,8 +102,8 @@
 		      </div>
 		</div>
 	</section>
+	<?php endif; ?>
 
 	<?php get_template_part('templates/section', 'testimony'); ?>
 
 <?php endwhile; ?>
-

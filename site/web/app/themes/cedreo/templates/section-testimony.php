@@ -25,11 +25,11 @@ $testimony = new WP_Query( $args_testimony );
             <blockquote>
               <div class="row">
                 <?php if(has_post_thumbnail()): ?>
-                <div class="columns small-4"><?php the_post_thumbnail('testimony'); ?></div>
+                <div class="columns medium-4"><?php the_post_thumbnail('testimony'); ?></div>
                 <?php endif; ?>
-                <div class="columns small-8">
+                <div class="columns medium-8">
                   <?php the_content(); ?>
-                  <cite><?php the_title(); ?><?php if(get_field('subtitle')) { echo ' // '; the_field('subtitle'); } ?></cite>
+                  <cite><?php the_title(); ?><?php if(get_field('subtitle')) { echo ' // ' . the_field('subtitle'); } ?></cite>
                 </div>
               </div>
               

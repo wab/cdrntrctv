@@ -67,12 +67,12 @@
         });
 
         // Custom Navigation Events
-        $(".next").click(function() {
+        $(".stories .next").click(function() {
             stories.trigger('next.owl.carousel');
             console.log('next');
         });
 
-         $(".prev").click(function() {
+         $(".stories .prev").click(function() {
             stories.trigger('prev.owl.carousel');
         });
 
@@ -129,12 +129,12 @@
         });
 
         // Custom Navigation Events
-        $(".equipe-carousel .next").click(function() {
+        $(".equipe .next").click(function() {
             equipe.trigger('next.owl.carousel');
             console.log('next');
         });
 
-         $(".equipe-carousel .prev").click(function() {
+         $(".equipe .prev").click(function() {
             equipe.trigger('prev.owl.carousel');
         });
 

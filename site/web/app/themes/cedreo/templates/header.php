@@ -13,7 +13,7 @@
       </button>
       <?php
           if (has_nav_menu('lg')) :
-            wp_nav_menu(['theme_location' => 'lg', 'menu_class' => 'menu simple lg']);
+            wp_nav_menu(['theme_location' => 'lg', 'menu_class' => 'menu simple lg show-for-medium']);
           endif;
       ?>
     </div>

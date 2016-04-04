@@ -48,50 +48,49 @@
 
 <section class="section cibles">
 	<div class="row column">
-			<h2 class="cedreo-title">Logiciels sur-mesure <span>ou standard ?</span></h2>
-		
-			<div class="row grid medium-up-2">
-				<div class="columns">
-					<figure class="effect-ming">
-						<img src="https://unsplash.it/600?random" alt="">
-						<figcaption>
-							<h3 class="h2 grid-title">Besoin d'un logiciel <br> <span>sur mesure ?</span></h3>
-							<div><span class="acces">Accédez &rarr;</span></div>
-							<a href="#">y accéder</a>
-						</figcaption>			
-					</figure>
-				</div>
-				<div class="columns">
-					<figure class="effect-ming">
-						<img src="https://unsplash.it/601?random" alt="">
-						<figcaption>
-							<h3 class="h2 grid-title">Un logiciel d’architecture 3D<span> simple et de grande qualité</span></h3>
-							<div><span class="acces">Découvrez <br> MySketcher &rarr;</span></div>
-							<a href="#">y accéder</a>
-						</figcaption>			
-					</figure>
-				</div>
-				<div class="columns">
-					<figure class="effect-ming">
-						<img src="https://unsplash.it/602?random" alt="">
-						<figcaption>
-							<h3 class="h2 grid-title"><span>Vous êtes constructeurs</span> <br> de maisons individuelles</h3>
-							<div><span class="acces">Découvrez <br> Home Planner &rarr;</span></div>
-							<a href="#">y accéder</a>
-						</figcaption>			
-					</figure>
-				</div>
-				<div class="columns">
-					<figure class="effect-ming">
-						<img src="https://unsplash.it/604?random" alt="">
-						<figcaption>
-							<h3 class="h2 grid-title">Besoin d'un <br><span>plan 3D ou une perspective ?</span></h3>
-							<div><span class="acces">Découvrez <br> Archiwow &rarr;</span></div>
-							<a href="#">y accéder</a>
-						</figcaption>			
-					</figure>
-				</div>
-				
+		<h2 class="cedreo-title">Logiciels sur-mesure <span>ou standard ?</span></h2>
+	
+		<div class="row grid medium-up-2">
+			<div class="columns">
+				<figure class="effect-ming">
+					<img src="https://unsplash.it/600?random" alt="">
+					<figcaption>
+						<h3 class="h2 grid-title">Besoin d'un logiciel <br> <span>sur mesure ?</span></h3>
+						<div><span class="acces">Accédez &rarr;</span></div>
+						<a href="#">y accéder</a>
+					</figcaption>			
+				</figure>
+			</div>
+			<div class="columns">
+				<figure class="effect-ming">
+					<img src="https://unsplash.it/601?random" alt="">
+					<figcaption>
+						<h3 class="h2 grid-title">Un logiciel d’architecture 3D<span> simple et de grande qualité</span></h3>
+						<div><span class="acces">Découvrez <br> MySketcher &rarr;</span></div>
+						<a href="#">y accéder</a>
+					</figcaption>			
+				</figure>
+			</div>
+			<div class="columns">
+				<figure class="effect-ming">
+					<img src="https://unsplash.it/602?random" alt="">
+					<figcaption>
+						<h3 class="h2 grid-title"><span>Vous êtes constructeurs</span> <br> de maisons individuelles</h3>
+						<div><span class="acces">Découvrez <br> Home Planner &rarr;</span></div>
+						<a href="#">y accéder</a>
+					</figcaption>			
+				</figure>
+			</div>
+			<div class="columns">
+				<figure class="effect-ming">
+					<img src="https://unsplash.it/604?random" alt="">
+					<figcaption>
+						<h3 class="h2 grid-title">Besoin d'un <br><span>plan 3D ou une perspective ?</span></h3>
+						<div><span class="acces">Découvrez <br> Archiwow &rarr;</span></div>
+						<a href="#">y accéder</a>
+					</figcaption>			
+				</figure>
+			</div>
 		</div>
 	</div>
 </section>
