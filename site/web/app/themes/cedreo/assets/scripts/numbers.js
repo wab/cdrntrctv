@@ -16,20 +16,29 @@
 	  suffix : '' 
 	};
 
-	var n1 = document.getElementById('n1');
+ 	var n1 = document.getElementById('n1');
+ 	if (typeof(n1) !== 'undefined' && n1 !== null) {
+	  	var n1Number = n1.dataset.number;
+		var count1 = new CountUp("n1", 0, n1Number, 0, 2.5, options);
+	}
+	
 	var n2 = document.getElementById('n2');
+	if (typeof(n2) !== 'undefined' && n2 !== null) {
+	  	var n2Number = n2.dataset.number;
+		var count2 = new CountUp("n2", 0, n2Number, 0, 2.5, options);
+	}
+
 	var n3 = document.getElementById('n3');
+	if (typeof(n3) !== 'undefined' && n3 !== null) {
+	  	var n3Number = n3.dataset.number;
+		var count3 = new CountUp("n3", 0, n3Number, 0, 2.5, options);
+	}
+
 	var n4 = document.getElementById('n4');
-
-	var n1Number = n1.dataset.number;
-	var n2Number = n2.dataset.number;
-	var n3Number = n3.dataset.number;
-	var n4Number = n4.dataset.number;
-
-	var count1 = new CountUp("n1", 0, n1Number, 0, 2.5, options);
-	var count2 = new CountUp("n2", 0, n2Number, 0, 2.5, options);
-	var count3 = new CountUp("n3", 0, n3Number, 0, 2.5, options);
-	var count4 = new CountUp("n4", 0, n4Number, 0, 2.5, options);
+	if (typeof(n4) !== 'undefined' && n4 !== null) {
+	  	var n4Number = n4.dataset.number;
+		var count4 = new CountUp("n4", 0, n4Number, 0, 2.5, options);
+	}
 
 	var numbers = new ScrollMagic.Scene({
 		triggerElement: '#triggerNumbers',
