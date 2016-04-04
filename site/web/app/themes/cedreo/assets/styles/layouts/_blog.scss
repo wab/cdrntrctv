@@ -1,25 +1,63 @@
-.blog, .archive, .single {
-	background: $light-gray;
-}
-
-.blog-breadcrumb {
-	background: $body-background;
-}
 
 .navigation-categories {
-	margin: 1em 0;
-	.cat-item {
+	
+	margin-bottom: 2em;
+
+	.menu-categories {
+
+		display: flex;
+
+		> li {
+			margin-right: 1px;
+			flex: 1;
+		}
 
 		a {
-			@include button(false, $primary-color, darken($primary-color, 10%), #fff, hollow);
-			margin-bottom: 0;
-		}
-	}
+			@include button(true, map-get($foundation-palette, primary), darken(map-get($foundation-palette, primary), 10%), #fff, solid);
+			text-transform: uppercase;
 
-	.current-cat {
-		a {
-			@include button(false, $primary-color, darken($primary-color, 10%), #fff, solid);
-			margin-bottom: 0;
+			padding: 1.4em;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 30px;
+				height: 1em;
+				background-image: url(../images/pictos.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+			}
+
+
+		}
+
+		.cat-item-all {
+			flex: 0;
+			flex-basis: 60px;
+			a {
+				text-indent: -99em;
+				@include button-style(#092a35, darken(#092a35, 10%), #fff);
+			}
+		}
+
+
+		//logiciels
+		.cat-item-26 a {
+			@include button-style(#158881, darken(#158881, 10%), #fff);
+		}
+		//interviews
+		.cat-item-24 a {
+			
+			@include button-style(#196680, darken(#196680, 10%), #fff);
+		}
+		//nos clients
+		.cat-item-28 a {
+			@include button-style(#02a77a, darken(#02a77a, 10%), #fff);
+		}
+		//cedreo
+		.cat-item-30 a {
+			@include button-style(#699f3c, darken(#699f3c, 10%), #fff);
 		}
 	}
+	
 }

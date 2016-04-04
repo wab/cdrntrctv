@@ -1,4 +1,6 @@
+<?php if(!is_home() && !is_archive() && !is_singular('post')) : ?>
 <?php get_template_part('templates/section', 'stories'); ?>
+<?php endif; ?>
 
 <?php if(is_front_page()): ?>
 

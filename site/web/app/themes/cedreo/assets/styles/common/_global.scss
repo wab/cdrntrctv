@@ -115,6 +115,10 @@ blockquote {
 		background-image: url(../images/banners/logiciels.jpg);
 	}
 
+	.sidebar-primary & {
+		background-image: url(../images/banners/blog.jpg);
+	}
+
 	.page-title {
 		text-align: center;
 		color: $white;

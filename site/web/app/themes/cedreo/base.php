@@ -25,20 +25,23 @@ use Roots\Sage\Breadcrumbs;
       <div class="push-wrap">
         
         <?php if(is_home() || is_archive() || is_singular('post')) : ?>
-          
-          <div class="blog-breadcrumb">
-            <div class="row column">
+
+           
+          <div class="banshadow">
+            <header class="page-header section" <?php if (has_post_thumbnail()) { ?>style="background-image: url(<?php the_post_thumbnail_url('banner'); ?>);"<?php } ?>>
+
+              <?php if( !is_singular('post') ) : ?>
+                <h1 class="page-title cedreo-title">l'Actualité <span>Cedreo</span></h1>
+              <?php else: ?>
+                <p class="h1 page-title cedreo-title">l'Actualité <span>Cedreo</span></p>
+              <?php endif; ?>
+
               <?= Breadcrumbs\breadcrumbs(); ?>
-            </div>
+           
+            </header>
           </div>
-                  
-          <nav class="navigation-categories">
-            <div class="row column">
-              <ul class="menu simple">
-              <?php wp_list_categories('exclude=14&title_li='); ?>
-              </ul>
-            </div>
-          </nav>
+
+        <?php get_template_part('templates/menu', 'categories'); ?>
 
         <?php endif; ?>
 
