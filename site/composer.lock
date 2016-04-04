@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6587dd93f69b6e578b32629865eaf77d",
-    "content-hash": "c2f07755ab3ef4f94af04e338a825ff0",
+    "hash": "9b557129611a4f514dab00b2be690cf7",
+    "content-hash": "f29f6bc66af3d25bafb21e790670021c",
     "packages": [
         {
             "name": "composer/installers",
@@ -445,16 +445,36 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist-plugin/polylang",
-            "version": "1.8.4",
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "2.9.38",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/1.8.4"
+                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/2.9.38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.1.8.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.38.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/polylang",
+            "version": "1.8.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/1.8.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.1.8.5.zip",
                 "reference": null,
                 "shasum": null
             },

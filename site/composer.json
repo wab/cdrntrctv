@@ -107,7 +107,8 @@
     "wpackagist-plugin/types": "^1.8",
     "toolbox-plugin/gravityforms": "1.9.17.5",
     "wpackagist-plugin/wordpress-seo": "^3.0",
-    "wpackagist-plugin/polylang": "1.8.4"
+    "wpackagist-plugin/polylang": "^1.8",
+    "wpackagist-plugin/ninja-forms": "^2.9"
   },
   "extra": {
     "installer-paths": {
