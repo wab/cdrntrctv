@@ -99,6 +99,26 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
+    // Home page
+    'single_logiciel': {
+      init: function() {
+        // JavaScript to be fired on the home page
+        
+        // Carousel accueil
+        $('.gallery-carousel').owlCarousel({
+          items : 1,
+          dots: false,
+          nav: false,
+          autoplay: false,
+          thumbs: true,
+          thumbsPrerendered: true
+        });
+
+      },
+      finalize: function() {
+        // JavaScript to be fired on the home page, after the init JS
+      }
+    },
     // About us page, note the change from about-us to about_us.
     'entreprise': {
       init: function() {

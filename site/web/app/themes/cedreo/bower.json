@@ -13,7 +13,8 @@
     "owl.carousel": "~2.0.0-beta.3",
     "css-hamburgers": "^0.3.0",
     "scrollmagic": "~2.0.5",
-    "countUp.js": "~1.6.1"
+    "countUp.js": "~1.6.1",
+    "owl.carousel2.thumbs": "~0.1.7"
   },
   "overrides": {
     "foundation-sites": {
