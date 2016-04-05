@@ -51,6 +51,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+  set_post_thumbnail_size( 825, 250, true ); // 50 pixels wide by 50 pixels tall, crop mode
   add_image_size( 'banner', 1200, 500, true ); // 1200 pixels wide by 500 pixels tall, hard crop mode
   add_image_size( 'square', 400, 400, true ); // 400 pixels wide by 400 pixels tall, hard crop mode
   add_image_size( 'testimony', 125, 125, true ); // 400 pixels wide by 400 pixels tall, hard crop mode
