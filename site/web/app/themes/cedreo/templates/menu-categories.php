@@ -4,7 +4,7 @@
         'show_count' => false,
         'title_li' => '',
         'exclude'    => array( 14 ),
-        'show_option_all' => 'tous'
+        'show_option_all' => '<span class="show-for-sr">tous</span>'
 	);
 ?>
 
