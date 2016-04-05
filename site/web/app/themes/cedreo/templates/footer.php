@@ -31,14 +31,14 @@
 		<a href="#" class="button expanded secondary"><i class="fa fa-facebook"></i> <span>Facebook</span></a></a>
     </div>
 
-    <div class="columns medium-4 medium-offset-1">
+    <div class="columns medium-5 large-4 large-offset-1">
     	<h2 class="sitemap-title">Les secteurs d'activité</h2>
     	<?php wp_nav_menu(['theme_location' => 'secteurs', 'menu_class' => 'menu vertical']); ?>
       <hr>
       <h2 class="sitemap-title">Nos solutions logicielles</h2>
       <?php wp_nav_menu(['theme_location' => 'logiciels', 'menu_class' => 'menu vertical']); ?>
     </div>
-    <div class="columns medium-3 medium-offset-1">
+    <div class="columns medium-4 large-3 large-offset-1">
     	<h2 class="sitemap-title">Cedreo</h2>
     	<?php wp_nav_menu(['theme_location' => 'cedreo', 'menu_class' => 'menu vertical']); ?>
       <hr>
