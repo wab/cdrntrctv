@@ -5,6 +5,9 @@
 			position: relative;
 			height: 100vh - ($header-height * 3);
 			z-index: 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 
 			.item-wrap {
 				height: 100%;

@@ -17,16 +17,16 @@ if( have_rows('carousel') ): ?>
     while ( have_rows('carousel') ) : the_row(); ?>
 
         <div class="item" style="background-image: url(<?php the_sub_field('image'); ?>)">
-        	<?php if( get_sub_fiel('text') || get_sub_fiel('link')) : ?>
+        	<?php if( get_sub_field('text') || get_sub_field('link')) : ?>
 	        <div class="row column item-wrap">
 
 				<div class="item-box">
 
-					<?php if( get_sub_fiel('text') ) : ?>
+					<?php if( get_sub_field('text') ) : ?>
 					<p class="lead"><?php the_sub_field('text'); ?></p>
 					<?php endif; ?>
 
-					<?php if( get_sub_fiel('link') ) : ?>
+					<?php if( get_sub_field('link') ) : ?>
 					<a href="<?php the_sub_field('link'); ?>" class="large button"><?php the_sub_field('link_txt'); ?>  &rarr;</a>
 					<?php endif; ?>
 					
