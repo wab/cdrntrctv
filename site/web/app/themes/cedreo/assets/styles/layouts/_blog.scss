@@ -34,9 +34,16 @@
 				width: 30px;
 				height: 30px;
 				margin-right: 0.4em;
-				background-image: url(../images/pictos.png);
+				transition: background-position 0.2s ease-in;
 				background-repeat: no-repeat;
 				background-position: 0 0;
+				background-size: 180px;
+				background-image: url(../images/pictos.png);
+
+
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+					background-image: url(../images/pictos@2x.png);
+				}
 				
 			}
 
@@ -49,10 +56,14 @@
 				position: absolute;
 				left: 0;
 				bottom: -8px;
-				transition: all 0.2s ease-out;
+				transition: all 0.2s ease-in;
 			}
 
 			&:hover, &:focus {
+				&:before {
+					background-position: bottom;
+				}
+				
 				&:after {
 					width: 100%;
 				}
@@ -75,6 +86,12 @@
 					text-indent: 0;
 					margin-right: 0;
 				}
+				&:hover, &:focus {
+					&:before {
+						background-position: 0 -30px;
+					}
+									
+				}
 			}
 		}
 
@@ -87,18 +104,30 @@
 			&:after {
 				background-color: map-get($foundation-palette, primary);
 			}
+			&:hover, &:focus {
+				&:before {
+					background-position: -60px -30px;
+				}
+								
+			}
 		}
 
 		//logiciels
 		.cat-item-26 a {
 			@include button-style(#158881, darken(#158881, 10%), #fff);
 			&:before {
-				background-position: -150px 0;
+				background-position: -90px 0;
 			}
 			&:after {
 				background-color: #158881;
 			}
-			
+			&:hover, &:focus {
+				&:before {
+					background-position: -90px -30px;
+				}
+								
+			}
+
 		}
 		//interviews
 		.cat-item-24 a {
@@ -110,6 +139,12 @@
 			&:after {
 				background-color: #196680;
 			}
+			&:hover, &:focus {
+				&:before {
+					background-position: -30px -30px;
+				}
+								
+			}
 		}
 		//nos clients
 		.cat-item-28 a {
@@ -120,15 +155,27 @@
 			&:after {
 				background-color: #02a77a;
 			}
+			&:hover, &:focus {
+				&:before {
+					background-position: -120px -30px;
+				}
+								
+			}
 		}
 		//cedreo
 		.cat-item-30 a {
 			@include button-style(#699f3c, darken(#699f3c, 10%), #fff);
 			&:before {
-				background-position: -90px 0;
+				background-position: -150px 0;
 			}
 			&:after {
 				background-color: #699f3c;
+			}
+			&:hover, &:focus {
+				&:before {
+					background-position: -150px -30px;
+				}
+								
 			}
 		}
 
