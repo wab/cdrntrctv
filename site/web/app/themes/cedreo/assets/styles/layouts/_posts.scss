@@ -52,9 +52,12 @@
 			display: inline-block;
 			width: 30px;
 			height: 30px;
-			background-image: url(../images/pictos.png);
 			background-repeat: no-repeat;
 			background-position: 0 0;
+			background-image: url(../images/pictos.png);
+			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+					background-image: url(../images/pictos@2x.png);
+			}
 		}
 
 		//logiciels
