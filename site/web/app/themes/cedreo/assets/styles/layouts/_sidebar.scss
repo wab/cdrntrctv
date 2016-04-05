@@ -1,0 +1,20 @@
+.sidebar-cta {
+	padding: 1.5em 3em;
+	background: url(../images/bg-sidebar-cta.jpg) center no-repeat;
+	background-size: cover;
+	color: $white;
+
+	.lead {
+		text-transform: uppercase;
+		&:before {
+			content: '';
+			display: block;
+			@extend .pull-left;
+			width: 46px;
+			height: 65px;
+			margin-right: 1em;
+			background: url(../images/cta-2.png) center no-repeat;
+		}
+
+	}
+}
