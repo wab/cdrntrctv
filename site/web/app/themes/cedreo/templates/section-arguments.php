@@ -1,3 +1,4 @@
+<a id="triggerNumbers"></a>
 <?php
 
 // Logiciels

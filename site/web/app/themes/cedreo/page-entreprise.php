@@ -4,6 +4,9 @@
  * Template Name: Page entreprise
  */
 
+// The Query for arguments
+$arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
+
 ?>
 <?php while (have_posts()) : the_post(); ?>
 	<?php get_template_part('templates/page', 'header'); ?>
@@ -24,7 +27,23 @@
 		</div>
 	</div>
 
-	<?php get_template_part('templates/section', 'arguments'); ?>
+	<?php if ( $arguments->have_posts() ) : ?>
+
+	<!-- pagination here -->
+
+	<!-- the loop -->
+	<?php while ( $arguments->have_posts() ) : $arguments->the_post(); ?>
+		<?php get_template_part('templates/section', 'arguments'); ?>
+	<?php endwhile; ?>
+	<!-- end of the loop -->
+
+	<!-- pagination here -->
+
+	<?php wp_reset_postdata(); ?>
+
+	<?php endif; ?>
+
+	
 
 
 	<section class="section competences contenu">
