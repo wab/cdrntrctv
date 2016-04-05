@@ -4,18 +4,7 @@
 
 <?php if(is_front_page()): ?>
 
-<section class="section partenaires">
-	<div class="row column">
-		<h2 class="cedreo-title">Nos <span>partenaires</span></h2>
-		<ul class="list no-bullet">
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/bamboo.png" alt=""></a></li>
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/total.png" alt=""></a></li>
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/sodero-gestion.png" alt=""></a></li>
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/ministere-education.png" alt=""></a></li>
-			<li class="item"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/partenaires/reseau-entreprendre.png" alt=""></a></li>
-		</ul>
-	</div>
-</section>
+  <?php get_template_part('templates/section', 'partenaires'); ?>
 
 <?php endif; ?>
 

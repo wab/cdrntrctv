@@ -446,15 +446,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "2.9.38",
+            "version": "2.9.40",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/2.9.38"
+                "reference": "tags/2.9.40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.38.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.40.zip",
                 "reference": null,
                 "shasum": null
             },

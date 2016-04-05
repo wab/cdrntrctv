@@ -6,95 +6,114 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
+<?php
+
+// Carsousel
+if( have_rows('carousel') ): ?>
+
 <div class="carousel owl-carousel banshadow">
-	<div class="item" style="background-image: url(https://unsplash.it/1850/800?random)">
-		<div class="row column item-wrap">
 
-			<div class="item-box">
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<a href="#" class="large button">Demandez la demo  &rarr;</a>
-			</div>
+	<?php 	// loop through the rows of data
+    while ( have_rows('carousel') ) : the_row(); ?>
 
-		</div>
-	</div>
-	<div class="item" style="background-image: url(https://unsplash.it/1800/800?random)">
-		<div class="row column item-wrap">
-			<div class="item-box">
-				<p class="lead">Sit obcaecati laboriosam nobis corporis accusantium, non assumenda quis tempora quo voluptatibus.</p>
+        <div class="item" style="background-image: url(<?php the_sub_field('image'); ?>)">
+        	<?php if( get_sub_fiel('text') || get_sub_fiel('link')) : ?>
+	        <div class="row column item-wrap">
+
+				<div class="item-box">
+
+					<?php if( get_sub_fiel('text') ) : ?>
+					<p class="lead"><?php the_sub_field('text'); ?></p>
+					<?php endif; ?>
+
+					<?php if( get_sub_fiel('link') ) : ?>
+					<a href="<?php the_sub_field('link'); ?>" class="large button"><?php the_sub_field('link_txt'); ?>  &rarr;</a>
+					<?php endif; ?>
+					
+				</div>
+
 			</div>
-		</div>
-	</div>
-	<div class="item" style="background-image: url(https://unsplash.it/1820/800?random)">
-		<div class="row column item-wrap">
-			<div class="item-box">
-				<p class="lead">Neque distinctio nulla ipsam alias harum eum ratione earum odit.</p>
-				<a href="#" class="large rounded button">Contactez-nous  &rarr;</a>
-			</div>
-		</div>
-	</div>
+			<?php endif; ?>
+        </div>
+
+    <?php endwhile; ?>
+
 </div>
+
+<?php endif; ?>
 
 <div class="section introduction">
 	<div class="row">
 		<div class="columns medium-6">
-			<h1 class="cedreo-title">Logiciels 3D d'aide à la vente <br> <span>sur tous supports</span> </h1>
+			
+			<?php if( get_field('subtitle') ) : ?>
+			<h1 class="cedreo-title"><?php the_field('subtitle'); ?></h1>
+			<?php else : ?>
+			<h1 class="cedreo-title"><?php bloginfo('description'); ?></h1>
+			<?php endif; ?>
+			
 			<?php get_template_part('templates/content', 'page'); ?>
 		</div>
+		<?php if( get_field('quote') ) : ?>
 		<div class="columns medium-6">
-			<blockquote class="homequote"><p><strong>Plus de 2000 professionnels</strong> <br> utilisent nos logiciels tous les mois à travers le monde <br> <span>serez vous le prochain ?</span></p></blockquote>
+			<blockquote class="homequote"><p><?php the_field('quote'); ?></p></blockquote>
 		</div>
+		<?php endif; ?>
 	</div>
 </div>
 
+<?php
+
+// Logiciels
+if( have_rows('l_items') ): ?>
+
 <section class="section cibles">
 	<div class="row column">
-		<h2 class="cedreo-title">Logiciels sur-mesure <span>ou standard ?</span></h2>
-	
+
+		<?php if (get_field('l_title')) : ?>
+		<h2 class="cedreo-title"><?php the_field('l_title'); ?></h2>
+		<?php endif; ?>
+
 		<div class="row grid medium-up-2">
-			<div class="columns">
-				<figure class="effect-ming">
-					<img src="https://unsplash.it/600?random" alt="">
-					<figcaption>
-						<h3 class="h2 grid-title">Besoin d'un logiciel <br> <span>sur mesure ?</span></h3>
-						<div><span class="acces">Accédez &rarr;</span></div>
-						<a href="#">y accéder</a>
-					</figcaption>			
-				</figure>
-			</div>
-			<div class="columns">
-				<figure class="effect-ming">
-					<img src="https://unsplash.it/601?random" alt="">
-					<figcaption>
-						<h3 class="h2 grid-title">Un logiciel d’architecture 3D<span> simple et de grande qualité</span></h3>
-						<div><span class="acces">Découvrez <br> MySketcher &rarr;</span></div>
-						<a href="#">y accéder</a>
-					</figcaption>			
-				</figure>
-			</div>
-			<div class="columns">
-				<figure class="effect-ming">
-					<img src="https://unsplash.it/602?random" alt="">
-					<figcaption>
-						<h3 class="h2 grid-title"><span>Vous êtes constructeurs</span> <br> de maisons individuelles</h3>
-						<div><span class="acces">Découvrez <br> Home Planner &rarr;</span></div>
-						<a href="#">y accéder</a>
-					</figcaption>			
-				</figure>
-			</div>
-			<div class="columns">
-				<figure class="effect-ming">
-					<img src="https://unsplash.it/604?random" alt="">
-					<figcaption>
-						<h3 class="h2 grid-title">Besoin d'un <br><span>plan 3D ou une perspective ?</span></h3>
-						<div><span class="acces">Découvrez <br> Archiwow &rarr;</span></div>
-						<a href="#">y accéder</a>
-					</figcaption>			
-				</figure>
-			</div>
-		</div>
+
+		<?php 	// loop through the rows of data
+	    while ( have_rows('l_items') ) : the_row(); ?>
+
+		        <div class="columns">
+					<figure class="effect-ming">
+
+						<?php 
+
+						$image = get_sub_field('img');
+						$size = 'post-thumbnail';
+						$thumb = $image['sizes'][ $size ];
+
+						if( !empty($image) ): ?>
+
+							<img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+
+						<?php endif; ?>
+
+						<?php if( get_sub_field('text') ) : ?>
+						<figcaption>
+							<h3 class="h2 grid-title"><?php the_sub_field('text'); ?></h3>
+							<div><span class="acces"><?php the_sub_field('link_txt'); ?> &rarr;</span></div>
+							<a href="<?php the_sub_field('link'); ?>">y accéder</a>
+						</figcaption>	
+						<?php endif; ?>
+						
+					</figure>
+
+				</div>
+
+	    <?php endwhile; ?>
+
 	</div>
 </section>
+
+<?php endif; ?>
 
 <?php get_template_part('templates/section', 'arguments'); ?>
 
 <?php endwhile; ?>
+

@@ -130,12 +130,6 @@
 	background-size: cover;
 	color: $body-background;
 
-	.section-title {
-		&:after {
-			background: $body-background;
-		}
-	}
-
 	.argument-title {
 		text-transform: uppercase;
 		color: map-get($foundation-palette, primary);
