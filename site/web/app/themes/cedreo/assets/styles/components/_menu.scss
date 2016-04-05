@@ -85,8 +85,8 @@ html, body {
     .subheader {
         margin-bottom: 0.5em;
         padding-bottom: 0.5em;
-        border-bottom: solid 1px map-get($foundation-palette, primary);
-        color: map-get($foundation-palette, primary);
+        border-bottom: solid 1px map-get($foundation-palette, secondary);
+        color: map-get($foundation-palette, secondary);
         text-transform: uppercase;
         font-size: 1.2em;
     }

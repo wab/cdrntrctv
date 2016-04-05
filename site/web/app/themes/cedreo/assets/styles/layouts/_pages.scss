@@ -164,23 +164,23 @@
 		}
 		&:nth-child(2) {
 			.argument-title {
-				color: map-get($foundation-palette, secondary);
+				color: map-get($foundation-palette, souplesse);
 				&:before { 
 					content: '2. ';
 				}
 				&:after {
-					background: map-get($foundation-palette, secondary);
+					background: map-get($foundation-palette, souplesse);
 				}
 			} 
 		}
 		&:nth-child(3) {
 			.argument-title {
-				color: map-get($foundation-palette, success);
+				color: map-get($foundation-palette, seduction);
 				&:before { 
 					content: '3. ';
 				}
 				&:after {
-					background: map-get($foundation-palette, success);
+					background: map-get($foundation-palette, seduction);
 				}
 			} 
 		}

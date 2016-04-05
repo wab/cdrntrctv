@@ -23,30 +23,32 @@
   
   <div class="row">
     
-    <div class="column medium-6">
-    	<?php
-		    if (has_nav_menu('footer')) :
-		      wp_nav_menu(['theme_location' => 'footer', 'menu_class' => 'nav-footer menu simple']);
-		    endif;
-		?>
+    <div class="columns medium-3">
+      <p class="text-center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-cedreo-interactive-w.png" width="200" alt="<?php bloginfo('name'); ?>"></p>
+    	<a href="#" class="button expanded secondary hollow"><i class="fa fa-phone"></i> 02.90.10.10.10</a>
+    	<a href="#" class="button expanded secondary"><i class="fa fa-envelope"></i> Contactez-nous !</a>
+    	<a href="#" class="button expanded secondary"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+		<a href="#" class="button expanded secondary"><i class="fa fa-facebook"></i> <span>Facebook</span></a></a>
     </div>
 
-    <div class="column medium-2">
-    	<?php
-		    if (has_nav_menu('lg')) :
-		      wp_nav_menu(['theme_location' => 'lg', 'menu_class' => 'menu simple']);
-		    endif;
-		?>
+    <div class="columns medium-4 medium-offset-1">
+    	<h2 class="sitemap-title">Les secteurs d'activité</h2>
+    	<?php wp_nav_menu(['theme_location' => 'secteurs', 'menu_class' => 'menu vertical']); ?>
+      <hr>
+      <h2 class="sitemap-title">Nos solutions logicielles</h2>
+      <?php wp_nav_menu(['theme_location' => 'logiciels', 'menu_class' => 'menu vertical']); ?>
+    </div>
+    <div class="columns medium-3 medium-offset-1">
+    	<h2 class="sitemap-title">Cedreo</h2>
+    	<?php wp_nav_menu(['theme_location' => 'cedreo', 'menu_class' => 'menu vertical']); ?>
+      <hr>
+      <?php
+        if (has_nav_menu('footer')) :
+          wp_nav_menu(['theme_location' => 'footer', 'menu_class' => 'menu vertical']);
+        endif;
+      ?>
     </div>
 
-	<div class="column medium-4">
-		
-		<ul class="reseaux">
-			<li>suivez-nous sur :</li>
-    		<li><a href="#"><i class="fa fa-twitter"></i> <span class="show-for-sr">Twitter</span></a></li>
-			<li><a href="#"><i class="fa fa-facebook"></i> <span class="show-for-sr">Facebook</span></a></a></li>
-    	</ul>
-	</div>
 
   </div>
   

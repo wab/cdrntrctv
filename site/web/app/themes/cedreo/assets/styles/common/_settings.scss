@@ -80,13 +80,15 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #16a29b,
-  secondary: #2db7d9   ,
+  secondary: #75c3ad,
+  souplesse: #2db7d9,
+  seduction: #7dbc04,
   success: #7dbc04,
   warning: #ffae00,
   alert: #ec5840,
 );
 $light-gray: #f1f3f5;
-$medium-gray: #cacaca;
+$medium-gray: #888;
 $dark-gray: #3f4655;
 $black: #121721;
 $white: #fff;

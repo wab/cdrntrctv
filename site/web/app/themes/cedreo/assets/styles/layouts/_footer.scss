@@ -76,7 +76,17 @@
 		.active a {
 			background: transparent;
 			color: map-get($foundation-palette, primary);
-			border-bottom: solid 1px map-get($foundation-palette, primary);
+			//border-bottom: solid 1px map-get($foundation-palette, primary);
 		}
+	}
+
+	hr {
+		border-color: $dark-gray;
+	}
+
+	.sitemap-title {
+		color: map-get($foundation-palette, secondary);
+		text-transform: uppercase;
+		font-size: 1.4em;
 	}
 }
