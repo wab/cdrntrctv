@@ -32,7 +32,7 @@
       ]
     },
     "vendor.js": {
-      "bower": ["foundation-sites", "what-input", "owl.carousel", "scrollmagic"]
+      "bower": ["foundation-sites", "what-input", "owl.carousel", "owl.carousel2.thumbs", "scrollmagic"]
     }
   },
   "config": {
