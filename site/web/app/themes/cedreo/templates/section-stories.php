@@ -29,8 +29,8 @@ $story = new WP_Query( $args_story );
                 <p><img src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>"></p>
                 <?php endif; ?>                          
                 <p class="lead">
-                  <?php if(the_field('prefix')) {?><span class="stat"><?php the_field('prefix'); ?></span><?php } ?>
-                  <span class="stat" id="n<?php echo $i; ?>" data-number="<?php the_field('number'); ?>"><?php the_field('number'); ?></span><?php if(the_field('suffix')) {?><span class="stat"><?php the_field('suffix'); ?></span><?php } ?><br>
+                  <?php if(get_field('prefix')) {?><span class="stat"><?php the_field('prefix'); ?></span><?php } ?>
+                  <span class="stat" id="n<?php echo $i; ?>" data-number="<?php the_field('number'); ?>"><?php the_field('number'); ?></span><?php if(the_field('suffix')) {?><span class="stat"><?php get_field('suffix'); ?></span><?php } ?><br>
                   <?php the_field('description'); ?>
                 </p>
           </div>
