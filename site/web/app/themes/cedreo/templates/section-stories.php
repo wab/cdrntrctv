@@ -30,7 +30,7 @@ $story = new WP_Query( $args_story );
                 <?php endif; ?>                          
                 <p class="lead">
                   <?php if(get_field('prefix')) {?><span class="stat"><?php the_field('prefix'); ?></span><?php } ?>
-                  <span class="stat" id="n<?php echo $i; ?>" data-number="<?php the_field('number'); ?>"><?php the_field('number'); ?></span><?php if(the_field('suffix')) {?><span class="stat"><?php get_field('suffix'); ?></span><?php } ?><br>
+                  <span class="stat" id="n<?php echo $i; ?>" data-number="<?php the_field('number'); ?>"><?php the_field('number'); ?></span><?php if(get_field('suffix')) {?><span class="stat"><?php the_field('suffix'); ?></span><?php } ?><br>
                   <?php the_field('description'); ?>
                 </p>
           </div>
