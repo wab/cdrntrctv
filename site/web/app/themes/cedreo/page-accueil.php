@@ -27,7 +27,7 @@ if( have_rows('carousel') ): ?>
 					<?php endif; ?>
 
 					<?php if( get_sub_field('link') ) : ?>
-					<a href="<?php the_sub_field('link'); ?>" class="large button"><?php the_sub_field('link_txt'); ?>  &rarr;</a>
+					<a href="<?php the_sub_field('link'); ?>" class="large button"><?php the_sub_field('link-txt'); ?>  &rarr;</a>
 					<?php endif; ?>
 					
 				</div>
