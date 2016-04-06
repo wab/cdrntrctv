@@ -46,10 +46,18 @@
 	})
 	.addTo(numbersCtrl)
 	.on("enter leave", function (e) {
-		count1.start();
-		count2.start();
-		count3.start();
-		count4.start();
+		if (typeof(n1) !== 'undefined' && n1 !== null) {
+		  	count1.start();
+		}
+		if (typeof(n2) !== 'undefined' && n2 !== null) {
+		  	count2.start();
+		}
+		if (typeof(n3) !== 'undefined' && n3 !== null) {
+		  	count3.start();
+		}
+		if (typeof(n4) !== 'undefined' && n4 !== null) {
+		  	count4.start();
+		}
 	});
 
 })();

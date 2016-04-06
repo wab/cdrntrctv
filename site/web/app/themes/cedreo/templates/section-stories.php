@@ -26,7 +26,7 @@ $story = new WP_Query( $args_story );
         <?php $i++; ?>
           <div class="item text-center">
                 <?php if(get_field('logo')): ?>
-                <p><?php the_field('logo'); ?></p>
+                <p><img src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>"></p>
                 <?php endif; ?>                          
                 <p class="lead">
                   <?php if(the_field('prefix')) {?><span class="stat"><?php the_field('prefix'); ?></span><?php } ?>
