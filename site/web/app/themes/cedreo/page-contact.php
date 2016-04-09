@@ -11,11 +11,16 @@
 			<div class="columns">
 				<div id="map"></div>
 			</div>
-			<div class="columns large-8 end">
+
+			<div class="columns large-4">
 				<?php if (get_field('subtitle')) : ?>
 					<h2 class="cedreo-title subtitle"><?php the_field('subtitle'); ?></h2>
 				<?php endif; ?>
 				<?php get_template_part('templates/content', 'page'); ?>
+			</div>
+
+			<div class="columns large-8">
+				<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
 			</div>
 		</div>
 	</div>
@@ -51,8 +56,6 @@
 		    marker.setAnimation(google.maps.Animation.BOUNCE);
 		  }
 		}
-
-
 
     </script>
 
