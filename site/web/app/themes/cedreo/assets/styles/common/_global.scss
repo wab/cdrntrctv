@@ -61,6 +61,16 @@ h1, h2, .h1, .h2, blockquote, .lead {
 	}
 }
 
+.img-rounded {
+	display: block;
+	border-radius: 50%;
+	border: solid 0.4em transparent;
+	background-color: map-get($foundation-palette, primary);
+}
+address {
+	font-style: normal;
+	text-transform: uppercase;
+}
 blockquote {
 	border: none;
 
@@ -98,6 +108,10 @@ blockquote {
 
 .lead {
 	font-family: $header-font-family;
+	text-transform: uppercase;
+	span, i {
+		color: map-get($foundation-palette, primary);
+	}
 }
 
 .page-header {

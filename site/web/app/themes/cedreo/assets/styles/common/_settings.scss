@@ -87,8 +87,8 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
-$light-gray: #f2f2f2;
-$medium-gray: #888;
+$light-gray: #f7f7f7;
+$medium-gray: #aaa;
 $dark-gray: #3f4655;
 $black: #121721;
 $white: #fff;
@@ -474,7 +474,7 @@ $pagination-arrows: true;
 // ----------------
 
 $progress-height: 1rem;
-$progress-background: $light-gray;
+$progress-background: $medium-gray;
 $progress-margin-bottom: $global-margin;
 $progress-meter-background: $primary-color;
 $progress-radius: $global-radius;

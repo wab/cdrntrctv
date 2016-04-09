@@ -356,7 +356,88 @@
 	}
 }
 
-#map {
-	height: 50vh;
-	margin-bottom: 2em;
+
+
+.contact {
+	.main {
+		background: url(../images/bg-page.jpg) center bottom no-repeat;
+		background-size: 100%;
+		background-color: $light-gray;
+	}
+	#map {
+		height: 50vh;
+		margin-bottom: 2em;
+	}
+
+	.list-contact {
+		
+		.item {
+			margin-bottom: 1em;
+			position: relative;
+			padding-left: map-get($grid-column-gutter, small) * 1.5;
+
+			@include breakpoint(medium) {
+		      padding-left: map-get($grid-column-gutter, medium) * 1.5;
+		    }
+		}
+
+		address {
+			
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 25px;
+				height: 38px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: url(../images/marker.png) center no-repeat;
+				margin-right: 1em;
+			}
+		}
+
+		.tel {
+			font-size: 1.6em;
+			&:before {
+				@extend .fa;
+				content: $fa-var-phone;
+				color: map-get($foundation-palette, primary);
+				position: absolute;
+				top: 0;
+				left: 0;
+				line-height: 1.8em;
+			}
+		}
+	}
+	
+	label {
+		text-transform: uppercase;
+	}
+
+	input:not([type="submit"]), textarea {
+		background-color: $white;
+		border-color: $medium-gray;
+	}
+
+	.ninja-forms-all-fields-wrap {
+		
+		@include grid-row;
+
+		.field-wrap {
+		@include grid-column(6);
+		}
+
+		.textarea-wrap, .submit-wrap {
+			@include grid-column-size(12);
+		}
+		
+		.submit-wrap {
+			input {
+				@extend .pull-right;
+			}
+		}
+
+		
+	}
+
 }
