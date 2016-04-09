@@ -355,3 +355,8 @@
 		color: map-get($foundation-palette, primary);
 	}
 }
+
+#map {
+	height: 50vh;
+	margin-bottom: 2em;
+}
