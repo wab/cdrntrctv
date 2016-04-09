@@ -19,18 +19,18 @@ $story = new WP_Query( $args_story );
       <h2 class="cedreo-title"><span>Nos success</span> stories</h2>
       <div class="owl-carousel stories-carousel no-bullet contenu">
 
-        <?php $i = 0; ?>
-
         <!-- the loop -->
         <?php while ( $story->have_posts() ) : $story->the_post(); ?>
-        <?php $i++; ?>
           <div class="item text-center">
                 <?php if(get_field('logo')): ?>
-                <p><img src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>"></p>
+                  <p><img src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>"></p>
                 <?php endif; ?>                          
                 <p class="lead">
-                  <?php if(get_field('prefix')) {?><span class="stat"><?php the_field('prefix'); ?></span><?php } ?>
-                  <span class="stat" id="n<?php echo $i; ?>" data-number="<?php the_field('number'); ?>"><?php the_field('number'); ?></span><?php if(get_field('suffix')) {?><span class="stat"><?php the_field('suffix'); ?></span><?php } ?><br>
+                  <div class="stat">
+                  <?php if(get_field('prefix')) { the_field('prefix'); } ?>
+                  <span class="counter" data-counterup-time="5200"><?php the_field('number'); ?></span>
+                  <?php if(get_field('suffix')) { the_field('suffix'); } ?>
+                  </div>
                   <?php the_field('description'); ?>
                 </p>
           </div>
@@ -42,8 +42,6 @@ $story = new WP_Query( $args_story );
         <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
       </div>
     </div>
-
-    
 
   </section>
 

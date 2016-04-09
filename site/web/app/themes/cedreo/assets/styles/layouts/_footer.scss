@@ -26,6 +26,12 @@
 				font-size: 1.2em;
 			}
 
+			.stat {
+				color: map-get($foundation-palette, primary);
+				font-weight: 700;
+				font-family: $header-font-family;
+			}
+
 		}
 	}
 

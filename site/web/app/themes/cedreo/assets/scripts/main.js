@@ -76,9 +76,36 @@
             stories.trigger('prev.owl.carousel');
         });
 
+        // Animations
+
+        $('.counter').counterUp();
+
+        var meter = $('.progress-meter');
+        
+        meter.waypoint(
+          function(direction) {
+            meter.addClass('animated');
+          },{
+            offset:'80%'
+          }
+        );
+
+        var picto = $('.argpicto');
+        
+        picto.waypoint(
+          function(direction) {
+            picto.addClass('animated');
+          },{
+            offset:'80%'
+          }
+        );
+
+        
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+        
       }
     },
     // Home page

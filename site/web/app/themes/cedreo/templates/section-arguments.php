@@ -23,7 +23,7 @@ if( have_rows('a_items') ): ?>
 		        <div class="columns medium-4 text-center">
 
 		        	<?php if (get_sub_field('img')) : ?>
-					<p><img src="<?php the_sub_field('img'); ?>" alt=""></p>
+					<p class="argpicto"><img src="<?php the_sub_field('img'); ?>" alt=""></p>
 					<?php endif; ?>
 
 		        	<?php if (get_sub_field('title')) : ?>

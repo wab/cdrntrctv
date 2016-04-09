@@ -151,6 +151,21 @@
 		
 	}
 
+	.argpicto {
+		img {
+			filter: grayscale(100%);
+			transform: scale(0.8);
+			transition: all 2s ease;
+		}
+
+		&.animated {
+			img {
+			filter: grayscale(0%);
+			transform: scale(1);
+		}
+		}
+	}
+
 	.columns {
 		&:nth-child(1) {
 			.argument-title {
@@ -189,6 +204,14 @@
 		li {
 			text-transform: uppercase;
 			color: map-get($foundation-palette, primary);
+
+			.progress-meter {
+				width: 0%;
+				transition: width 1s ease-in-out;
+				&.animated {
+					width: 100%;
+				}
+			}
 			
 			&:nth-child(1) {
 				color: #75c3ad;

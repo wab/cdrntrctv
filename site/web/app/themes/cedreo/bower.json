@@ -12,9 +12,10 @@
     "modernizr": "~3.2.0",
     "owl.carousel": "~2.0.0-beta.3",
     "css-hamburgers": "^0.3.0",
-    "scrollmagic": "~2.0.5",
-    "countUp.js": "~1.6.1",
-    "owl.carousel2.thumbs": "~0.1.7"
+    "owl.carousel2.thumbs": "~0.1.7",
+    "waypoints": "^4.0.0",
+    "jquery.counterup": "^2.0.4",
+    "animate.css": "^3.5.1"
   },
   "overrides": {
     "foundation-sites": {
@@ -26,6 +27,11 @@
       "main": [
         "dist/owl.carousel.js",
         "src/scss/owl.carousel.scss"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.js"
       ]
     }
   }

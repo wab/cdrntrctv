@@ -43,9 +43,6 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 
 	<?php endif; ?>
 
-	
-
-
 	<section class="section competences contenu">
 		<div class="row">
 			<div class="columns medium-6">
@@ -68,7 +65,8 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 
 				        <li><?php the_sub_field('title'); ?>
 				        	<div class="progress" role="progressbar" tabindex="0" aria-valuenow="<?php the_sub_field('value'); ?>" aria-valuemin="0" aria-valuetext="<?php the_sub_field('value'); ?> percent" aria-valuemax="100">
-							  <div class="progress-meter" style="width: <?php the_sub_field('value'); ?>%"></div>
+				        		<div style="width: <?php the_sub_field('value'); ?>%; height: 100%"><div class="progress-meter"></div></div>
+							  
 							</div>
 				        </li>
 
