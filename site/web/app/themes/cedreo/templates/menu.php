@@ -7,7 +7,7 @@
 			
 			<?php wp_nav_menu(['theme_location' => 'secteurs', 'menu_class' => 'menu vertical']); ?>
 			
-		</div> <!-- columns -->
+		</div> <!-- menu-section -->
 		<?php endif; ?>
 
 		<?php if (has_nav_menu('logiciels')) : ?> 
@@ -17,7 +17,7 @@
 			
 			<?php wp_nav_menu(['theme_location' => 'logiciels', 'menu_class' => 'menu vertical']); ?>
 			
-		</div> <!-- columns -->
+		</div> <!-- menu-section -->
 		<?php endif; ?>
 
 		<?php if (has_nav_menu('cedreo')) : ?> 
@@ -27,7 +27,7 @@
 			
 			<?php wp_nav_menu(['theme_location' => 'cedreo', 'menu_class' => 'menu vertical']); ?>
 			
-		</div> <!-- columns -->
+		</div> <!-- menu-section -->
 		<?php endif; ?>
 		
 		<div class="menu-section">
@@ -42,6 +42,6 @@
 				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter"></i></a></li>
 				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-facebook"></i></a></li>
 			</ul>
-		</div> <!-- columns -->
+		</div> <!-- menu-section -->
 	</div> <!-- row -->
 </nav>

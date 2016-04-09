@@ -1,12 +1,7 @@
 html, body {
     height: 100%;
 }
-/* Hides everything pushed outside of it */
-.site-wrap {
-    //overflow-x: hidden;
-    //width: 100%;
-    //height: 100%;
-}
+
 /* Adds a transition and the resting translate state */
 .push-wrap {
     transition: all 500ms ease;
@@ -25,10 +20,11 @@ html, body {
 /* Positions the nav fixed below the push wrapper */
 .main-navigation {
     width: 100%;
-    height: 100%;
+    height: 0;
     position: fixed;
     padding-top: $header-height;
-    top: -100vh;
+    top: 0;
+    left: 0;
     background: $body-font-color;
     transition: all 300ms ease-in;
     opacity: 0.5;
@@ -36,22 +32,32 @@ html, body {
 
     overflow-y: auto;
 
+    visibility: hidden;
+
 
     .menu-row {
-        @include flex-grid-row();
-        @include flex-align(right, stretch);
+        display: flex;
+        //align-items: center;
+        flex-flow: row wrap;
+        padding: map-get($grid-column-gutter, small);
     }
 
     .menu-section {
-        margin-bottom: 3em;
-        @include flex-grid-column(12);
-       
+        //margin: 3em;
+        //@include flex-grid-column();
+
+        padding: map-get($grid-column-gutter, small);
+        flex: 1;
+        flex-basis: 250px;
+
         @include breakpoint(medium) {
-            @include flex-grid-column(6);
+            flex-basis: 50%;
         }
+        
         @include breakpoint(large) {
-            @include flex-grid-column(3);
+            flex-basis: 25%;
         }
+
 
         ul:not(.reseaux) {
 
@@ -109,8 +115,9 @@ html, body {
     }
 
     .show-nav & {
-        top: 0;
+        height: 100%;
         opacity: 1;
+        visibility: visible;
     }
 
     a {
