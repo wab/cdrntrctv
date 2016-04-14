@@ -113,3 +113,12 @@ function load_async_scripts($url) {
 return str_replace( '#asyncload', '', $url )."' async='async"; 
 }
 add_filter( 'clean_url', __NAMESPACE__ . '\\load_async_scripts', 11, 1 );
+
+
+// Remove types metabox
+
+function rm_metabox() {
+
+    return false;
+}
+add_filter( 'types_information_table', __NAMESPACE__ .'\\rm_metabox' );
