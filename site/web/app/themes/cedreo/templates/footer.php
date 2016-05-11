@@ -14,10 +14,11 @@
     
     <div class="columns medium-3">
       <p class="text-center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-cedreo-interactive-w.png" width="200" alt="<?php bloginfo('name'); ?>"></p>
-    	<a href="#" class="button expanded secondary hollow"><i class="fa fa-phone"></i> 02.90.10.10.10</a>
-    	<a href="#" class="button expanded secondary"><i class="fa fa-envelope"></i> Contactez-nous !</a>
-    	<a href="#" class="button expanded secondary"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
-		<a href="#" class="button expanded secondary"><i class="fa fa-facebook"></i> <span>Facebook</span></a></a>
+    	<a href="#" class="button expanded primary hollow"><i class="fa fa-phone"></i> 02.90.10.10.10</a>
+    	<a href="#" class="button expanded primary"><i class="fa fa-envelope"></i> Contactez-nous !</a>
+    	<a href="#" class="button expanded primary"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+      <a href="#" class="button expanded primary"><i class="fa fa-facebook"></i> <span>Facebook</span></a></a>
+		  <a href="#" class="button expanded primary"><i class="fa fa-instagram"></i> <span>Instagram</span></a></a>
     </div>
 
     <div class="columns medium-5 large-4 large-offset-1">

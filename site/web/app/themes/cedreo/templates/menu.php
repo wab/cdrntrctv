@@ -41,6 +41,7 @@
 			<ul class="reseaux">
 				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter"></i></a></li>
 				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-facebook"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 		</div> <!-- menu-section -->
 	</div> <!-- row -->

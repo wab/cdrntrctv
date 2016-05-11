@@ -67,13 +67,14 @@
         });
 
         // Custom Navigation Events
-        $(".stories .next").click(function() {
-            stories.trigger('next.owl.carousel');
-            console.log('next');
+        $(".stories .next").click(function(event) {
+          event.preventDefault();
+          stories.trigger('next.owl.carousel');   
         });
 
-         $(".stories .prev").click(function() {
-            stories.trigger('prev.owl.carousel');
+        $(".stories .prev").click(function(event) {
+           event.preventDefault();
+          stories.trigger('prev.owl.carousel');
         });
 
         // Animations
