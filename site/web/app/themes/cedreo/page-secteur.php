@@ -8,6 +8,7 @@
 ?>
 <?php while (have_posts()) : the_post(); ?>
 	<?php get_template_part('templates/page', 'header'); ?>
+	
 	<div class="introduction">
 		<div class="row">
 			<div class="columns large-8 large-offset-2 text-center section">
@@ -18,6 +19,8 @@
 			</div>
 		</div>
 	</div>
+
+	<?php get_template_part('templates/section'); ?>
 
 	<?php 
 
