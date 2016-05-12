@@ -18,7 +18,7 @@ if( have_rows('carousel') ): ?>
 
         <div class="item" style="background-image: url(<?php the_sub_field('image'); ?>)">
         	<?php if( get_sub_field('text') || get_sub_field('link')) : ?>
-	        <div class="row column item-wrap">
+	        <div class="row column item-wrap <?php if( get_sub_field('right') ) { echo 'right'; } ?>">
 
 				<div class="item-box">
 
