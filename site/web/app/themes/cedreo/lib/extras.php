@@ -122,3 +122,5 @@ function rm_metabox() {
     return false;
 }
 add_filter( 'types_information_table', __NAMESPACE__ .'\\rm_metabox' );
+
+

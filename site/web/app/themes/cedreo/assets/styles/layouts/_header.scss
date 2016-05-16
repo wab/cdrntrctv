@@ -32,16 +32,16 @@
 			margin-right: 0;
 			display: inline-block;
 			
-			a {
-				color: $white;
+			// a {
+			// 	color: $white;
 
-				&:after {
-					content: '/';
-					display: inline-block;
-					margin: 0 0.5em;
-					color: $white;
-				}
-			}
+			// 	&:after {
+			// 		content: '/';
+			// 		display: inline-block;
+			// 		margin: 0 0.5em;
+			// 		color: $white;
+			// 	}
+			// }
 
 			&:last-child {
 				a:after {
