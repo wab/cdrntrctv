@@ -360,6 +360,19 @@
 	}
 }
 
+.page-section {
+	&:nth-child(2n) {
+		background: $light-gray;
+		.media {
+			@extend .large-push-6
+		}
+
+		.contenu {
+			@extend .large-pull-6
+		}
+	}
+}
+
 
 
 .contact {

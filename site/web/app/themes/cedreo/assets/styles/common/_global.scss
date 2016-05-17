@@ -2,14 +2,13 @@ body{
 	//overflow: hidden;
 }
 .section {
-	padding: 2rem 0;
+	padding: 3rem 0;
 	.row {
 		position: relative;
 	}
 }
 
 .cedreo-title {
-	//margin-bottom: 1em;
 	text-align: center;
 	text-transform: uppercase;
 
@@ -22,7 +21,7 @@ body{
 		content: '';
 		display: block;
 		width: 200px;
-		margin: 0.5em auto;
+		margin: 0.5em auto 2em auto;
 		height: 1px;
 		background: $body-font-color;
 
