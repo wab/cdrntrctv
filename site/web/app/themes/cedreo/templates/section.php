@@ -53,8 +53,4 @@ if( have_rows('section') ): ?>
 
     <?php endwhile; ?>
 
-	
-
-
-
 <?php endif; ?>

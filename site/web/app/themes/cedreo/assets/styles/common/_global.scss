@@ -38,9 +38,12 @@ body{
 
 .breadcrumbs {
 
+	text-align: center;
+
 	ul {
 		@include breadcrumbs-container;
 		margin-bottom: 0;
+		display: inline-block;
 
 		a {
 			color: $body-font-color;
