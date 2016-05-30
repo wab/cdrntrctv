@@ -361,14 +361,15 @@
 }
 
 .page-section {
+
 	&:nth-child(2n) {
-		background: $light-gray;
+		background: $medium-gray;
 		.media {
-			@extend .large-push-6
+			@extend .medium-push-8;
 		}
 
 		.contenu {
-			@extend .large-pull-6
+			@extend .medium-pull-4;
 		}
 	}
 }

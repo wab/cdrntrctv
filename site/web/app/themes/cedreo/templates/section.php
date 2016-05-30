@@ -13,7 +13,7 @@ if( have_rows('section') ): ?>
 
 	        <h2 class="cedreo-title subtitle large-8 large-centered columns"><?php the_sub_field('title'); ?></h2>
 
-	        <div class="media medium-6 columns">
+	        <div class="media medium-4 columns">
 
 	        	<?php if (get_sub_field('media') == 'image') : ?>
 
@@ -40,7 +40,7 @@ if( have_rows('section') ): ?>
 	        		
 	        	</div>
 
-	        <div class="contenu medium-6 columns">
+	        <div class="contenu medium-8 columns">
 	        	<?php the_sub_field('contenu'); ?>
 	        	<?php if ( get_sub_field('action-link')) : ?>
 	        		<p><a href="<?php the_sub_field('action-link'); ?>" class="button"><?php the_sub_field('action-title'); ?></a></p>

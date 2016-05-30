@@ -119,14 +119,26 @@ blockquote {
 .page-header {
 	min-height: 25vh;
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	flex-flow: column;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: center;
 	background-color: $dark-gray;
 	background-image: url(../images/banners/cedreo.jpg);
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom:0;
+		background: rgba(0,0,0,0.6);
+	}
 
 
 	.page-template-page-secteur & {
@@ -146,9 +158,12 @@ blockquote {
 		color: $white;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
+		position: relative;
+		z-index: 100;
 
 		&:after {
-			background-color: $white;
+			background: none;
+			margin: 0;
 		}
 	}
 }
