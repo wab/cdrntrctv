@@ -21,10 +21,12 @@
 
 .alignleft {
   float: left;
+  margin-right: $global-padding;
 }
 
 .alignright {
   float: right;
+  margin-left: $global-padding;
 }
 
 // Captions
