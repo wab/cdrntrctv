@@ -13,7 +13,7 @@
   <div class="row">
     
     <div class="columns medium-3">
-      <p class="text-center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-cedreo-interactive-w.png" width="200" alt="<?php bloginfo('name'); ?>"></p>
+      <p class="text-center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-cedreo-v.svg" width="300" alt="<?php bloginfo('name'); ?>"></p>
     	<a href="#" class="button expanded primary hollow"><i class="fa fa-phone"></i> 02.90.10.10.10</a>
     	<a href="#" class="button expanded primary"><i class="fa fa-envelope"></i> Contactez-nous !</a>
     	<a href="#" class="button expanded primary"><i class="fa fa-twitter"></i> <span>Twitter</span></a>

@@ -1,7 +1,7 @@
 <header class="banner">
   <div class="row column">
     <div class="text-left">
-       <a class="brand" href="<?php bloginfo('url'); ?>/" title="retour à l'accueil"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-brand.png" alt="<?php bloginfo('name'); ?>"></a>
+       <a class="brand" href="<?php bloginfo('url'); ?>/" title="retour à l'accueil"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-cedreo.svg" width="250" alt="<?php bloginfo('name'); ?>"></a>
     </div>
     <div class="text-right">
       
