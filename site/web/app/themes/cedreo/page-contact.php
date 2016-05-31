@@ -5,18 +5,21 @@
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
+
 	<?php get_template_part('templates/page', 'header'); ?>
+
 	<div class="section contenu">
 		<div class="row">
 
 			<?php $location = get_field('geoloc');
 
-				if( !empty($location) ): ?>
+				if( !empty( $location ) ): ?>
 
 				<div class="columns">
 					<div id="map"></div>
 				</div>
-			<?php endif; ?>
+
+				<?php endif; ?>
 
 			<div class="columns large-4">
 				<?php 
@@ -50,6 +53,8 @@
 			</div>
 		</div>
 	</div>
+
+	<?php if ( get_field('display-stories') ) { get_template_part('templates/section', 'stories'); } ?>
 
 	<script type="text/javascript">
 

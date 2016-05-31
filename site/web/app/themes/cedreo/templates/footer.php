@@ -1,5 +1,5 @@
 <?php if(!is_home() && !is_archive() && !is_singular('post')) : ?>
-<?php get_template_part('templates/section', 'stories'); ?>
+<?php //get_template_part('templates/section', 'stories'); ?>
 <?php endif; ?>
 
 <?php if(is_front_page()): ?>
@@ -17,8 +17,8 @@
     	<a href="#" class="button expanded primary hollow"><i class="fa fa-phone"></i> 02.90.10.10.10</a>
     	<a href="#" class="button expanded primary"><i class="fa fa-envelope"></i> Contactez-nous !</a>
     	<a href="#" class="button expanded primary"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
-      <a href="#" class="button expanded primary"><i class="fa fa-facebook"></i> <span>Facebook</span></a></a>
-		  <a href="#" class="button expanded primary"><i class="fa fa-instagram"></i> <span>Instagram</span></a></a>
+      <a href="#" class="button expanded primary"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+		  <a href="#" class="button expanded primary"><i class="fa fa-instagram"></i> <span>Instagram</span></a>
     </div>
 
     <div class="columns medium-5 large-4 large-offset-1">

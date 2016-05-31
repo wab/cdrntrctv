@@ -109,11 +109,15 @@ if( have_rows('l_items') ): ?>
 	    <?php endwhile; ?>
 
 	</div>
+
+	</div>
 </section>
 
 <?php endif; ?>
 
 <?php get_template_part('templates/section', 'arguments'); ?>
+<?php get_template_part('templates/section', 'stories'); ?>
+
 
 <?php endwhile; ?>
 

@@ -129,5 +129,6 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 	<?php endif; ?>
 
 	<?php get_template_part('templates/section', 'testimony'); ?>
+	<?php if ( the_field('display-stories') ) { get_template_part('templates/section', 'stories'); } ?>
 
 <?php endwhile; ?>

@@ -52,5 +52,7 @@
 	    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 	<?php endif; ?>
 
+	<?php if ( get_field('display-stories') ) { get_template_part('templates/section', 'stories'); } ?>
+
 <?php endwhile; ?>
 
