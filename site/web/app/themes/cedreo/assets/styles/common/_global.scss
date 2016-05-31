@@ -12,10 +12,9 @@ body{
 	text-align: center;
 	text-transform: uppercase;
 
-	.logiciels &, .contenu & {
+	.contenu & {
 		text-align: left;
 	}
-
 
 	&:after {
 		content: '';
@@ -25,7 +24,7 @@ body{
 		height: 1px;
 		background: $body-font-color;
 
-		.logiciels &, .contenu & {
+		.contenu & {
 			margin-left: 0;
 		}
 
@@ -171,6 +170,8 @@ blockquote {
 		letter-spacing: 0.05em;
 		position: relative;
 		z-index: 100;
+
+		font-size: rem-calc(map-get(map-get($header-sizes, medium), h1)); 
 
 		&:after {
 			background: none;

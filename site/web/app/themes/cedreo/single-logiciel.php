@@ -3,19 +3,24 @@
 	<?php get_template_part('templates/page', 'header'); ?>
 	<div class="section logiciels">
 		<div class="row">
-			<div class="columns large-6">
-				<h2 class="cedreo-title"><?php the_field('subtitle'); ?></h2>
-				<?php if(get_field('video_id')): ?>
-					<div class="flex-video widescreen">
-						<iframe type="text/html" src="https://www.youtube.com/embed/<?php the_field('video_id'); ?>?controls=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
-					</div>
-				<?php endif; ?>
+			<header class="columns large-8 large-centered">
+				<h1 class="cedreo-title text-center"><?php the_field('subtitle'); ?></h1>
+			</header>
+		</div>
+		<?php if(get_field('video_id')): ?>
+		<div class="row">
+			<div class="columns large-6 large-centered">
+				<div class="flex-video widescreen">
+					<iframe type="text/html" src="https://www.youtube.com/embed/<?php the_field('video_id'); ?>?controls=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+				</div>
 			</div>
-			<?php if(get_field('video_id')): ?>
-			<div class="columns large-6 ">
+		</div>
+		<?php endif; ?>
+		</div>
+		<div class="row">
+			<div class="columns large-8 large-centered">
 				<?php the_content(); ?>
 			</div>
-			<?php endif; ?>
 		</div>
 	</div>
 
