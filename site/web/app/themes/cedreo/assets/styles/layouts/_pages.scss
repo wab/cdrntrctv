@@ -363,7 +363,7 @@
 .page-section {
 
 	&:nth-child(2n) {
-		background: $medium-gray;
+		background: $light-gray;
 		.media {
 			@extend .medium-push-8;
 		}

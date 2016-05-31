@@ -39,6 +39,8 @@ body{
 .breadcrumbs {
 
 	text-align: center;
+	position: relative;
+	z-index: 100;
 
 	ul {
 		@include breadcrumbs-container;
@@ -47,6 +49,10 @@ body{
 
 		a {
 			color: $body-font-color;
+
+			.banshadow & {
+				color: $body-background;
+			}
 
 		}
 
