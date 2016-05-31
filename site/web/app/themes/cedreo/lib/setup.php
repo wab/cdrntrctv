@@ -18,7 +18,7 @@ function setup() {
   add_theme_support('soil-js-to-footer');
   add_theme_support('soil-disable-asset-versioning');
   add_theme_support('soil-disable-trackbacks');
-  add_theme_support('soil-google-analytics', 'UA-XXXXX-Y');
+  add_theme_support('soil-google-analytics', 'UA-16868440-1');
 
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations
