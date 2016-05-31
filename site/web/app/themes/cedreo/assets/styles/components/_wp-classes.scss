@@ -19,6 +19,14 @@
   height: auto;
 }
 
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
 // Captions
 .wp-caption {
   @extend .thumbnail;
