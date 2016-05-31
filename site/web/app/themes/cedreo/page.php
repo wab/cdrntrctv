@@ -2,7 +2,7 @@
 	<?php get_template_part('templates/page', 'header'); ?>
 	<div class="section contenu">
 		<div class="row">
-			<div class="columns large-8">
+			<div class="columns large-8 large-centered">
 				<?php if (get_field('subtitle')) : ?>
 					<h2 class="cedreo-title subtitle"><?php the_field('subtitle'); ?></h2>
 				<?php endif; ?>

@@ -9,7 +9,7 @@
   	<?php get_template_part('templates/page', 'header'); ?>
 	<div class="section">
 		<div class="row">
-			<div class="columns large-6">
+			<div class="columns large-6 large-centered">
 				<?php get_template_part('templates/content', 'page'); ?>
 				<?php
 				$children = wp_list_pages( 'title_li=&child_of='.$post->ID.'&echo=0' );
