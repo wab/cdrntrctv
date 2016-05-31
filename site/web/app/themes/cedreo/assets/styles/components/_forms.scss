@@ -10,6 +10,5 @@
   @extend .form-control;
 }
 .search-form .search-submit {
-  @extend .btn;
-  @extend .btn-default;
+  @extend .button;
 }

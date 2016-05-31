@@ -17,7 +17,7 @@ $testimony = new WP_Query( $args_testimony );
   <section class="section temoignages ">
     <div class="row column">
       <h2 class="cedreo-title">Témoignages <span>Clients</span></h2>
-      <div class="owl-carousel testimony-carousel no-bullet contenu">
+      <div class="owl-carousel testimony-carousel no-bullet">
 
         <!-- the loop -->
         <?php while ( $testimony->have_posts() ) : $testimony->the_post(); ?>

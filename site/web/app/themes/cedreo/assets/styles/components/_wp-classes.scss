@@ -10,22 +10,21 @@
 }
 .aligncenter {
   display: block;
-  margin: ($spacer / 2) auto;
+  margin: ($global-padding / 2) auto;
   height: auto;
 }
 .alignleft,
 .alignright {
-  margin-bottom: ($spacer / 2);
+  margin-bottom: ($global-padding / 2);
   height: auto;
 }
-
 
 // Captions
 .wp-caption {
   @extend .thumbnail;
 }
 .wp-caption-text {
-  padding: $spacer;
+  padding: $global-padding;
 }
 
 // Text meant only for screen readers
