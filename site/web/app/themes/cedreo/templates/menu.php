@@ -39,9 +39,9 @@
 			</ul>
 			<hr>
 			<ul class="reseaux">
-				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter"></i></a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-facebook"></i></a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-instagram"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="https://twitter.com/cedreo"><i class="fa fa-twitter"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="https://www.facebook.com/cedreointeractive"><i class="fa fa-facebook"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cedreo_interactive"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 		</div> <!-- menu-section -->
 	</div> <!-- row -->
