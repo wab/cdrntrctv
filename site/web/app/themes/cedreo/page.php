@@ -11,6 +11,8 @@
 		</div>
 	</div>
 
+	<?php get_template_part('templates/section'); ?>
+
 	<?php if ( get_field('display-stories') ) { get_template_part('templates/section', 'stories'); } ?>
 
 <?php endwhile; ?>

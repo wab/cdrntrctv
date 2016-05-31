@@ -27,6 +27,8 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 		</div>
 	</div>
 
+	<?php get_template_part('templates/section'); ?>
+
 	<?php if ( $arguments->have_posts() ) : ?>
 
 	<!-- pagination here -->
