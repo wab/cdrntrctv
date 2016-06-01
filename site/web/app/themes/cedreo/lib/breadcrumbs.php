@@ -11,7 +11,7 @@ namespace Roots\Sage\Breadcrumbs;
  */
 function breadcrumbs(){
   /* === OPTIONS === */
-  	if(is_home() || is_archive() || is_single()) { 
+  	if(is_home() || is_archive() || is_singular('post')) { 
 		$text['home']     = 'Actualités'; // text for the 'Home' link
 		$homeLink = get_bloginfo('url') . '/actualites';
 	}
@@ -88,7 +88,7 @@ function breadcrumbs(){
 			if ( get_post_type() != 'post' ) {
 				$post_type = get_post_type_object(get_post_type());
 				$slug = $post_type->rewrite;
-				printf($link, $homeLink . '/' . $slug['slug'] . '/', $post_type->labels->singular_name);
+				printf($link, $homeLink  . $slug['slug'] . '/', $post_type->labels->singular_name);
 				if ($showCurrent == 1) echo $delimiter . $before . get_the_title() . $after;
 			} else {
 				$cat = get_the_category(); $cat = $cat[0];

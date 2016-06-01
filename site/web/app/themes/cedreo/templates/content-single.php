@@ -8,7 +8,12 @@
       <?php the_content(); ?>
     </div>
     <footer>
-      <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+      <?php //wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+      <ul class="pagination" role="navigation" aria-label="Pagination">
+        <li class="pagination-previous"><?php previous_post_link('%link', '%title', false); ?></li>
+        <li class="pagination-next"><?php next_post_link('%link', '%title', false); ?></li>
+      </ul>        
+          
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
