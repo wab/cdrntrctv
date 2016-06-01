@@ -24,6 +24,8 @@
 		</div>
 	</div>
 
+	<?php get_template_part('templates/section'); ?>
+
 	<?php
 
 	// check if the repeater field has rows of data

@@ -92,7 +92,7 @@ function my_function_admin_bar() {
 add_filter( 'show_admin_bar' , __NAMESPACE__ . '\\my_function_admin_bar');
 
 
-
+// add login link in footer menu
 function add_login_logout_link($items, $args) {
   if( $args->theme_location == 'footer')  {
         $loginoutlink = wp_loginout($_SERVER['REQUEST_URI'], false); 
@@ -100,7 +100,7 @@ function add_login_logout_link($items, $args) {
   }
   return $items; 
 }
-add_filter('wp_nav_menu_items', __NAMESPACE__ . '\\add_login_logout_link', 10, 2);
+//add_filter('wp_nav_menu_items', __NAMESPACE__ . '\\add_login_logout_link', 10, 2);
 
 
 // Async load
