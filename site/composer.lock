@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a87078973868b4b42c07092424fe82ec",
-    "content-hash": "b19a583913465235ca6409227875c4ab",
+    "hash": "d40045b60a088802f6a11e526dabdaf0",
+    "content-hash": "7d4423a7c75d6574e0beebef17fb0b2f",
     "packages": [
         {
             "name": "composer/installers",
@@ -360,11 +360,11 @@
             "type": "wordpress-plugin"
         },
         {
-            "name": "toolbox-plugin/gravityforms",
-            "version": "1.9.17.5",
+            "name": "toolbox-plugin/ninja-forms-uploads",
+            "version": "1.4.9",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/wab/gravityforms/archive/master.zip",
+                "url": "https://github.com/wab/ninja-forms-uploads/archive/master.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -445,15 +445,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "2.9.45",
+            "version": "2.9.47",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/2.9.45"
+                "reference": "tags/2.9.47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.45.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.47.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -465,15 +465,15 @@
         },
         {
             "name": "wpackagist-plugin/polylang",
-            "version": "1.9",
+            "version": "1.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/1.9"
+                "reference": "tags/1.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.1.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.1.9.1.zip",
                 "reference": null,
                 "shasum": null
             },

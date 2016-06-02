@@ -34,12 +34,12 @@
     {
       "type": "package",
       "package": {
-        "name": "toolbox-plugin/gravityforms",
-        "version": "1.9.17.5",
+        "name": "toolbox-plugin/ninja-forms-uploads",
+        "version": "1.4.9",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/wab/gravityforms/archive/master.zip"
+          "url": "https://github.com/wab/ninja-forms-uploads/archive/master.zip"
         },
         "require" : {
           "composer/installers": "v1.0.12"
@@ -104,8 +104,8 @@
     "toolbox-plugin/acf-repeater": "^1.1",
     "toolbox-plugin/acf-flexible-content": "^1.1",
     "toolbox-plugin/acf-gallery": "^1.1",
+    "toolbox-plugin/ninja-forms-uploads": "^1",
     "wpackagist-plugin/types": "^2",
-    "toolbox-plugin/gravityforms": "1.9.17.5",
     "wpackagist-plugin/wordpress-seo": "^3.0",
     "wpackagist-plugin/polylang": "^1.8",
     "wpackagist-plugin/ninja-forms": "^2.9",
