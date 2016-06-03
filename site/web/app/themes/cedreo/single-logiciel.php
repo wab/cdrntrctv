@@ -107,8 +107,12 @@
 
 	<section class="cta">
 		<div class="row">
-			<div class="columns medium-8 lead"><?php if (get_field('cta_img')) {?><img src="<?php the_field('cta_img') ?>" alt="" class="pull-left"> <?php } ?><?php the_field('cta');?></div>
-			<div class="columns medium-4"><button class="button large">contactez-nous</button></div>
+			<div class="columns medium-8 lead">
+				<?php if (get_field('cta_img')) : ?>
+					<img src="<?php the_field('cta_img') ?>" alt="" class="pull-left"> 
+				<?php endif; ?>
+				<?php the_field('cta');?></div>
+			<div class="columns medium-4"><a href="<?php bloginfo('url') ?>/contact" class="button large">contactez-nous</a></div>
 		</div>
 	</section>
 
