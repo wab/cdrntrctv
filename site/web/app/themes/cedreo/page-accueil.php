@@ -26,8 +26,17 @@ if( have_rows('carousel') ): ?>
 					<p class="lead"><?php the_sub_field('text'); ?></p>
 					<?php endif; ?>
 
-					<?php if( get_sub_field('link') ) : ?>
-					<a href="<?php the_sub_field('link'); ?>" class="large button"><?php the_sub_field('link-txt'); ?>  &rarr;</a>
+					<?php if( get_sub_field('link') || get_sub_field('e-link') ) : ?>
+
+						<?php if (get_sub_field('link-type') == 'Interne') {
+							$urlink = get_sub_field('link');
+						} else {
+							$urlink = get_sub_field('e-link');;
+						} ?>
+						
+						<a href="<?php echo $urlink; ?>" class="button"><?php the_sub_field('link-txt'); ?>  &rarr;</a>
+
+
 					<?php endif; ?>
 					
 				</div>
