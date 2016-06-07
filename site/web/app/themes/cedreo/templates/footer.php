@@ -13,7 +13,7 @@
   <div class="row">
     
     <div class="columns medium-3">
-      <p class="text-center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-cedreo-v.svg" width="300" alt="<?php bloginfo('name'); ?>"></p>
+      <p class="text-center"><img data-src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-cedreo-v.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" width="300" alt="<?php bloginfo('name'); ?>"></p>
     	<a href="#" class="button expanded primary hollow"><i class="fa fa-phone"></i> 02 40 18 04 77</a>
     	<a href="/contact" class="button expanded primary"><i class="fa fa-envelope"></i> Contactez-nous !</a>
     	<a href="https://twitter.com/cedreo" class="button expanded primary"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
