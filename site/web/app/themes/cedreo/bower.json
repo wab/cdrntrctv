@@ -15,7 +15,8 @@
     "owl.carousel2.thumbs": "~0.1.7",
     "waypoints": "^4.0.0",
     "jquery.counterup": "^2.0.4",
-    "animate.css": "^3.5.1"
+    "animate.css": "^3.5.1",
+    "lazyload": "^3.2.2"
   },
   "overrides": {
     "foundation-sites": {

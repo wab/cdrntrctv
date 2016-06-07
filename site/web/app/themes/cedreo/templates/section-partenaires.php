@@ -23,7 +23,7 @@ $partenaires = new WP_Query( $args_partenaires );
 						<?php if( get_field('url') ) : ?>
 						<a href="<?php the_field('url'); ?>"><img src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>"></a>
 						<?php else : ?>
-							<img src="<?php the_field('image_src'); ?>" alt="<?php the_title(); ?>">
+							<img data-src="<?php the_field('image_src'); ?>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<?php the_title(); ?>">
 						<?php endif; ?>
 
 					</li>

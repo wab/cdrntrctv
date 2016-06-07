@@ -23,7 +23,7 @@ $story = new WP_Query( $args_story );
         <?php while ( $story->have_posts() ) : $story->the_post(); ?>
           <div class="item text-center">
                 <?php if(get_field('logo')): ?>
-                  <p><img src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>"></p>
+                  <p><img data-src="<?php the_field('logo'); ?>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<?php the_title(); ?>"></p>
                 <?php endif; ?>                          
                 <p class="lead">
                   <div class="stat">

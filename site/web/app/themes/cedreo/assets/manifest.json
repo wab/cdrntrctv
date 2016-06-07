@@ -17,6 +17,9 @@
         "scripts/customizer.js"
       ]
     },
+    "lazyload.js": {
+      "bower": ["lazyload"]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     },

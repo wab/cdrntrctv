@@ -99,7 +99,7 @@ if( have_rows('l_items') ): ?>
 
 						if( !empty($image) ): ?>
 
-							<img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+							<img data-src="<?php echo $thumb; ?>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<?php echo $image['alt']; ?>" />
 
 						<?php endif; ?>
 
