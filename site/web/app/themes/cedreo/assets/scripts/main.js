@@ -171,18 +171,19 @@
                   items:2
               },
               1000:{
-                  items:4
+                  items:3
               }
           }
         });
 
         // Custom Navigation Events
-        $(".equipe .next").click(function() {
-            equipe.trigger('next.owl.carousel');
-            console.log('next');
+        $(".equipe .next").click(function(e) {
+          e.preventDefault();
+          equipe.trigger('next.owl.carousel');
         });
 
-         $(".equipe .prev").click(function() {
+         $(".equipe .prev").click(function(e) {
+            e.preventDefault();
             equipe.trigger('prev.owl.carousel');
         });
 

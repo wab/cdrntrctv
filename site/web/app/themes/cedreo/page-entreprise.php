@@ -88,7 +88,7 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 	</section>
 	
 	<?php if( have_rows('members') ): ?>
-	<section class="section equipe grid ">
+	<section class="section equipe grid">
 		<div class="row column">
 			<h2 class="cedreo-title">Notre <span>équipe</span></h2>
 
@@ -99,8 +99,21 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 
 				        <div class="item">
 							<figure>
-								<?php if(get_sub_field('photo')): ?>
-									<img src="<?php the_sub_field('photo'); ?>" alt="" />
+								<?php $image = get_sub_field('photo');
+
+								if( !empty($image) ): 
+
+									// vars
+									$url = $image['url'];
+									$title = $image['title'];
+									$alt = $image['alt'];
+									$caption = $image['caption'];
+
+									// thumbnail
+									$size = 'square';
+									$thumb = $image['sizes'][ $size ];
+								?>
+									<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
 								<?php else: ?>
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/silhouette.jpg" alt="" />
 								<?php endif; ?>
@@ -125,7 +138,7 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 			<div class="arrows">
 		        <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
 		        <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
-		      </div>
+		    </div>
 		</div>
 	</section>
 	<?php endif; ?>
