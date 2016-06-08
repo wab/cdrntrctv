@@ -9,18 +9,16 @@
 		</div>
 		<?php if(get_field('video_id')): ?>
 		<div class="row">
-			<div class="columns large-6 large-centered">
+			<div class="columns large-6">
+				<?php the_content(); ?>
+			</div>
+			<div class="columns large-6">
 				<div class="flex-video widescreen">
 					<iframe type="text/html" src="https://www.youtube.com/embed/<?php the_field('video_id'); ?>?controls=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 		<?php endif; ?>
-		</div>
-		<div class="row">
-			<div class="columns large-8 large-centered">
-				<?php the_content(); ?>
-			</div>
 		</div>
 	</div>
 

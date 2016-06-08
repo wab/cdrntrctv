@@ -9,12 +9,12 @@
 <?php while (have_posts()) : the_post(); ?>
 	<?php get_template_part('templates/page', 'header'); ?>
 	
-	<div class="introduction">
+	<div class="introduction section">
 		<div class="row">
-			<div class="columns large-8 large-offset-2 text-center section">
-				<?php if (get_field('subtitle')) : ?>
-					<h2 class="cedreo-title subtitle"><?php the_field('subtitle'); ?></h2>
-				<?php endif; ?>
+			<?php if (get_field('subtitle')) : ?>
+				<h2 class="cedreo-title subtitle large-8 large-centered columns"><?php the_field('subtitle'); ?></h2>
+			<?php endif; ?>
+			<div class="columns medium-6 end">
 				<?php get_template_part('templates/content', 'page'); ?>
 			</div>
 		</div>

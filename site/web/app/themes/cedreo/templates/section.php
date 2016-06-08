@@ -9,7 +9,7 @@ if( have_rows('section') ): ?>
     while ( have_rows('section') ) : the_row(); ?>
 
     <section class="section page-section">
-		<div class="row column">
+		<div class="row">
 
 	        <h2 class="cedreo-title subtitle large-8 large-centered columns"><?php the_sub_field('title'); ?></h2>
 
