@@ -139,7 +139,9 @@
           nav: false,
           autoplay: false,
           thumbs: true,
-          thumbsPrerendered: true
+          thumbsPrerendered: true,
+          lazyLoad: true,
+          autoheight: true
         });
 
       },

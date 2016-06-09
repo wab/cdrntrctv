@@ -16,7 +16,7 @@ $story = new WP_Query( $args_story );
   <!-- pagination here -->
   <section class="section stories">
     <div class="row column">
-      <h2 class="cedreo-title"><span>Nos success</span> stories</h2>
+      <h2 class="cedreo-title"><span>Les success</span> stories</h2>
       <div class="owl-carousel stories-carousel no-bullet contenu">
 
         <!-- the loop -->

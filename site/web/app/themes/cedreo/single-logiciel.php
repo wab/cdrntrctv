@@ -78,23 +78,26 @@
 
 
 	<section class="section gallery">
-		<div class="row column text-center">
-			<h3 class="cedreo-title">Exemples de rendus réalisés grace à <span><?php the_title(); ?></span></h3>
-			<?php if(get_field('txt_gallery')) { echo '<p class="lead">' . the_field('txt_gallery') . '</p>'; } ?>
+		<div class="row text-center">
+			<div class="columns large-10 large-centered">
+				
+				<h3 class="cedreo-title">Exemples de rendus réalisés grace à <span><?php the_title(); ?></span></h3>
+				<?php if(get_field('txt_gallery')) { echo '<p class="lead">' . the_field('txt_gallery') . '</p>'; } ?>
 
-		    <div class="owl-carousel gallery-carousel" data-slider-id="1">
-	            <?php foreach( $images as $image ): ?>
-	                <div class="item" data-thumb="">
-	                    <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                    <p><?php echo $image['caption']; ?></p>
-	                </div>
-	            <?php endforeach; ?>
-		    </div>
-		    <div class="owl-thumbs" data-slider-id="1">
-	            <?php foreach( $images as $image ): ?>
-	                <button class="owl-thumb-item"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /></button>
-	            <?php endforeach; ?>
-		    </div>
+			    <div class="owl-carousel gallery-carousel" data-slider-id="1">
+		            <?php foreach( $images as $image ): ?>
+		                <div class="item" data-thumb="">
+		                    <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+		                    <p><?php echo $image['caption']; ?></p>
+		                </div>
+		            <?php endforeach; ?>
+			    </div>
+			    <div class="owl-thumbs" data-slider-id="1">
+		            <?php foreach( $images as $image ): ?>
+		                <button class="owl-thumb-item"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /></button>
+		            <?php endforeach; ?>
+			    </div>
+			</div>
 		</div>
 	</section>
 
