@@ -167,6 +167,7 @@
           responsiveClass:true,
           nav:false,
           dots:false,
+          lazyLoad: true,
           responsive:{
               0:{
                   items:1
@@ -202,6 +203,7 @@
           responsiveClass:true,
           nav:false,
           dots:true,
+          lazyLoad: true,
           responsive:{
               0:{
                   items:1
