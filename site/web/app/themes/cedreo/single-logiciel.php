@@ -19,7 +19,6 @@
 			</div>
 		</div>
 		<?php endif; ?>
-		</div>
 	</div>
 
 	<?php get_template_part('templates/section'); ?>
@@ -79,7 +78,7 @@
 
 	<section class="section gallery">
 		<div class="row text-center">
-			<div class="columns large-10 large-centered">
+			<div class="columns large-8 large-centered">
 				
 				<h3 class="cedreo-title">Exemples de rendus réalisés grace à <span><?php the_title(); ?></span></h3>
 				<?php if(get_field('txt_gallery')) { echo '<p class="lead">' . the_field('txt_gallery') . '</p>'; } ?>
