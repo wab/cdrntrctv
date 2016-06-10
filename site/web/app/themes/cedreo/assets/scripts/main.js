@@ -53,6 +53,7 @@
           responsiveClass:true,
           nav:false,
           dots:false,
+          lazyLoad: true,
           responsive:{
               0:{
                   items:1
@@ -119,6 +120,7 @@
           items : 1,
           dots: true,
           nav: false,
+          lazyLoad: true,
           autoplay: true
         });
 
