@@ -92,53 +92,49 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 		<div class="row column">
 			<h2 class="cedreo-title">Notre <span>équipe</span></h2>
 
-				<div class="owl-carousel equipe-carousel contenu">
+			<ul class="list contenu row no-bullet">
 
-					<?php 	// loop through the rows of data
-				    while ( have_rows('members') ) : the_row(); ?>
+				<?php 	// loop through the rows of data
+			    while ( have_rows('members') ) : the_row(); ?>
 
-				        <div class="item">
-							<figure>
-								<?php $image = get_sub_field('photo');
+			        <li class="item column large-3 end">
+						<figure>
+							<?php $image = get_sub_field('photo');
 
-								if( !empty($image) ): 
+							if( !empty($image) ): 
 
-									// vars
-									$url = $image['url'];
-									$title = $image['title'];
-									$alt = $image['alt'];
-									$caption = $image['caption'];
+								// vars
+								$url = $image['url'];
+								$title = $image['title'];
+								$alt = $image['alt'];
+								$caption = $image['caption'];
 
-									// thumbnail
-									$size = 'square';
-									$thumb = $image['sizes'][ $size ];
-								?>
-									<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
-								<?php else: ?>
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/silhouette.jpg" alt="" />
-								<?php endif; ?>
-								<figcaption>
-									<?php if(get_sub_field('name')) { ?>
-									<h2 class="cedreo-title">
-										<?php the_sub_field('name'); ?>
-										<?php if(get_sub_field('function')) { ?>
-											&nbsp;<span><?php the_sub_field('function');?></span>
-										<?php } ?>
-									</h2>
+								// thumbnail
+								$size = 'equipe';
+								$thumb = $image['sizes'][ $size ];
+							?>
+								<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
+							<?php else: ?>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/silhouette.jpg" alt="" />
+							<?php endif; ?>
+							<figcaption>
+								<?php if(get_sub_field('name')) { ?>
+								<h3 class="equipe-title">
+									<?php the_sub_field('name'); ?>
+									<?php if(get_sub_field('function')) { ?>
+										&nbsp;<span><?php the_sub_field('function');?></span>
 									<?php } ?>
-									<?php if(get_sub_field('desc')) { echo '<p>' . the_sub_field('desc') . '</p>';} ?>
-								</figcaption>
-							</figure>
-						</div>
+								</h3>
+								<?php } ?>
+								<?php if(get_sub_field('desc')) { the_sub_field('desc');} ?>
+							</figcaption>
+						</figure>
+					</li>
 
-				    <?php endwhile; ?>
+			    <?php endwhile; ?>
 
-				</div>
+			</ul>
 
-			<div class="arrows">
-		        <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
-		        <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
-		    </div>
 		</div>
 	</section>
 	<?php endif; ?>

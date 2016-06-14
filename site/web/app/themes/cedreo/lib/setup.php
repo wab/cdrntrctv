@@ -59,6 +59,7 @@ function setup() {
   add_image_size( 'banner', 1200, 500, true );
   add_image_size( 'square', 400, 400, true );
   add_image_size( 'testimony', 125, 125, true );
+  add_image_size( 'equipe', 360, 480, true );
 
 
   // Enable post formats

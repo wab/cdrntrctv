@@ -258,8 +258,9 @@
 
 	.equipe {
 		background-image: url(../images/bg-cibles.jpg);
+		background-color: $light-gray;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100%;
 
 		.contenu .cedreo-title {
 			font-size: 1.4em;
