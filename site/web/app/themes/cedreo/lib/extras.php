@@ -122,23 +122,3 @@ function rm_metabox() {
     return false;
 }
 add_filter( 'types_information_table', __NAMESPACE__ .'\\rm_metabox' );
-
-// Async load
-function wsds_defer_scripts( $tag, $handle, $src ) {
-
-  // The handles of the enqueued scripts we want to defer
-  $defer_scripts = array( 
-    'modernizr',
-    'lazyload',
-    'main'
-  );
-
-    if ( in_array( $handle, $defer_scripts ) ) {
-        return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
-    }
-    
-    return $tag;
-} 
-add_filter( 'script_loader_tag', __NAMESPACE__ .'\\wsds_defer_scripts', 10, 3 );
-
-

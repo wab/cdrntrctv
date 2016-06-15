@@ -15,7 +15,7 @@ function setup() {
   add_theme_support('soil-nice-search');
   add_theme_support('soil-jquery-cdn');
   add_theme_support('soil-relative-urls');
-  add_theme_support('soil-js-to-footer');
+  //add_theme_support('soil-js-to-footer');
   add_theme_support('soil-disable-asset-versioning');
   add_theme_support('soil-disable-trackbacks');
   add_theme_support('soil-google-analytics', 'UA-16868440-1');
@@ -147,3 +147,37 @@ function assets() {
 
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+// Async load
+function wsds_defer_scripts( $tag, $handle, $src ) {
+
+  // The handles of the enqueued scripts we want to defer
+  $defer_scripts = array( 
+    'modernizr',
+    'main'
+  );
+
+    if ( in_array( $handle, $defer_scripts ) ) {
+        return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
+    }
+    
+    return $tag;
+} 
+add_filter( 'script_loader_tag', __NAMESPACE__ .'\\wsds_defer_scripts', 10, 3 );
+
+// Async load
+function wsds_async_scripts( $tag, $handle, $src ) {
+
+  // The handles of the enqueued scripts we want to defer
+  $defer_scripts = array( 
+    
+  );
+
+    if ( in_array( $handle, $defer_scripts ) ) {
+        return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
+    }
+    
+    return $tag;
+} 
+add_filter( 'script_loader_tag', __NAMESPACE__ .'\\wsds_async_scripts', 10, 3 );
+
