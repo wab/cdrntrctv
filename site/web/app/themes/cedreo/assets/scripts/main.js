@@ -23,6 +23,10 @@
 
         // Foundation init
         $(document).foundation();
+
+        $('.cookies-message').cookieBar({ 
+          closeButton : '.button' 
+        });
         
         // Toggle nav
         $(function() {

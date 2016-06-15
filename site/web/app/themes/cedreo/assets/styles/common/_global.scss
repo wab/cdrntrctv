@@ -200,3 +200,19 @@ blockquote {
 		text-transform: uppercase;
 	}
 }
+
+.cookies-message {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0.8em;
+	background: rgba(0,0,0,0.8);
+	color: $white;
+	z-index: 800;
+	font-size: 0.8rem;
+
+	.button {
+		margin-bottom: 0;
+	}
+}

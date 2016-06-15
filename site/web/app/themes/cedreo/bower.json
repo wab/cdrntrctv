@@ -16,7 +16,8 @@
     "waypoints": "^4.0.0",
     "jquery.counterup": "^2.0.4",
     "animate.css": "^3.5.1",
-    "lazyload": "^3.2.2"
+    "lazyload": "^3.2.2",
+    "jquery.cookieBar": "^1.0.1"
   },
   "overrides": {
     "foundation-sites": {
