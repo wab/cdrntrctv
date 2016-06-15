@@ -61,8 +61,8 @@ use Roots\Sage\Breadcrumbs;
 
 
         <div class="cookies-message text-center">
-        <?php  _e( 'Ce site utilise Google Analytics. En continuant à naviguer, vous nous autorisez à déposer des cookies à des fins de mesure d’audience.' ); ?>
-           <a class="button tiny hollow"><i class="fa fa-check"></i> <?php _e('Accepter'); ?></a>
+        <?php  _e( 'Ce site utilise Google Analytics. En continuant à naviguer, vous nous autorisez à déposer des cookies à des fins de mesure d’audience.', 'sage' ); ?>
+           <a class="button tiny hollow"><i class="fa fa-check"></i> <?php _e('Accepter', 'sage'); ?></a>
         </div>
         
         <?php
