@@ -134,7 +134,7 @@ function wsds_defer_scripts( $tag, $handle, $src ) {
   );
 
     if ( in_array( $handle, $defer_scripts ) ) {
-        return '<script src="' . $src . '" async="async" type="text/javascript"></script>' . "\n";
+        return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
     }
     
     return $tag;
