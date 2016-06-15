@@ -91,7 +91,7 @@
 		                </div>
 		            <?php endforeach; ?>
 			    </div>
-			    <div class="owl-thumbs" data-slider-id="1">
+			    <div class="owl-thumbs show-for-medium" data-slider-id="1">
 		            <?php foreach( $images as $image ): ?>
 		                <button class="owl-thumb-item"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /></button>
 		            <?php endforeach; ?>

@@ -14,7 +14,7 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 		<div class="row column">
 			<?php if(get_field('logo')): ?>
 				<div class="columns medium-4">
-					<img src="<?php the_field('logo'); ?>" alt="">
+					<p><img src="<?php the_field('logo'); ?>" alt="Logo Cedreo Interactive"></p>
 				</div>
 			<?php endif; ?>
 			<div class="columns medium-8">

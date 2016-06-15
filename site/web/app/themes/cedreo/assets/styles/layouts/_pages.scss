@@ -79,8 +79,13 @@
 .logiciels {
 	.presentation {
 		display: flex;
+		flex-flow: row wrap;
 		> * {
-			flex-basis: 50%;
+			flex-basis: 100%;
+
+			@include breakpoint(large) {
+				flex-basis: 100%;
+			}
 		}
 	}
 
@@ -118,12 +123,13 @@
 			&:nth-child(2n) {
 				
 				.presentation > div:first-child {
-					order: 1;
+					
 					
 					margin-left: map-get($grid-column-gutter, small);
 
 					@include breakpoint(medium) {
 						margin-left: map-get($grid-column-gutter, medium);
+						order: 1;
 					}
 				}
 			}
