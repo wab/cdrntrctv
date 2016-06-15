@@ -83,8 +83,13 @@
 		> * {
 			flex-basis: 100%;
 
-			@include breakpoint(large) {
-				flex-basis: 100%;
+			
+		}
+
+		@include breakpoint(medium) {
+				flex-flow: row nowrap;
+			> * {
+				flex-basis: 50%;
 			}
 		}
 	}
