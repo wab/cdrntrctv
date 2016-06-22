@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.0.0\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
 "Project-Id-Version: Network Admin\n"
 
 #. translators: 1: theme name, 2: theme author
@@ -21,39 +21,39 @@ msgstr "%1$s by %2$s"
 msgid "User added. <a href=\"%s\">Edit user</a>"
 msgstr "User added. <a href=\"%s\">Edit user</a>"
 
-#: wp-admin/network/site-new.php:204
-msgid "Only lowercase letters (a-z), numbers, and hyphens are allowed."
-msgstr "Only lowercase letters (a-z), numbers, and hyphens are allowed."
-
-#: wp-admin/network/site-new.php:154
-msgctxt "email \"From\" field"
-msgid "Site Admin"
-msgstr "Site Admin"
+#. translators: 1: wp-config.php
+#: wp-admin/includes/network.php:448
+msgid "This unique authentication key is also missing from your %s file."
+msgstr "This unique authentication key is also missing from your %s file."
 
 #. translators: 1: wp-config.php
 #: wp-admin/includes/network.php:454
 msgid "These unique authentication keys are also missing from your %s file."
 msgstr "These unique authentication keys are also missing from your %s file."
 
-#. translators: 1: wp-config.php
-#: wp-admin/includes/network.php:448
-msgid "This unique authentication key is also missing from your %s file."
-msgstr "This unique authentication key is also missing from your %s file."
+#: wp-admin/network/site-new.php:154
+msgctxt "email \"From\" field"
+msgid "Site Admin"
+msgstr "Site Admin"
 
-#. translators: 1: wp-config.php 2: location of wp-config file
-#: wp-admin/includes/network.php:409
-msgid "Add the following to your %1$s file in %2$s <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
-msgstr "Add the following to your %1$s file in %2$s <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
+#: wp-admin/network/site-new.php:204
+msgid "Only lowercase letters (a-z), numbers, and hyphens are allowed."
+msgstr "Only lowercase letters (a-z), numbers, and hyphens are allowed."
 
-#. translators: 1: localhost 2: localhost.localdomain
-#: wp-admin/includes/network.php:254
-msgid "Because you are using %1$s, the sites in your WordPress network must use sub-directories. Consider using %2$s if you wish to use sub-domains."
-msgstr "Because you are using %1$s, the sites in your WordPress network must use sub-directories. Consider using %2$s if you wish to use sub-domains."
+#. translators: 1: site url 2: host name 3. www
+#: wp-admin/includes/network.php:227
+msgid "We recommend you change your siteurl to %1$s before enabling the network feature. It will still be possible to visit your site using the %3$s prefix with an address like %2$s but any links will not have the %3$s prefix."
+msgstr "We recommend you change your siteurl to %1$s before enabling the network feature. It will still be possible to visit your site using the %3$s prefix with an address like %2$s but any links will not have the %3$s prefix."
 
 #. translators: %s: host name
 #: wp-admin/includes/network.php:238 wp-admin/includes/network.php:287
 msgid "The internet address of your network will be %s."
 msgstr "The internet address of your network will be %s."
+
+#. translators: 1: localhost 2: localhost.localdomain
+#: wp-admin/includes/network.php:254
+msgid "Because you are using %1$s, the sites in your WordPress network must use sub-directories. Consider using %2$s if you wish to use sub-domains."
+msgstr "Because you are using %1$s, the sites in your WordPress network must use sub-directories. Consider using %2$s if you wish to use sub-domains."
 
 #. translators: 1: wp-config.php 2: .htaccess
 #. translators: 1: wp-config.php 2: web.config
@@ -66,10 +66,10 @@ msgstr "We recommend you back up your existing %1$s and %2$s files."
 msgid "We recommend you back up your existing %s file."
 msgstr "We recommend you back up your existing %s file."
 
-#. translators: 1: site url 2: host name 3. www
-#: wp-admin/includes/network.php:227
-msgid "We recommend you change your siteurl to %1$s before enabling the network feature. It will still be possible to visit your site using the %3$s prefix with an address like %2$s but any links will not have the %3$s prefix."
-msgstr "We recommend you change your siteurl to %1$s before enabling the network feature. It will still be possible to visit your site using the %3$s prefix with an address like %2$s but any links will not have the %3$s prefix."
+#. translators: 1: wp-config.php 2: location of wp-config file
+#: wp-admin/includes/network.php:409
+msgid "Add the following to your %1$s file in %2$s <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
+msgstr "Add the following to your %1$s file in %2$s <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
 
 #. translators: 1: mod_rewrite, 2: mod_rewrite documentation URL, 3: Google
 #. search for mod_rewrite
@@ -85,158 +85,10 @@ msgstr "Please choose whether you would like sites in your WordPress network to 
 msgid "You cannot change this later."
 msgstr "You cannot change this later."
 
-#. translators: 1: site name, 2: site tagline.
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:321
-msgid "%1$s &#8211; %2$s"
-msgstr "%1$s &#8211; %2$s"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
-msgctxt "themes"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "All <span class=\"count\">(%s)</span>"
-msgstr[1] "All <span class=\"count\">(%s)</span>"
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:517
-msgctxt "verb; site"
-msgid "Archive"
-msgstr "Archive"
-
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:41
 #: wp-admin/network/site-info.php:198
 msgid "Archived"
 msgstr "Archived"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:297
-msgid "Broken <span class=\"count\">(%s)</span>"
-msgid_plural "Broken <span class=\"count\">(%s)</span>"
-msgstr[0] "Broken <span class=\"count\">(%s)</span>"
-msgstr[1] "Broken <span class=\"count\">(%s)</span>"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:536
-msgid "Broken Theme:"
-msgstr "Broken Theme:"
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:43
-#: wp-admin/network/site-info.php:200
-msgid "Deleted"
-msgstr "Deleted"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:330
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:442
-msgid "Disable"
-msgstr "Disable"
-
-#. translators: %s: theme name
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:433
-msgid "Disable %s"
-msgstr "Disable %s"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:291
-msgid "Disabled <span class=\"count\">(%s)</span>"
-msgid_plural "Disabled <span class=\"count\">(%s)</span>"
-msgstr[0] "Disabled <span class=\"count\">(%s)</span>"
-msgstr[1] "Disabled <span class=\"count\">(%s)</span>"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:328
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:420
-msgid "Enable"
-msgstr "Enable"
-
-#. translators: %s: theme name
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:411
-msgid "Enable %s"
-msgstr "Enable %s"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:288
-msgid "Enabled <span class=\"count\">(%s)</span>"
-msgid_plural "Enabled <span class=\"count\">(%s)</span>"
-msgstr[0] "Enabled <span class=\"count\">(%s)</span>"
-msgstr[1] "Enabled <span class=\"count\">(%s)</span>"
-
-#. translators: %s: mod_rewrite
-#: wp-admin/includes/network.php:172
-msgid "It looks like the Apache %s module is not installed."
-msgstr "It looks like the Apache %s module is not installed."
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:217
-#: wp-admin/network/site-info.php:192
-msgid "Last Updated"
-msgstr "Last Updated"
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:190
-msgctxt "site"
-msgid "Mark as Spam"
-msgstr "Mark as Spam"
-
-#: wp-admin/includes/class-wp-ms-users-list-table.php:113
-msgctxt "user"
-msgid "Mark as Spam"
-msgstr "Mark as Spam"
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:44
-#: wp-admin/network/site-info.php:202
-msgid "Mature"
-msgstr "Mature"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:330
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:442
-msgid "Network Disable"
-msgstr "Network Disable"
-
-#. translators: %s: theme name
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:436
-msgid "Network Disable %s"
-msgstr "Network Disable %s"
-
-#. translators: %s: theme name
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:414
-msgid "Network Enable %s"
-msgstr "Network Enable %s"
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:347
-msgid "Never"
-msgstr "Never"
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:179
-msgid "No sites found."
-msgstr "No sites found."
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:229
-msgid "No themes found."
-msgstr "No themes found."
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:191
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:521
-msgctxt "site"
-msgid "Not Spam"
-msgstr "Not Spam"
-
-#: wp-admin/includes/class-wp-ms-users-list-table.php:114
-msgctxt "user"
-msgid "Not Spam"
-msgstr "Not Spam"
-
-#. translators: %s: theme name
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:452
-msgid "Open %s in the Theme Editor"
-msgstr "Open %s in the Theme Editor"
-
-#. translators: %s: mod_rewrite
-#: wp-admin/includes/network.php:165
-msgid "Please make sure the Apache %s module is installed as it will be used at the end of this installation."
-msgstr "Please make sure the Apache %s module is installed as it will be used at the end of this installation."
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:218
-#: wp-admin/network/site-info.php:188
-msgctxt "site"
-msgid "Registered"
-msgstr "Registered"
-
-#: wp-admin/includes/class-wp-ms-users-list-table.php:171
-msgctxt "user"
-msgid "Registered"
-msgstr "Registered"
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:42
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:523
@@ -245,19 +97,140 @@ msgctxt "site"
 msgid "Spam"
 msgstr "Spam"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:142
-msgid "Super Admin <span class=\"count\">(%s)</span>"
-msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
-msgstr[0] "Super Admin <span class=\"count\">(%s)</span>"
-msgstr[1] "Super Admins <span class=\"count\">(%s)</span>"
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:43
+#: wp-admin/network/site-info.php:200
+msgid "Deleted"
+msgstr "Deleted"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:44
+#: wp-admin/network/site-info.php:202
+msgid "Mature"
+msgstr "Mature"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:179
+msgid "No sites found."
+msgstr "No sites found."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:190
+msgctxt "site"
+msgid "Mark as Spam"
+msgstr "Mark as Spam"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:191
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:521
+msgctxt "site"
+msgid "Not Spam"
+msgstr "Not Spam"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:217
+#: wp-admin/network/site-info.php:192
+msgid "Last Updated"
+msgstr "Last Updated"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:218
+#: wp-admin/network/site-info.php:188
+msgctxt "site"
+msgid "Registered"
+msgstr "Registered"
+
+#. translators: 1: site name, 2: site tagline.
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:321
+msgid "%1$s &#8211; %2$s"
+msgstr "%1$s &#8211; %2$s"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:347
+msgid "Never"
+msgstr "Never"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:515
+msgid "Unarchive"
+msgstr "Unarchive"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:517
+msgctxt "verb; site"
+msgid "Archive"
+msgstr "Archive"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:229
+msgid "No themes found."
+msgstr "No themes found."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:231
+msgid "You do not appear to have any themes available at this time."
+msgstr "You do not appear to have any themes available at this time."
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:242
 msgid "Theme"
 msgstr "Theme"
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:515
-msgid "Unarchive"
-msgstr "Unarchive"
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgctxt "themes"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "All <span class=\"count\">(%s)</span>"
+msgstr[1] "All <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:288
+msgid "Enabled <span class=\"count\">(%s)</span>"
+msgid_plural "Enabled <span class=\"count\">(%s)</span>"
+msgstr[0] "Enabled <span class=\"count\">(%s)</span>"
+msgstr[1] "Enabled <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:291
+msgid "Disabled <span class=\"count\">(%s)</span>"
+msgid_plural "Disabled <span class=\"count\">(%s)</span>"
+msgstr[0] "Disabled <span class=\"count\">(%s)</span>"
+msgstr[1] "Disabled <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:297
+msgid "Broken <span class=\"count\">(%s)</span>"
+msgid_plural "Broken <span class=\"count\">(%s)</span>"
+msgstr[0] "Broken <span class=\"count\">(%s)</span>"
+msgstr[1] "Broken <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:328
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:420
+msgid "Enable"
+msgstr "Enable"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:330
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:442
+msgid "Disable"
+msgstr "Disable"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:330
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:442
+msgid "Network Disable"
+msgstr "Network Disable"
+
+#. translators: %s: theme name
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:411
+msgid "Enable %s"
+msgstr "Enable %s"
+
+#. translators: %s: theme name
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:414
+msgid "Network Enable %s"
+msgstr "Network Enable %s"
+
+#. translators: %s: theme name
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:433
+msgid "Disable %s"
+msgstr "Disable %s"
+
+#. translators: %s: theme name
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:436
+msgid "Network Disable %s"
+msgstr "Network Disable %s"
+
+#. translators: %s: theme name
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:452
+msgid "Open %s in the Theme Editor"
+msgstr "Open %s in the Theme Editor"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:536
+msgid "Broken Theme:"
+msgstr "Broken Theme:"
 
 #. translators: %s: theme name
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:563
@@ -268,14 +241,41 @@ msgstr "Visit %s homepage"
 msgid "Visit Theme Site"
 msgstr "Visit Theme Site"
 
+#: wp-admin/includes/class-wp-ms-users-list-table.php:113
+msgctxt "user"
+msgid "Mark as Spam"
+msgstr "Mark as Spam"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:114
+msgctxt "user"
+msgid "Not Spam"
+msgstr "Not Spam"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:142
+msgid "Super Admin <span class=\"count\">(%s)</span>"
+msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
+msgstr[0] "Super Admin <span class=\"count\">(%s)</span>"
+msgstr[1] "Super Admins <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:171
+msgctxt "user"
+msgid "Registered"
+msgstr "Registered"
+
 #. translators: %s: port number
 #: wp-admin/includes/network.php:125
 msgid "You cannot use port numbers such as %s."
 msgstr "You cannot use port numbers such as %s."
 
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:231
-msgid "You do not appear to have any themes available at this time."
-msgstr "You do not appear to have any themes available at this time."
+#. translators: %s: mod_rewrite
+#: wp-admin/includes/network.php:165
+msgid "Please make sure the Apache %s module is installed as it will be used at the end of this installation."
+msgstr "Please make sure the Apache %s module is installed as it will be used at the end of this installation."
+
+#. translators: %s: mod_rewrite
+#: wp-admin/includes/network.php:172
+msgid "It looks like the Apache %s module is not installed."
+msgstr "It looks like the Apache %s module is not installed."
 
 #: wp-admin/network/site-users.php:329 wp-admin/network/user-new.php:120
 msgid "A password reset link will be sent to the user via email."
@@ -286,21 +286,21 @@ msgstr "A password reset link will be sent to the user via email."
 msgid "If registration is disabled, please set %1$s in %2$s to a URL you will redirect visitors to if they visit a non-existent site."
 msgstr "If registration is disabled, please set %1$s in %2$s to a URL you will redirect visitors to if they visit a non-existent site."
 
-#: wp-admin/network/site-users.php:42
-msgid "Site users list"
-msgstr "Site users list"
-
 #: wp-admin/network/site-users.php:41
 msgid "Site users list navigation"
 msgstr "Site users list navigation"
 
-#: wp-admin/network/sites.php:51
-msgid "Sites list"
-msgstr "Sites list"
+#: wp-admin/network/site-users.php:42
+msgid "Site users list"
+msgstr "Site users list"
 
 #: wp-admin/network/sites.php:50
 msgid "Sites list navigation"
 msgstr "Sites list navigation"
+
+#: wp-admin/network/sites.php:51
+msgid "Sites list"
+msgstr "Sites list"
 
 #: wp-admin/network/themes.php:231
 msgid "Themes list navigation"
@@ -311,25 +311,25 @@ msgstr "Themes list navigation"
 msgid "You must define the %1$s constant as true in your %2$s file to allow creation of a Network."
 msgstr "You must define the %1$s constant as true in your %2$s file to allow creation of a Network."
 
+#: wp-admin/network/site-new.php:109
+msgid "The domain or path entered conflicts with an existing username."
+msgstr "The domain or path entered conflicts with an existing username."
+
 #: wp-admin/network/site-themes.php:37
 msgid "Filter site themes list"
 msgstr "Filter site themes list"
-
-#: wp-admin/network/site-users.php:40
-msgid "Filter site users list"
-msgstr "Filter site users list"
-
-#: wp-admin/network/site-themes.php:39
-msgid "Site themes list"
-msgstr "Site themes list"
 
 #: wp-admin/network/site-themes.php:38
 msgid "Site themes list navigation"
 msgstr "Site themes list navigation"
 
-#: wp-admin/network/site-new.php:109
-msgid "The domain or path entered conflicts with an existing username."
-msgstr "The domain or path entered conflicts with an existing username."
+#: wp-admin/network/site-themes.php:39
+msgid "Site themes list"
+msgstr "Site themes list"
+
+#: wp-admin/network/site-users.php:40
+msgid "Filter site users list"
+msgstr "Filter site users list"
 
 #: wp-admin/network/sites.php:69
 msgid "You are about to mark the site %s as mature."
@@ -415,21 +415,19 @@ msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" ta
 msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
 msgstr "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
 
+#: wp-admin/network/themes.php:139
+msgid "Delete Themes"
+msgstr "Delete Themes"
+
 #: wp-admin/network/themes.php:173
 msgid "Yes, delete these themes"
 msgstr "Yes, delete these themes"
 
-#: wp-admin/network/themes.php:141
-msgid "You are about to remove the following themes:"
-msgstr "You are about to remove the following themes:"
-
-#: wp-admin/network/themes.php:140
-msgid "These themes may be active on other sites in the network."
-msgstr "These themes may be active on other sites in the network."
-
-#: wp-admin/network/themes.php:156
-msgid "Are you sure you wish to delete this theme?"
-msgstr "Are you sure you wish to delete this theme?"
+#: wp-admin/network/themes.php:275
+msgid "%s theme deleted."
+msgid_plural "%s themes deleted."
+msgstr[0] "%s theme deleted."
+msgstr[1] "%s themes deleted."
 
 #: wp-admin/network/site-themes.php:172 wp-admin/network/themes.php:259
 msgid "%s theme enabled."
@@ -443,15 +441,21 @@ msgid_plural "%s themes disabled."
 msgstr[0] "%s theme disabled."
 msgstr[1] "%s themes disabled."
 
-#: wp-admin/network/themes.php:275
-msgid "%s theme deleted."
-msgid_plural "%s themes deleted."
-msgstr[0] "%s theme deleted."
-msgstr[1] "%s themes deleted."
+#: wp-admin/network/themes.php:156
+msgid "Are you sure you wish to delete this theme?"
+msgstr "Are you sure you wish to delete this theme?"
 
-#: wp-admin/network/themes.php:139
-msgid "Delete Themes"
-msgstr "Delete Themes"
+#: wp-admin/network/themes.php:140
+msgid "These themes may be active on other sites in the network."
+msgstr "These themes may be active on other sites in the network."
+
+#: wp-admin/network/themes.php:141
+msgid "You are about to remove the following themes:"
+msgstr "You are about to remove the following themes:"
+
+#: wp-admin/network/settings.php:367
+msgid "Enable menus"
+msgstr "Enable menus"
 
 #: wp-admin/network/site-info.php:208
 msgid "Set site attributes"
@@ -468,10 +472,6 @@ msgstr "Size in kilobytes"
 #: wp-admin/network/settings.php:134
 msgid "New registrations settings"
 msgstr "New registrations settings"
-
-#: wp-admin/network/settings.php:367
-msgid "Enable menus"
-msgstr "Enable menus"
 
 #. translators: 1: a filename like .htaccess. 2: a file path.
 #: wp-admin/includes/network.php:523 wp-admin/includes/network.php:563
@@ -646,6 +646,10 @@ msgstr "Info"
 msgid "Are you sure you wish to delete these themes?"
 msgstr "Are you sure you wish to delete these themes?"
 
+#: wp-admin/network/themes.php:171
+msgid "Yes, delete this theme"
+msgstr "Yes, delete this theme"
+
 #: wp-admin/network/themes.php:137
 msgid "You are about to remove the following theme:"
 msgstr "You are about to remove the following theme:"
@@ -695,10 +699,34 @@ msgstr "Theme enabled."
 msgid "No theme selected."
 msgstr "No theme selected."
 
+#: wp-admin/network/site-info.php:28 wp-admin/network/site-settings.php:26
+#: wp-admin/network/site-themes.php:26 wp-admin/network/site-users.php:29
+msgid "<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
+msgstr "<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
+
 #: wp-admin/network/site-info.php:134 wp-admin/network/site-settings.php:86
 #: wp-admin/network/site-themes.php:142 wp-admin/network/site-users.php:182
 msgid "Edit Site: %s"
 msgstr "Edit Site: %s"
+
+#: wp-admin/network/themes.php:181
+msgid "No, return me to the theme list"
+msgstr "No, return me to the theme list"
+
+#: wp-admin/network/site-info.php:29 wp-admin/network/site-settings.php:27
+#: wp-admin/network/site-themes.php:27 wp-admin/network/site-users.php:30
+msgid "<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
+msgstr "<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are greyed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
+
+#: wp-admin/network/site-info.php:26 wp-admin/network/site-settings.php:24
+#: wp-admin/network/site-themes.php:24 wp-admin/network/site-users.php:27
+msgid "<strong>Info</strong> &mdash; The site URL is rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
+msgstr "<strong>Info</strong> &mdash; The site URL is rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
+
+#: wp-admin/network/site-info.php:27 wp-admin/network/site-settings.php:25
+#: wp-admin/network/site-themes.php:25 wp-admin/network/site-users.php:28
+msgid "<strong>Users</strong> &mdash; This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
+msgstr "<strong>Users</strong> &mdash; This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
 
 #: wp-admin/network/site-info.php:25 wp-admin/network/site-settings.php:23
 #: wp-admin/network/site-themes.php:23 wp-admin/network/site-users.php:26
@@ -786,34 +814,6 @@ msgstr "Updates"
 #: wp-admin/network/settings.php:38
 msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
 msgstr "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
-
-#: wp-admin/network/themes.php:181
-msgid "No, return me to the theme list"
-msgstr "No, return me to the theme list"
-
-#: wp-admin/network/themes.php:171
-msgid "Yes, delete this theme"
-msgstr "Yes, delete this theme"
-
-#: wp-admin/network/site-info.php:26 wp-admin/network/site-settings.php:24
-#: wp-admin/network/site-themes.php:24 wp-admin/network/site-users.php:27
-msgid "<strong>Info</strong> &mdash; The site URL is rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
-msgstr "<strong>Info</strong> &mdash; The site URL is rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
-
-#: wp-admin/network/site-info.php:29 wp-admin/network/site-settings.php:27
-#: wp-admin/network/site-themes.php:27 wp-admin/network/site-users.php:30
-msgid "<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
-msgstr "<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are greyed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
-
-#: wp-admin/network/site-info.php:28 wp-admin/network/site-settings.php:26
-#: wp-admin/network/site-themes.php:26 wp-admin/network/site-users.php:29
-msgid "<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
-msgstr "<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
-
-#: wp-admin/network/site-info.php:27 wp-admin/network/site-settings.php:25
-#: wp-admin/network/site-themes.php:25 wp-admin/network/site-users.php:28
-msgid "<strong>Users</strong> &mdash; This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
-msgstr "<strong>Users</strong> &mdash; This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
 
 #. translators: 1: hostname
 #: wp-admin/includes/network.php:209
