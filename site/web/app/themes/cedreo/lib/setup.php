@@ -113,7 +113,8 @@ function display_sidebar() {
     is_front_page(),
     is_page(),
     is_page_template('template-custom.php'),
-    is_singular('logiciel')
+    is_singular('logiciels'),
+    is_post_type_archive( 'logiciels' )
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

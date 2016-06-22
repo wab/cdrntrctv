@@ -23,7 +23,7 @@ use Roots\Sage\Breadcrumbs;
       
       <div class="push-wrap">
         
-        <?php if(is_home() || is_archive() || is_singular('post')) : ?>
+        <?php if(is_home() || is_archive() && !is_post_type_archive('logiciels') || is_singular('post')) : ?>
 
            
           <div class="banshadow">

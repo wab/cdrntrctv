@@ -134,7 +134,7 @@
       }
     },
     // Home page
-    'single_logiciel': {
+    'page_template_page_logiciels': {
       init: function() {
         // JavaScript to be fired on the home page
         

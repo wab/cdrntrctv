@@ -111,7 +111,8 @@
     "wpackagist-plugin/ninja-forms": "^2.9",
     "wpackagist-plugin/regenerate-thumbnails": "^2",
     "wpackagist-plugin/redirection": "^2.4",
-    "wpackagist-plugin/akismet": "3"
+    "wpackagist-plugin/akismet": "^3",
+    "wpackagist-plugin/convert-post-types": "^1.4"
   },
   "extra": {
     "installer-paths": {
