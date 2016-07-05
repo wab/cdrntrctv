@@ -5,7 +5,7 @@
 <div class="banshadow">
 	<header class="page-header section" <?php if (has_post_thumbnail() ) { ?>style="background-image: url(<?php the_post_thumbnail_url('banner'); ?>);"<?php } ?>>
 
-		<?php if ( is_singular('logiciel') ) : ?>
+		<?php if ( is_page_template( 'page-logiciels.php' ) ) : ?>
 
   		<p class="h1 page-title cedreo-title"><?= Titles\title(); ?></p>
 
@@ -20,4 +20,3 @@
 <div class="column row">
 	<?= Breadcrumbs\breadcrumbs(); ?>
 </div>
-
