@@ -97,39 +97,39 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 				<?php 	// loop through the rows of data
 			    while ( have_rows('members') ) : the_row(); ?>
 
-			        <li class="item column large-3 end">
-						<figure>
-							<?php $image = get_sub_field('photo');
+			        <li class="item columns large-4 medium-6 end">
+								<?php $image = get_sub_field('photo'); ?>
 
-							if( !empty($image) ): 
+								<?php if( !empty($image) ) {
 
-								// vars
-								$url = $image['url'];
-								$title = $image['title'];
-								$alt = $image['alt'];
-								$caption = $image['caption'];
+										// vars
+										$url = $image['url'];
+										$title = $image['title'];
+										$alt = $image['alt'];
+										$caption = $image['caption'];
 
-								// thumbnail
-								$size = 'equipe';
-								$thumb = $image['sizes'][ $size ];
-							?>
-								<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
-							<?php else: ?>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/silhouette.jpg" alt="" />
-							<?php endif; ?>
-							<figcaption>
-								<?php if(get_sub_field('name')) { ?>
-								<h3 class="equipe-title">
-									<?php the_sub_field('name'); ?>
-									<?php if(get_sub_field('function')) { ?>
-										&nbsp;<span><?php the_sub_field('function');?></span>
-									<?php } ?>
-								</h3>
-								<?php } ?>
-								<?php if(get_sub_field('desc')) { the_sub_field('desc');} ?>
-							</figcaption>
-						</figure>
-					</li>
+										// thumbnail
+										$size = 'equipe';
+										$thumb = $image['sizes'][ $size ];
+
+									} else {
+										$thumb = get_stylesheet_directory_uri() .'/dist/images/silhouette.jpg';
+									}
+								?>
+			        	<div class="figure" style="background-image: url('<?php echo $thumb; ?>');">
+									<div class="desc">
+										<?php if(get_sub_field('name')) { ?>
+										<h3 class="equipe-title">
+											<?php the_sub_field('name'); ?>
+											<?php if(get_sub_field('function')) { ?>
+												&nbsp;<span><?php the_sub_field('function');?></span>
+											<?php } ?>
+										</h3>
+										<?php } ?>
+										<?php if(get_sub_field('desc')) { the_sub_field('desc');} ?>
+									</div>
+								</div>
+							</li>
 
 			    <?php endwhile; ?>
 

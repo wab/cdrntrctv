@@ -283,6 +283,57 @@
 				background: $white;
 			}
 		}
+
+		.item {
+			margin-bottom: $global-padding;
+
+			@include breakpoint(xlarge) {
+				@include grid-col-size(3);
+			}
+		}
+
+		.figure {
+
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top center;
+			@include thumbnail;
+			line-height: $global-lineheight;
+
+			.desc {
+				background: rgba(0,0,0,0.9);
+				color: $white;
+				padding: $global-padding;
+				font-size: 0.9em;
+				text-align: left;
+				min-height: 390px;
+				opacity: 0;
+				cursor: pointer;
+				transition: opacity 200ms ease-in-out;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			.equipe-title {
+				text-transform: uppercase;
+				font-size: 1rem;
+				font-weight: bold;
+				span {
+					color: map-get($foundation-palette, primary);
+				}
+			}
+
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+				figcaption {
+					top: 0;
+				}
+			}
+		}
 	}
 
 	.temoignages {
