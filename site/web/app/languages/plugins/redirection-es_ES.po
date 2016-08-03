@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-06-15 09:49:09+0000\n"
+"PO-Revision-Date: 2016-07-01 11:39:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,11 +28,11 @@ msgstr "La URL destino será elegida entre las URL que siguen, dependiendo si el
 
 #: matches/login.php:23 matches/login.php:25
 msgid "Logged In"
-msgstr "Validado"
+msgstr "Conectado"
 
 #: matches/login.php:35 matches/login.php:37
 msgid "Logged Out"
-msgstr "Sin validar"
+msgstr "Desconectado"
 
 #: matches/referrer.php:8
 msgid "URL and referrer"
@@ -226,6 +226,10 @@ msgstr "Mostrar sólo esta IP"
 msgid "Configure"
 msgstr "Configurar"
 
+#: models/redirect.php:160
+msgid "Source and target URL must be different"
+msgstr "La URL de origen y destino deben ser diferentes"
+
 #: models/redirect.php:166
 msgid "You can only redirect from a relative URL (<code>%s</code>) on this domain (<code>%s</code>)."
 msgstr "Solo puedes redireccionar de una URL relativa (<code>%s</code>) en este dominio (<code>%s</code>)."
@@ -294,6 +298,10 @@ msgstr "Borrar WWW (%s)"
 msgid "Add WWW (www.%s)"
 msgstr "Añadir WWW (www.%s)"
 
+#: modules/apache.php:93
+msgid "Automatically remove or add www to your site."
+msgstr "Eliminar o añadir automáticamente www a tu sitio."
+
 #: modules/apache.php:102
 msgid "<code>.htaccess</code> saved to %s"
 msgstr "<code>.htaccess</code> guardado en %s"
@@ -326,6 +334,10 @@ msgstr "Redirecciones gestionadas por WordPress. No requiere configuración adic
 msgid "Settings"
 msgstr "Configuración"
 
+#: redirection-admin.php:147
+msgid "Log entries"
+msgstr "Entradas del registro"
+
 #: redirection-admin.php:153
 msgid "Sorry, unable to do that. Please try refreshing the page."
 msgstr "Lo siento, no se puede hacer eso. Por favor, intenta refrescando la página."
@@ -343,6 +355,12 @@ msgstr "Sus opciones se actualizaron"
 #: redirection-admin.php:250
 msgid "Redirection data has been deleted and the plugin disabled"
 msgstr "Los datos de redirección fueron eliminados y el plugin deshabilitado"
+
+#: redirection-admin.php:257
+msgid "%d redirection was successfully imported"
+msgid_plural "%d redirections were successfully imported"
+msgstr[0] "%d redirección fue importada correctamente"
+msgstr[1] "%d redirecciones fueron importadas correctamente"
 
 #: redirection-admin.php:259
 msgid "No items were imported"
@@ -448,6 +466,10 @@ msgstr "opcional"
 msgid "Redirection Log"
 msgstr "Registro de redirecciones"
 
+#: view/log.php:19
+msgid "Log Management"
+msgstr "Gestión de Logs"
+
 #: view/log.php:23
 msgid "These apply to the current search term, if any, otherwise all logs."
 msgstr "Esto se aplica al término de búsqueda actual, si existe alguno. En caso contrario, en todos los registros."
@@ -463,6 +485,10 @@ msgstr "Exportar a CSV"
 #: view/module-list.php:5 view/submenu.php:16
 msgid "Modules"
 msgstr "Módulos"
+
+#: view/options.php:6
+msgid "No logs"
+msgstr "No hay logs"
 
 #: view/options.php:7
 msgid "A day"
