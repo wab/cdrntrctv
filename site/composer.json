@@ -107,12 +107,13 @@
     "toolbox-plugin/ninja-forms-uploads": "^1",
     "wpackagist-plugin/types": "^2",
     "wpackagist-plugin/wordpress-seo": "^3.0",
-    "wpackagist-plugin/polylang": "^1.8",
+    "wpackagist-plugin/polylang": "^2",
     "wpackagist-plugin/ninja-forms": "^2.9",
     "wpackagist-plugin/regenerate-thumbnails": "^2",
     "wpackagist-plugin/redirection": "^2.4",
     "wpackagist-plugin/akismet": "^3",
-    "wpackagist-plugin/convert-post-types": "^1.4"
+    "wpackagist-plugin/convert-post-types": "^1.4",
+    "wpackagist-plugin/wordpress-importer": "^0.6"
   },
   "extra": {
     "installer-paths": {
