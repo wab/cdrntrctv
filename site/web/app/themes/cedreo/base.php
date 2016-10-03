@@ -20,12 +20,12 @@ use Roots\Sage\Breadcrumbs;
         do_action('get_header');
         get_template_part('templates/header');
       ?>
-      
+
       <div class="push-wrap">
-        
+
         <?php if(is_home() || is_archive() && !is_post_type_archive('logiciels') || is_singular('post')) : ?>
 
-           
+
           <div class="banshadow">
             <header class="page-header section">
 
@@ -36,7 +36,7 @@ use Roots\Sage\Breadcrumbs;
               <?php endif; ?>
 
               <?= Breadcrumbs\breadcrumbs(); ?>
-           
+
             </header>
           </div>
 
@@ -49,9 +49,9 @@ use Roots\Sage\Breadcrumbs;
             <main class="main">
               <?php include Wrapper\template_path(); ?>
             </main><!-- /.main -->
-            
+
             <?php if (Setup\display_sidebar()) : ?>
-              
+
               <aside class="sidebar">
                 <?php include Wrapper\sidebar_path(); ?>
               </aside><!-- /.sidebar -->
@@ -64,7 +64,7 @@ use Roots\Sage\Breadcrumbs;
         <?php  _e( 'Ce site utilise Google Analytics. En continuant à naviguer, vous nous autorisez à déposer des cookies à des fins de mesure d’audience.', 'sage' ); ?>
            <a class="button tiny hollow"><i class="fa fa-check"></i> <?php _e('Accepter', 'sage'); ?></a>
         </div>
-        
+
         <?php
           do_action('get_footer');
           get_template_part('templates/footer');
@@ -73,7 +73,9 @@ use Roots\Sage\Breadcrumbs;
       </div> <!-- push-wrap -->
 
     <?php get_template_part('templates/menu'); ?>
-          
+
     <?php wp_footer(); ?>
+
+    <?php get_template_part('templates/marketing'); ?>
   </body>
 </html>
