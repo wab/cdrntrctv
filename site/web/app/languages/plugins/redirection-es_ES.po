@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-07-01 11:39:07+0000\n"
+"PO-Revision-Date: 2016-08-07 09:56:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,7 +16,7 @@ msgstr "¿Estás seguro de que quieres eliminar todo?"
 
 #: view/item-edit.php:35
 msgid "Advanced Settings"
-msgstr "Opciones Avanzadas"
+msgstr "Ajustes avanzados"
 
 #: matches/login.php:7
 msgid "URL and login status"
@@ -272,7 +272,7 @@ msgstr "No puedo escribir en el sitio indicado - comprueba la ruta y los permiso
 
 #: modules/apache.php:76
 msgid ".htaccess Location"
-msgstr "Localización .htaccess"
+msgstr "Ubicación de .htaccess"
 
 #: modules/apache.php:80
 msgid "If you want Redirection to automatically update your <code>.htaccess</code> file then enter the full path and filename here. You can also download the file and update it manually."
@@ -284,7 +284,7 @@ msgstr "WordPress está instalado en: <code>%s</code>"
 
 #: modules/apache.php:85
 msgid "Canonical URL"
-msgstr "URL Canónica"
+msgstr "URL canónica"
 
 #: modules/apache.php:88
 msgid "Default server"
@@ -332,7 +332,7 @@ msgstr "Redirecciones gestionadas por WordPress. No requiere configuración adic
 
 #: redirection-admin.php:135
 msgid "Settings"
-msgstr "Configuración"
+msgstr "Ajustes"
 
 #: redirection-admin.php:147
 msgid "Log entries"
@@ -350,21 +350,21 @@ msgstr "Redirection"
 
 #: redirection-admin.php:225 redirection-admin.php:241
 msgid "Your options were updated"
-msgstr "Sus opciones se actualizaron"
+msgstr "Tus ajustes se actualizaron"
 
 #: redirection-admin.php:250
 msgid "Redirection data has been deleted and the plugin disabled"
-msgstr "Los datos de redirección fueron eliminados y el plugin deshabilitado"
+msgstr "Los datos de Redirection se eliminaron y el plugin deshabilitado"
 
 #: redirection-admin.php:257
 msgid "%d redirection was successfully imported"
 msgid_plural "%d redirections were successfully imported"
-msgstr[0] "%d redirección fue importada correctamente"
-msgstr[1] "%d redirecciones fueron importadas correctamente"
+msgstr[0] "%d redirección importada correctamente"
+msgstr[1] "%d redirecciones importadas correctamente"
 
 #: redirection-admin.php:259
 msgid "No items were imported"
-msgstr "No se importaron items"
+msgstr "Ningún elemento importado"
 
 #: redirection-admin.php:271 redirection-admin.php:291
 msgid "Your logs have been deleted"
@@ -372,11 +372,11 @@ msgstr "Se han borrado sus registros"
 
 #: redirection-admin.php:305
 msgid "Your group was added successfully"
-msgstr "Su grupo ha sido agregado correctamente."
+msgstr "Tu grupo ha sido agregado correctamente."
 
 #: redirection-admin.php:308
 msgid "Please specify a group name"
-msgstr "Por favor especifique un nombre para el grupo"
+msgstr "Por favor especifica un nombre para el grupo"
 
 #: redirection-admin.php:355 redirection-admin.php:367
 #: redirection-admin.php:394 redirection-admin.php:408
@@ -387,11 +387,11 @@ msgstr "No se pudo realizar la acción"
 
 #: redirection-admin.php:484
 msgid "Sorry, but your redirection was not created"
-msgstr "Lo siento, pero su redirección no fué creada"
+msgstr "Lo siento, pero tu redirección no fue creada"
 
 #: redirection-admin.php:490
 msgid "Invalid module"
-msgstr "Módulo Inválido"
+msgstr "Módulo no válido"
 
 #: redirection-admin.php:506
 msgid "Download"
@@ -408,7 +408,7 @@ msgstr "Añadir nueva redirección"
 
 #: view/add.php:7
 msgid "Your redirection has been added."
-msgstr "Se ha agregado su redirección"
+msgstr "Se ha agregado tu redirección"
 
 #: view/add.php:17
 msgid "Match"
@@ -468,7 +468,7 @@ msgstr "Registro de redirecciones"
 
 #: view/log.php:19
 msgid "Log Management"
-msgstr "Gestión de Logs"
+msgstr "Gestión de registros"
 
 #: view/log.php:23
 msgid "These apply to the current search term, if any, otherwise all logs."
@@ -516,7 +516,7 @@ msgstr "Opciones"
 
 #: view/options.php:27
 msgid "Plugin Support"
-msgstr "Soporte de Plugin"
+msgstr "Soporte del plugin"
 
 #: view/options.php:30
 msgid "I'm a nice person and I have helped support the author of this plugin"
@@ -524,11 +524,11 @@ msgstr "Soy una buena persona y ayude al autor de este plugin"
 
 #: view/options.php:34
 msgid "Redirect Logs"
-msgstr "Registros redirecciones"
+msgstr "Registros de redirecciones"
 
 #: view/options.php:40 view/options.php:50
 msgid "(time to keep logs for)"
-msgstr "(tiempo que se mantendrá los registros)"
+msgstr "(tiempo que se mantendrán los registros)"
 
 #: view/options.php:44
 msgid "404 Logs"
@@ -604,11 +604,11 @@ msgstr "Soporte"
 
 #: view/support.php:5
 msgid "Redirection Support"
-msgstr "Soporte Técnico de Redirection"
+msgstr "Soporte de Redirection"
 
 #: view/support.php:9
 msgid "Redirection is free to use - life is wonderful and lovely!  However, it has required a great deal of time and effort to develop and if it has been useful you can help support this development by <strong>making a small donation</strong>."
-msgstr "Redirection es libre de uso - ¡La vida es maravillosa y encantadora! Sin embargo, ha requerido una gran cantidad de tiempo y esfuerzo desarrollarlo y, si te ha sido útil, puedes puedes ayudar a este desarrollo <strong>haciendo una pequeña donación</strong>. "
+msgstr "Redirection se puede usar gratis - ¡La vida es maravillosa y encantadora! Sin embargo, ha requerido una gran cantidad de tiempo y esfuerzo desarrollarlo y, si te ha sido útil, puedes puedes ayudar a este desarrollo <strong>haciendo una pequeña donación</strong>. "
 
 #: view/support.php:10
 msgid "This will act as an incentive for me to carry on developing. You get some useful software and I get to carry on making it.  Everybody wins."
