@@ -1,18 +1,19 @@
-# Translation of Twenty Fifteen in Spanish (Spain)
-# This file is distributed under the same license as the Twenty Fifteen package.
+# Translation of Themes - Twenty Fifteen in Spanish (Spain)
+# This file is distributed under the same license as the Themes - Twenty Fifteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-08-18 16:52:11+0000\n"
+"PO-Revision-Date: 2016-11-29 16:17:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: Twenty Fifteen\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Themes - Twenty Fifteen\n"
 
 #. Description of the plugin/theme
 msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
-msgstr "Nuestro tema por defecto de 2015 es limpio, enfocado a los blogs y con un diseño claro. La tipografía de Twenty Finten es sencilla, clara y legible en una gran variedad de tamaños de pantalla, además de disponible en multitud de idiomas. Lo hemos diseñado pensando primero en su uso móvil, lo que implica que tu contenido ocupará el centro de la escena independientemente de como lleguen tus visitantes, ya sea desde un móvil inteligente, una tableta, un portátil o un ordenador de escritorio."
+msgstr "Nuestro tema por defecto de 2015 es limpio, enfocado a los blogs y con un diseño claro. La tipografía de Twenty Fifteen es sencilla, clara y legible en una gran variedad de tamaños de pantalla, además de disponible en multitud de idiomas. Lo hemos diseñado pensando primero en su uso móvil, lo que implica que tu contenido ocupará el centro de la escena independientemente de cómo lleguen tus visitantes, ya sea desde un móvil inteligente, una tableta, un portátil o un ordenador de escritorio."
 
 #. Theme Name of the plugin/theme
 msgid "Twenty Fifteen"
@@ -136,7 +137,7 @@ msgstr "Esquema de color básico"
 
 #: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
 msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Finten requiere al menos la versión 4.1 de WordPress. Estás ejecutando la versión %s. Por favor, actualiza e inténtalo de nuevo."
+msgstr "Twenty Fifteen requiere al menos la versión 4.1 de WordPress. Estás ejecutando la versión %s. Por favor, actualiza e inténtalo de nuevo."
 
 #: image.php:84
 msgctxt "Parent post link"
@@ -159,18 +160,18 @@ msgstr "Menú y widgets"
 msgid "Skip to content"
 msgstr "Saltar al contenido"
 
-#: functions.php:270
+#: functions.php:283
 msgid "collapse child menu"
 msgstr "plegar menú inferior"
 
-#: functions.php:269
+#: functions.php:282
 msgid "expand child menu"
 msgstr "expande el menú inferior"
 
 #. Translators: To add an additional character subset specific to your
 #. language, translate this to 'greek', 'cyrillic', 'devanagari' or
 #. 'vietnamese'. Do not translate into your own language.
-#: functions.php:199
+#: functions.php:212
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr "sin derivada"
@@ -178,7 +179,7 @@ msgstr "sin derivada"
 #. Translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:191
+#: functions.php:204
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "activa"
@@ -186,7 +187,7 @@ msgstr "activa"
 #. Translators: If there are characters in your language that are not supported
 #. by Noto Serif, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:183
+#: functions.php:196
 msgctxt "Noto Serif font: on or off"
 msgid "on"
 msgstr "activa"
@@ -194,16 +195,16 @@ msgstr "activa"
 #. Translators: If there are characters in your language that are not supported
 #. by Noto Sans, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:175
+#: functions.php:188
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr "activa"
 
-#: functions.php:149
+#: functions.php:162
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Añade widgets aquí y aparecerán en tu barra lateral."
 
-#: functions.php:147
+#: functions.php:160
 msgid "Widget Area"
 msgstr "Área de widgets"
 
@@ -219,7 +220,7 @@ msgstr "Menú principal"
 msgid "Proudly powered by %s"
 msgstr "Creado con %s"
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.6)  #-#-#-#-#
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.7)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:25
 msgid "https://wordpress.org/"
@@ -293,7 +294,7 @@ msgstr "Parece que no hay nada en este lugar. ¿Y si pruebas una búsqueda?"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "¡Vaya! Está página no se encuentra."
+msgstr "¡Vaya! Esta página no se encuentra."
 
 #. Author of the plugin/theme
 msgid "the WordPress team"
@@ -301,4 +302,4 @@ msgstr "el equipo de WordPress"
 
 #. Theme URI of the plugin/theme
 msgid "https://wordpress.org/themes/twentyfifteen/"
-msgstr "https://wordpress.org/themes/twentyfifteen/"
+msgstr "https://es.wordpress.org/themes/twentyfifteen/"
