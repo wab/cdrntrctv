@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "598330b874f7f72c0b3de6b13fb44e8d",
-    "content-hash": "e084352c3e57a0c1d37c12f6105620aa",
+    "hash": "96ffa1c4d844ea0da06741861c463c83",
+    "content-hash": "c67087d318c77835009a4ad110275649",
     "packages": [
         {
             "name": "composer/installers",
@@ -605,6 +605,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/types/"
+        },
+        {
+            "name": "wpackagist-plugin/vaultpress",
+            "version": "1.8.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/vaultpress/",
+                "reference": "tags/1.8.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/vaultpress.1.8.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/vaultpress/"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",

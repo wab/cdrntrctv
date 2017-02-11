@@ -114,7 +114,8 @@
     "wpackagist-plugin/akismet": "^3",
     "wpackagist-plugin/convert-post-types": "^1.4",
     "wpackagist-plugin/wordpress-importer": "^0.6",
-    "wpackagist-plugin/jetpack": "^4.6"
+    "wpackagist-plugin/jetpack": "^4.6",
+    "wpackagist-plugin/vaultpress": "1.8.6"
   },
   "extra": {
     "installer-paths": {
